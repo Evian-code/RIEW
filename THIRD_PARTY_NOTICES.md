@@ -1,0 +1,217 @@
+# Third-party webpage content
+
+The HTML and link records in this archive were collected from public websites for the experiments. They are not original works by the repository authors. Page URLs and titles are retained to identify their sources.
+
+- **MDN Web Docs.** Documentation text is generally available under [CC BY-SA 2.5 or later](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license). Credit: Mozilla Contributors. MDN code examples have separate licensing terms; logos, trademarks and site design are not covered by the documentation license.
+- **Wikipedia.** Article text is generally available under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Credit: Wikipedia contributors. Article histories provide contributor attribution; images and other third-party material may have separate licenses.
+- **USA.gov.** U.S. federal government employee works are generally public domain under U.S. law, but not all material appearing on government websites is government-owned. See [USA.gov copyright guidance](https://www.usa.gov/government-copyright).
+
+The page HTML also includes site navigation, markup, and references to external assets. These files must not be treated as uniformly covered by one software license. The archive does not redistribute downloaded image or font assets. Real email addresses found in third-party pages and outbound links were replaced with `redacted@example.invalid` before this release; these redactions do not alter the released directed edge lists. Redacted HTML is not byte-identical to the original captured snapshots.
+
+## Source pages
+
+### MDN Web Docs (103 pages)
+
+- en-US — https://developer.mozilla.org/en-US
+- MDN Web Docs — https://developer.mozilla.org/en-US/
+- About MDN — https://developer.mozilla.org/en-US/about
+- Advertise with us   MDN — https://developer.mozilla.org/en-US/advertising
+- blog — https://developer.mozilla.org/en-US/blog
+- MDN Blog — https://developer.mozilla.org/en-US/blog/
+- Contribute to MDN — https://developer.mozilla.org/en-US/community
+- curriculum — https://developer.mozilla.org/en-US/curriculum
+- MDN Curriculum — https://developer.mozilla.org/en-US/curriculum/
+- API - Glossary   MDN — https://developer.mozilla.org/en-US/docs/Glossary/API
+- DOM (Document Object Model) - Glossary   MDN — https://developer.mozilla.org/en-US/docs/Glossary/DOM
+- Dynamic typing - Glossary   MDN — https://developer.mozilla.org/en-US/docs/Glossary/Dynamic_typing
+- First-class function - Glossary   MDN — https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function
+- Garbage collection - Glossary   MDN — https://developer.mozilla.org/en-US/docs/Glossary/Garbage_collection
+- Just-In-Time Compilation (JIT) - Glossary   MDN — https://developer.mozilla.org/en-US/docs/Glossary/Just_In_Time_Compilation
+- Node.js - Glossary   MDN — https://developer.mozilla.org/en-US/docs/Glossary/Node.js
+- Prototype-based programming - Glossary   MDN — https://developer.mozilla.org/en-US/docs/Glossary/Prototype-based_programming
+- Learn web development   MDN — https://developer.mozilla.org/en-US/docs/Learn_web_development
+- Core learning modules - Learn web development   MDN — https://developer.mozilla.org/en-US/docs/Learn_web_development/Core
+- CSS layout - Learn web development   MDN — https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout
+- JavaScript frameworks and libraries - Learn web development   MDN — https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Frameworks_libraries
+- Dynamic scripting with JavaScript - Learn web development   MDN — https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting
+- Structuring content with HTML - Learn web development   MDN — https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content
+- CSS styling basics - Learn web development   MDN — https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics
+- Advanced JavaScript objects - Learn web development   MDN — https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects
+- Asynchronous JavaScript - Learn web development   MDN — https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Async_JS
+- Getting started modules - Learn web development   MDN — https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started
+- JavaScript: Adding interactivity - Learn web development   MDN — https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Adding_interactivity
+- Browser extensions - Mozilla   MDN — https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions
+- Web technology for developers   MDN — https://developer.mozilla.org/en-US/docs/Web
+- Web APIs   MDN — https://developer.mozilla.org/en-US/docs/Web/API
+- Fetch API - Web APIs   MDN — https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+- Using the Fetch API - Web APIs   MDN — https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+- File System API - Web APIs   MDN — https://developer.mozilla.org/en-US/docs/Web/API/File_System_API
+- Geolocation API - Web APIs   MDN — https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
+- HTML DOM API - Web APIs   MDN — https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API
+- Working with the History API - Web APIs   MDN — https://developer.mozilla.org/en-US/docs/Web/API/History_API/Working_with_the_History_API
+- Push API - Web APIs   MDN — https://developer.mozilla.org/en-US/docs/Web/API/Push_API
+- Service Worker API - Web APIs   MDN — https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
+- Using the Web Animations API - Web APIs   MDN — https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API
+- Using the Web Speech API - Web APIs   MDN — https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API
+- Using Web Workers - Web APIs   MDN — https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers
+- Accessibility   MDN — https://developer.mozilla.org/en-US/docs/Web/Accessibility
+- CSS: Cascading Style Sheets   MDN — https://developer.mozilla.org/en-US/docs/Web/CSS
+- CSS guides - CSS   MDN — https://developer.mozilla.org/en-US/docs/Web/CSS/Guides
+- Using CSS animations - CSS   MDN — https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Animations/Using
+- Border-image generator - CSS   MDN — https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Backgrounds_and_borders/Border-image_generator
+- Border-radius generator - CSS   MDN — https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Backgrounds_and_borders/Border-radius_generator
+- Box-shadow generator - CSS   MDN — https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Backgrounds_and_borders/Box-shadow_generator
+- Introduction to the CSS box model - CSS   MDN — https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_model/Introduction
+- Applying color to HTML elements using CSS - CSS   MDN — https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Colors/Applying_color
+- Color format converter - CSS   MDN — https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Colors/Color_format_converter
+- Color_mixer — https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Colors/Color_mixer
+- Basic concepts of flexbox - CSS   MDN — https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Basic_concepts
+- Shape generator - CSS   MDN — https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Shapes/Shape_generator
+- CSS layout cookbook - CSS   MDN — https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook
+- Card - CSS   MDN — https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Card
+- Center an element - CSS   MDN — https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Center_an_element
+- Column layouts - CSS   MDN — https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Column_layouts
+- CSS reference - CSS   MDN — https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+- CSS at-rules - CSS   MDN — https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules
+- CSS properties - CSS   MDN — https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties
+- CSS selectors - CSS   MDN — https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors
+- CSS values - CSS   MDN — https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values
+- HTML: HyperText Markup Language   MDN — https://developer.mozilla.org/en-US/docs/Web/HTML
+- HTML guides - HTML   MDN — https://developer.mozilla.org/en-US/docs/Web/HTML/Guides
+- HTML cheatsheet for syntax and common tasks - HTML   MDN — https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Cheatsheet
+- Using date and time formats in HTML - HTML   MDN — https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Date_and_time_formats
+- Using responsive images in HTML - HTML   MDN — https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images
+- HTML reference - HTML   MDN — https://developer.mozilla.org/en-US/docs/Web/HTML/Reference
+- HTML attribute reference - HTML   MDN — https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes
+- HTML elements reference - HTML   MDN — https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements
+- Global attributes - HTML   MDN — https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes
+- HTTP: Hypertext Transfer Protocol   MDN — https://developer.mozilla.org/en-US/docs/Web/HTTP
+- JavaScript   MDN — https://developer.mozilla.org/en-US/docs/Web/JavaScript
+- JavaScript Guide - JavaScript   MDN — https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+- Control flow and error handling - JavaScript   MDN — https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling
+- Loops and iteration - JavaScript   MDN — https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
+- Using classes - JavaScript   MDN — https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_classes
+- Working with objects - JavaScript   MDN — https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects
+- JavaScript reference - JavaScript   MDN — https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+- Functions - JavaScript   MDN — https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions
+- Standard built-in objects - JavaScript   MDN — https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+- Function.prototype.toString() - JavaScript   MDN — https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/toString
+- Object - JavaScript   MDN — https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+- eval() - JavaScript   MDN — https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval
+- JavaScript technologies overview - JavaScript   MDN — https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/JavaScript_technologies_overview
+- Expressions and operators - JavaScript   MDN — https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators
+- Statements and declarations - JavaScript   MDN — https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements
+- for...in - JavaScript   MDN — https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
+- MathML   MDN — https://developer.mozilla.org/en-US/docs/Web/MathML
+- Media technologies on the web   MDN — https://developer.mozilla.org/en-US/docs/Web/Media
+- Web performance   MDN — https://developer.mozilla.org/en-US/docs/Web/Performance
+- Privacy on the web   MDN — https://developer.mozilla.org/en-US/docs/Web/Privacy
+- Progressive web apps   MDN — https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps
+- SVG: Scalable Vector Graphics   MDN — https://developer.mozilla.org/en-US/docs/Web/SVG
+- Security   MDN — https://developer.mozilla.org/en-US/docs/Web/Security
+- URIs   MDN — https://developer.mozilla.org/en-US/docs/Web/URI
+- WebDriver   MDN — https://developer.mozilla.org/en-US/docs/Web/WebDriver
+- XML: Extensible Markup Language   MDN — https://developer.mozilla.org/en-US/docs/Web/XML
+- WebAssembly   MDN — https://developer.mozilla.org/en-US/docs/WebAssembly
+- HTTP Header Security Test - HTTP Observatory   MDN — https://developer.mozilla.org/en-US/observatory
+- Playground   MDN — https://developer.mozilla.org/en-US/play
+
+### Wikipedia (43 pages)
+
+- File:WebCrawlerArchitecture.svg - Wikipedia — https://commons.wikimedia.org/wiki/File:WebCrawlerArchitecture.svg
+- Download as PDF - Wikipedia — https://en.wikipedia.org/w/index.php?action=show-download-screen&page=Web_crawler&title=Special%3ADownloadAsPdf
+- Cite This Page - Wikipedia — https://en.wikipedia.org/w/index.php?id=1373879962&page=Web_crawler&title=Special%3ACiteThisPage&wpFormIdentifier=titleform
+- Blocked - Wikipedia — https://en.wikipedia.org/w/index.php?title=Special%3AUrlShortener&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWeb_crawler
+- Web crawler: Revision history - Wikipedia — https://en.wikipedia.org/w/index.php?title=Web_crawler&action=history
+- Information for "Web crawler" - Wikipedia — https://en.wikipedia.org/w/index.php?title=Web_crawler&action=info
+- Arac (video game) - Wikipedia — https://en.wikipedia.org/wiki/Arac_(video_game)
+- Cantwell, Alaska - Wikipedia — https://en.wikipedia.org/wiki/Cantwell,_Alaska
+- Crawl frontier - Wikipedia — https://en.wikipedia.org/wiki/Crawl_frontier
+- Data-driven programming - Wikipedia — https://en.wikipedia.org/wiki/Data-driven_programming
+- FOAF - Wikipedia — https://en.wikipedia.org/wiki/FOAF
+- HTML - Wikipedia — https://en.wikipedia.org/wiki/HTML
+- Help:Contents - Wikipedia — https://en.wikipedia.org/wiki/Help:Contents
+- Help:Introduction - Wikipedia — https://en.wikipedia.org/wiki/Help:Introduction
+- Hyperlink - Wikipedia — https://en.wikipedia.org/wiki/Hyperlink
+- Internet bot - Wikipedia — https://en.wikipedia.org/wiki/Internet_bot
+- List of search engines - Wikipedia — https://en.wikipedia.org/wiki/List_of_search_engines
+- Wikipedia, the free encyclopedia — https://en.wikipedia.org/wiki/Main_Page
+- Portal:Current events - Wikipedia — https://en.wikipedia.org/wiki/Portal:Current_events
+- Recursion - Wikipedia — https://en.wikipedia.org/wiki/Recursion
+- Search engine indexing - Wikipedia — https://en.wikipedia.org/wiki/Search_engine_indexing
+- Software - Wikipedia — https://en.wikipedia.org/wiki/Software
+- Recent changes - Wikipedia — https://en.wikipedia.org/wiki/Special:RecentChanges
+- Related changes - Wikipedia — https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Web_crawler
+- Search - Wikipedia — https://en.wikipedia.org/wiki/Special:Search
+- Special pages - Wikipedia — https://en.wikipedia.org/wiki/Special:SpecialPages
+- Pages that link to "Web crawler" - Wikipedia — https://en.wikipedia.org/wiki/Special:WhatLinksHere/Web_crawler
+- Spider web - Wikipedia — https://en.wikipedia.org/wiki/Spider_web
+- Talk:Web crawler - Wikipedia — https://en.wikipedia.org/wiki/Talk:Web_crawler
+- URL - Wikipedia — https://en.wikipedia.org/wiki/URL
+- WebCrawler - Wikipedia — https://en.wikipedia.org/wiki/WebCrawler
+- Web content - Wikipedia — https://en.wikipedia.org/wiki/Web_content
+- View source for Web crawler - Wikipedia — https://en.wikipedia.org/wiki/Web_crawler
+- Web indexing - Wikipedia — https://en.wikipedia.org/wiki/Web_indexing
+- Web scraping - Wikipedia — https://en.wikipedia.org/wiki/Web_scraping
+- Web server - Wikipedia — https://en.wikipedia.org/wiki/Web_server
+- Website - Wikipedia — https://en.wikipedia.org/wiki/Website
+- Wikipedia:About - Wikipedia — https://en.wikipedia.org/wiki/Wikipedia:About
+- Wikipedia:Community portal - Wikipedia — https://en.wikipedia.org/wiki/Wikipedia:Community_portal
+- Wikipedia:Contact us - Wikipedia — https://en.wikipedia.org/wiki/Wikipedia:Contact_us
+- Wikipedia:Contents - Wikipedia — https://en.wikipedia.org/wiki/Wikipedia:Contents
+- Wikipedia:File upload wizard - Wikipedia — https://en.wikipedia.org/wiki/Wikipedia:File_upload_wizard
+- World Wide Web - Wikipedia — https://en.wikipedia.org/wiki/World_Wide_Web
+
+### USA.gov (50 pages)
+
+- Making government services easier to find   USAGov — https://www.usa.gov/
+- About USAGov   USAGov — https://www.usa.gov/about
+- The U.S. and its government   USAGov — https://www.usa.gov/about-the-us
+- USA.gov accessibility policy   USAGov — https://www.usa.gov/accessibility-policy
+- A-Z index of U.S. government departments and agencies   USAGov — https://www.usa.gov/agency-index
+- Find government benefits and financial help   USAGov — https://www.usa.gov/benefit-finder
+- Government benefits   USAGov — https://www.usa.gov/benefits
+- Blog Listing   USAGov — https://www.usa.gov/blog
+- Branches of the U.S. government   USAGov — https://www.usa.gov/branches-of-government
+- Chat with USAGov   USAGov — https://www.usa.gov/chat
+- Complaints   USAGov — https://www.usa.gov/complaints
+- How to confirm your voter registration status   USAGov — https://www.usa.gov/confirm-voter-registration
+- Contact us   USAGov — https://www.usa.gov/contact-us
+- Disability services   USAGov — https://www.usa.gov/disability-services
+- Disasters and emergencies   USAGov — https://www.usa.gov/disasters-and-emergencies
+- Education   USAGov — https://www.usa.gov/education
+- Información del Gobierno de Estados Unidos a su alcance   USAGov — https://www.usa.gov/es/
+- Llame a USAGov   USAGov — https://www.usa.gov/es/llamenos
+- USAGov feature articles   USAGov — https://www.usa.gov/features
+- Health   USAGov — https://www.usa.gov/health
+- Housing help   USAGov — https://www.usa.gov/housing-help
+- How, when, and where to vote   USAGov — https://www.usa.gov/how-to-vote
+- Immigration and U.S. citizenship   USAGov — https://www.usa.gov/immigration-and-citizenship
+- Innovation   USAGov — https://www.usa.gov/innovation
+- Jobs, labor laws, and unemployment   USAGov — https://www.usa.gov/jobs-labor-laws-unemployment
+- Laws and legal issues   USAGov — https://www.usa.gov/laws-and-legal-issues
+- Life events   USAGov — https://www.usa.gov/life-events
+- Congressional, state, and local elections   USAGov — https://www.usa.gov/midterm-state-and-local-elections
+- Military and veterans   USAGov — https://www.usa.gov/military-and-veterans
+- USAGov's mission and history   USAGov — https://www.usa.gov/mission-history
+- Money and credit   USAGov — https://www.usa.gov/money
+- USAGov Outreach   USAGov — https://www.usa.gov/outreach
+- Partner with USAGov   USAGov — https://www.usa.gov/partner-with-usagov
+- U.S. passports   USAGov — https://www.usa.gov/passport
+- Call USAGov   USAGov — https://www.usa.gov/phone
+- USA.gov privacy and security policies   USAGov — https://www.usa.gov/privacy-security
+- Products and programs   USAGov — https://www.usa.gov/products-programs
+- Scams and fraud   USAGov — https://www.usa.gov/scams-and-fraud
+- Report an issue with the website USA.gov   USAGov — https://www.usa.gov/site-issue-report-form
+- Small business   USAGov — https://www.usa.gov/small-business
+- State and local election offices   USAGov — https://www.usa.gov/state-election-office
+- Taxes   USAGov — https://www.usa.gov/taxes
+- Travel   USAGov — https://www.usa.gov/travel
+- How to find unclaimed money from the government   USAGov — https://www.usa.gov/unclaimed-money
+- Voter registration   USAGov — https://www.usa.gov/voter-registration
+- Decide who to vote for   USAGov — https://www.usa.gov/voter-research
+- Voting and elections   USAGov — https://www.usa.gov/voting-and-elections
+- Voting and election laws   USAGov — https://www.usa.gov/voting-laws
+- USAGov Web Analytics   USAGov — https://www.usa.gov/website-analytics/
+- Website policies and notices   USAGov — https://www.usa.gov/website-policies-and-notices
+

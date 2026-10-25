@@ -1,0 +1,51 @@
+{
+  "rendered": {
+    "title": "Web server - Wikipedia",
+    "canonical": "https://en.wikipedia.org/wiki/Web_server",
+    "alternates": [
+      {
+        "href": "https://en.wikipedia.org/w/index.php?title=Web_server&action=edit",
+        "type": "application/x-wiki",
+        "hreflang": null
+      },
+      {
+        "href": "https://en.wikipedia.org/w/index.php?title=Special:RecentChanges&feed=atom",
+        "type": "application/atom+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [],
+    "open_graph": {
+      "og:image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Web_server_serving_static_content.svg/1280px-Web_server_serving_static_content.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+      "og:image:width": "1200",
+      "og:image:height": "1001",
+      "og:title": "Web server - Wikipedia",
+      "og:type": "website"
+    },
+    "meta": {
+      "generator": "MediaWiki 1.47.0-wmf.20",
+      "referrer": "origin-when-cross-origin",
+      "robots": "max-image-preview:standard",
+      "format-detection": "telephone=no",
+      "og:image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Web_server_serving_static_content.svg/1280px-Web_server_serving_static_content.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+      "og:image:width": "1200",
+      "og:image:height": "1001",
+      "viewport": "width=1120",
+      "og:title": "Web server - Wikipedia",
+      "og:type": "website"
+    },
+    "json_ld": [
+      {
+        "index": 0,
+        "raw": "{\"@context\":\"https:\\/\\/schema.org\",\"@type\":\"Article\",\"name\":\"Web server\",\"url\":\"https:\\/\\/en.wikipedia.org\\/wiki\\/Web_server\",\"sameAs\":\"http:\\/\\/www.wikidata.org\\/entity\\/Q11288\",\"mainEntity\":\"http:\\/\\/www.wikidata.org\\/entity\\/Q11288\",\"author\":{\"@type\":\"Organization\",\"name\":\"Contributors to Wikimedia projects\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Wikimedia Foundation, Inc.\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https:\\/\\/www.wikimedia.org\\/static\\/images\\/wmf-hor-googpub.png\"}},\"datePublished\":\"2001-08-08T16:30:09Z\",\"dateModified\":\"2026-08-10T09:58:17Z\",\"image\":\"https:\\/\\/upload.wikimedia.org\\/wikipedia\\/commons\\/1\\/16\\/Web_server_serving_static_content.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original\",\"headline\":\"computer software that distributes web pages\"}",
+        "parse_error": null
+      }
+    ]
+  },
+  "capture": {
+    "requested_url": "https://en.wikipedia.org/wiki/Web_server",
+    "expected_normalized_url": "https://en.wikipedia.org/wiki/Web_server",
+    "live_final_url": "https://en.wikipedia.org/wiki/Web_server",
+    "captured_at": "2026-09-20T13:31:03.138Z"
+  }
+}

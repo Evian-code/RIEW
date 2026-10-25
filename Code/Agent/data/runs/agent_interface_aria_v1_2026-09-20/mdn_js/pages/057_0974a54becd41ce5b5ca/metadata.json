@@ -1,0 +1,63 @@
+{
+  "rendered": {
+    "title": "WebAssembly | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/WebAssembly",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "WebAssembly",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/WebAssembly"
+        ]
+      },
+      {
+        "text": "WebAssembly",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/WebAssembly"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/WebAssembly",
+      "og:title": "WebAssembly | MDN",
+      "og:locale": "en_US",
+      "og:description": "WebAssembly (Wasm) is a low-level assembly-like language that brings near-native performance to the web. It serves as a compilation target for languages like C/C++, C#, and Rust, allowing high-performance code to run directly in the browser.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "WebAssembly (Wasm) is a low-level assembly-like language that brings near-native performance to the web. It serves as a compilation target for languages like C/C++, C#, and Rust, allowing high-performance code to run directly in the browser.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/WebAssembly",
+      "og:title": "WebAssembly | MDN",
+      "og:locale": "en_US",
+      "og:description": "WebAssembly (Wasm) is a low-level assembly-like language that brings near-native performance to the web. It serves as a compilation target for languages like C/C++, C#, and Rust, allowing high-performance code to run directly in the browser.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "1"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/WebAssembly",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/WebAssembly",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/WebAssembly",
+    "captured_at": "2026-09-20T12:57:33.080Z"
+  }
+}

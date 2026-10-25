@@ -1,0 +1,65 @@
+{
+  "rendered": {
+    "title": "First-class function - Glossary | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Glossary First-class function",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Glossary",
+          "https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function"
+        ]
+      },
+      {
+        "text": "Glossary First-class function",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Glossary",
+          "https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function",
+      "og:title": "First-class function - Glossary | MDN",
+      "og:locale": "en_US",
+      "og:description": "A programming language is said to have First-class functions when functions in that language are treated like any other variable. For example, in such a language, a function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "A programming language is said to have First-class functions when functions in that language are treated like any other variable. For example, in such a language, a function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function",
+      "og:title": "First-class function - Glossary | MDN",
+      "og:locale": "en_US",
+      "og:description": "A programming language is said to have First-class functions when functions in that language are treated like any other variable. For example, in such a language, a function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "2"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function",
+    "captured_at": "2026-09-20T12:59:07.291Z"
+  }
+}

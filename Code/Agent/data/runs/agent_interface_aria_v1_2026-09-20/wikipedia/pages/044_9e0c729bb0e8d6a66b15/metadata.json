@@ -1,0 +1,45 @@
+{
+  "rendered": {
+    "title": "Web scraping - Wikipedia",
+    "canonical": "https://en.wikipedia.org/wiki/Web_scraping",
+    "alternates": [
+      {
+        "href": "https://en.wikipedia.org/w/index.php?title=Web_scraping&action=edit",
+        "type": "application/x-wiki",
+        "hreflang": null
+      },
+      {
+        "href": "https://en.wikipedia.org/w/index.php?title=Special:RecentChanges&feed=atom",
+        "type": "application/atom+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [],
+    "open_graph": {
+      "og:title": "Web scraping - Wikipedia",
+      "og:type": "website"
+    },
+    "meta": {
+      "generator": "MediaWiki 1.47.0-wmf.20",
+      "referrer": "origin-when-cross-origin",
+      "robots": "max-image-preview:standard",
+      "format-detection": "telephone=no",
+      "viewport": "width=1120",
+      "og:title": "Web scraping - Wikipedia",
+      "og:type": "website"
+    },
+    "json_ld": [
+      {
+        "index": 0,
+        "raw": "{\"@context\":\"https:\\/\\/schema.org\",\"@type\":\"Article\",\"name\":\"Web scraping\",\"url\":\"https:\\/\\/en.wikipedia.org\\/wiki\\/Web_scraping\",\"sameAs\":\"http:\\/\\/www.wikidata.org\\/entity\\/Q665452\",\"mainEntity\":\"http:\\/\\/www.wikidata.org\\/entity\\/Q665452\",\"author\":{\"@type\":\"Organization\",\"name\":\"Contributors to Wikimedia projects\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Wikimedia Foundation, Inc.\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https:\\/\\/www.wikimedia.org\\/static\\/images\\/wmf-hor-googpub.png\"}},\"datePublished\":\"2005-09-17T18:57:30Z\",\"dateModified\":\"2026-09-19T09:13:04Z\",\"headline\":\"data scraping used for extracting data from websites\"}",
+        "parse_error": null
+      }
+    ]
+  },
+  "capture": {
+    "requested_url": "https://en.wikipedia.org/wiki/Web_scraping",
+    "expected_normalized_url": "https://en.wikipedia.org/wiki/Web_scraping",
+    "live_final_url": "https://en.wikipedia.org/wiki/Web_scraping",
+    "captured_at": "2026-09-20T13:30:54.075Z"
+  }
+}

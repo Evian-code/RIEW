@@ -1,0 +1,61 @@
+{
+  "rendered": {
+    "title": "Wikipedia, the free encyclopedia",
+    "canonical": "https://en.wikipedia.org/wiki/Main_Page",
+    "alternates": [
+      {
+        "href": "https://en.wikipedia.org/w/api.php?action=featuredfeed&feed=potd&feedformat=atom",
+        "type": "application/atom+xml",
+        "hreflang": null
+      },
+      {
+        "href": "https://en.wikipedia.org/w/api.php?action=featuredfeed&feed=featured&feedformat=atom",
+        "type": "application/atom+xml",
+        "hreflang": null
+      },
+      {
+        "href": "https://en.wikipedia.org/w/api.php?action=featuredfeed&feed=onthisday&feedformat=atom",
+        "type": "application/atom+xml",
+        "hreflang": null
+      },
+      {
+        "href": "https://en.wikipedia.org/w/index.php?title=Special:RecentChanges&feed=atom",
+        "type": "application/atom+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [],
+    "open_graph": {
+      "og:image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Volcano_Misti%2C_Peru.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+      "og:image:width": "1200",
+      "og:image:height": "674",
+      "og:title": "Wikipedia, the free encyclopedia",
+      "og:type": "website"
+    },
+    "meta": {
+      "generator": "MediaWiki 1.47.0-wmf.20",
+      "referrer": "origin-when-cross-origin",
+      "robots": "max-image-preview:standard",
+      "format-detection": "telephone=no",
+      "og:image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Volcano_Misti%2C_Peru.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+      "og:image:width": "1200",
+      "og:image:height": "674",
+      "viewport": "width=1120",
+      "og:title": "Wikipedia, the free encyclopedia",
+      "og:type": "website"
+    },
+    "json_ld": [
+      {
+        "index": 0,
+        "raw": "{\"@context\":\"https:\\/\\/schema.org\",\"@type\":\"Article\",\"name\":\"Main Page\",\"url\":\"https:\\/\\/en.wikipedia.org\\/wiki\\/Main_Page\",\"sameAs\":\"http:\\/\\/www.wikidata.org\\/entity\\/Q5296\",\"mainEntity\":\"http:\\/\\/www.wikidata.org\\/entity\\/Q5296\",\"author\":{\"@type\":\"Organization\",\"name\":\"Contributors to Wikimedia projects\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Wikimedia Foundation, Inc.\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https:\\/\\/www.wikimedia.org\\/static\\/images\\/wmf-hor-googpub.png\"}},\"datePublished\":\"2002-01-26T15:28:12Z\",\"dateModified\":\"2026-06-12T07:37:08Z\",\"image\":\"https:\\/\\/upload.wikimedia.org\\/wikipedia\\/commons\\/a\\/a3\\/Volcano_Misti%2C_Peru.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original\",\"headline\":\"main page of a Wikimedia project\"}",
+        "parse_error": null
+      }
+    ]
+  },
+  "capture": {
+    "requested_url": "https://en.wikipedia.org/wiki/Main_Page",
+    "expected_normalized_url": "https://en.wikipedia.org/wiki/Main_Page",
+    "live_final_url": "https://en.wikipedia.org/wiki/Main_Page",
+    "captured_at": "2026-09-20T13:29:42.078Z"
+  }
+}

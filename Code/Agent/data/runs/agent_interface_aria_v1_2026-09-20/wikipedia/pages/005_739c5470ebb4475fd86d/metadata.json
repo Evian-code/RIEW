@@ -1,0 +1,51 @@
+{
+  "rendered": {
+    "title": "Cantwell, Alaska - Wikipedia",
+    "canonical": "https://en.wikipedia.org/wiki/Cantwell,_Alaska",
+    "alternates": [
+      {
+        "href": "https://en.wikipedia.org/w/index.php?title=Cantwell,_Alaska&action=edit",
+        "type": "application/x-wiki",
+        "hreflang": null
+      },
+      {
+        "href": "https://en.wikipedia.org/w/index.php?title=Special:RecentChanges&feed=atom",
+        "type": "application/atom+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [],
+    "open_graph": {
+      "og:image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Cantwell%2C_Alaska.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+      "og:image:width": "1200",
+      "og:image:height": "797",
+      "og:title": "Cantwell, Alaska - Wikipedia",
+      "og:type": "website"
+    },
+    "meta": {
+      "generator": "MediaWiki 1.47.0-wmf.20",
+      "referrer": "origin-when-cross-origin",
+      "robots": "max-image-preview:standard",
+      "format-detection": "telephone=no",
+      "og:image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Cantwell%2C_Alaska.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+      "og:image:width": "1200",
+      "og:image:height": "797",
+      "viewport": "width=1120",
+      "og:title": "Cantwell, Alaska - Wikipedia",
+      "og:type": "website"
+    },
+    "json_ld": [
+      {
+        "index": 0,
+        "raw": "{\"@context\":\"https:\\/\\/schema.org\",\"@type\":\"Article\",\"name\":\"Cantwell, Alaska\",\"url\":\"https:\\/\\/en.wikipedia.org\\/wiki\\/Cantwell,_Alaska\",\"sameAs\":\"http:\\/\\/www.wikidata.org\\/entity\\/Q1033949\",\"mainEntity\":\"http:\\/\\/www.wikidata.org\\/entity\\/Q1033949\",\"author\":{\"@type\":\"Organization\",\"name\":\"Contributors to Wikimedia projects\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Wikimedia Foundation, Inc.\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https:\\/\\/www.wikimedia.org\\/static\\/images\\/wmf-hor-googpub.png\"}},\"datePublished\":\"2002-10-15T16:18:52Z\",\"dateModified\":\"2026-08-21T05:49:40Z\",\"image\":\"https:\\/\\/upload.wikimedia.org\\/wikipedia\\/commons\\/3\\/3f\\/Cantwell%2C_Alaska.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original\",\"headline\":\"census-designated place in Alaska, United States\"}",
+        "parse_error": null
+      }
+    ]
+  },
+  "capture": {
+    "requested_url": "https://en.wikipedia.org/wiki/Cantwell,_Alaska",
+    "expected_normalized_url": "https://en.wikipedia.org/wiki/Cantwell,_Alaska",
+    "live_final_url": "https://en.wikipedia.org/wiki/Cantwell,_Alaska",
+    "captured_at": "2026-09-20T13:29:47.486Z"
+  }
+}

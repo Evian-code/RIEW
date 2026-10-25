@@ -1,0 +1,67 @@
+{
+  "rendered": {
+    "title": "CSS guides - CSS | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Web CSS Guides",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides"
+        ]
+      },
+      {
+        "text": "Web CSS Guides",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides",
+      "og:title": "CSS guides - CSS | MDN",
+      "og:locale": "en_US",
+      "og:description": "This page lists CSS modules, which reflect how CSS specifications are structured. Each module provides an overview of the specification, lists the features it provides (such as properties, at-rules, and data types), and shows how they relate to other parts of CSS and the web platform. You can use the module pages as a starting point to navigate through the related guides and dive deeper into reference documentation for specific features.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "This page lists CSS modules, which reflect how CSS specifications are structured. Each module provides an overview of the specification, lists the features it provides (such as properties, at-rules, and data types), and shows how they relate to other parts of CSS and the web platform. You can use the module pages as a starting point to navigate through the related guides and dive deeper into reference documentation for specific features.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides",
+      "og:title": "CSS guides - CSS | MDN",
+      "og:locale": "en_US",
+      "og:description": "This page lists CSS modules, which reflect how CSS specifications are structured. Each module provides an overview of the specification, lists the features it provides (such as properties, at-rules, and data types), and shows how they relate to other parts of CSS and the web platform. You can use the module pages as a starting point to navigate through the related guides and dive deeper into reference documentation for specific features.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "3"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides",
+    "captured_at": "2026-09-20T12:55:25.770Z"
+  }
+}

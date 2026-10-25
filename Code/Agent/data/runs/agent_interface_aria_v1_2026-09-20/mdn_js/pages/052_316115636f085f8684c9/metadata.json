@@ -1,0 +1,63 @@
+{
+  "rendered": {
+    "title": "Web technology for developers | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/Web",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Web",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web"
+        ]
+      },
+      {
+        "text": "Web",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web",
+      "og:title": "Web technology for developers | MDN",
+      "og:locale": "en_US",
+      "og:description": "The open Web presents incredible opportunities for developers. To take full advantage of these technologies, you need to know how to use them. Below you'll find links to our Web technology documentation.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "The open Web presents incredible opportunities for developers. To take full advantage of these technologies, you need to know how to use them. Below you'll find links to our Web technology documentation.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web",
+      "og:title": "Web technology for developers | MDN",
+      "og:locale": "en_US",
+      "og:description": "The open Web presents incredible opportunities for developers. To take full advantage of these technologies, you need to know how to use them. Below you'll find links to our Web technology documentation.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "1"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/Web",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/Web",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/Web",
+    "captured_at": "2026-09-20T12:57:23.235Z"
+  }
+}

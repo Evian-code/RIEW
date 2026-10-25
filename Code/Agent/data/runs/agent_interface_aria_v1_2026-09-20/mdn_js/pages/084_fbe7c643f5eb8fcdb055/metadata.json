@@ -1,0 +1,65 @@
+{
+  "rendered": {
+    "title": "Just-In-Time Compilation (JIT) - Glossary | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/Glossary/Just_In_Time_Compilation",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Glossary Just-In-Time Compilation (JIT)",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Glossary",
+          "https://developer.mozilla.org/en-US/docs/Glossary/Just_In_Time_Compilation"
+        ]
+      },
+      {
+        "text": "Glossary Just-In-Time Compilation (JIT)",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Glossary",
+          "https://developer.mozilla.org/en-US/docs/Glossary/Just_In_Time_Compilation"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/Glossary/Just_In_Time_Compilation",
+      "og:title": "Just-In-Time Compilation (JIT) - Glossary | MDN",
+      "og:locale": "en_US",
+      "og:description": "JIT (Just-In-Time Compilation) is a compilation process in which code is translated from an intermediate representation or a higher-level language (e.g., JavaScript or Java bytecode) into machine code at runtime, rather than prior to execution. This approach combines the benefits of both interpretation and ahead-of-time (AOT) compilation.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "JIT (Just-In-Time Compilation) is a compilation process in which code is translated from an intermediate representation or a higher-level language (e.g., JavaScript or Java bytecode) into machine code at runtime, rather than prior to execution. This approach combines the benefits of both interpretation and ahead-of-time (AOT) compilation.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/Glossary/Just_In_Time_Compilation",
+      "og:title": "Just-In-Time Compilation (JIT) - Glossary | MDN",
+      "og:locale": "en_US",
+      "og:description": "JIT (Just-In-Time Compilation) is a compilation process in which code is translated from an intermediate representation or a higher-level language (e.g., JavaScript or Java bytecode) into machine code at runtime, rather than prior to execution. This approach combines the benefits of both interpretation and ahead-of-time (AOT) compilation.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "2"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/Glossary/Just_In_Time_Compilation",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/Glossary/Just_In_Time_Compilation",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/Glossary/Just_In_Time_Compilation",
+    "captured_at": "2026-09-20T12:58:58.960Z"
+  }
+}

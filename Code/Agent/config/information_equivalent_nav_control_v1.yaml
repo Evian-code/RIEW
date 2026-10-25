@@ -1,0 +1,34 @@
+experiment_kind: information_equivalent_navigation_control
+control_suite_version: 1
+batch_id: information-equivalent-nav-control-v1-attempt01
+provider: alibaba_model_studio
+region: cn-beijing
+api_protocol: openai_chat_completions
+api_base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+model: qwen3.7-plus-2026-05-26
+model_version: qwen3.7-plus-2026-05-26
+thinking_mode: disabled
+temperature: 0
+max_tool_steps: 10
+token_budget: 100000
+timeout_ms: 120000
+answer_format: plain_text
+trajectory_schema_version: '1.2'
+system_prompt_file: config/agent_system_prompt.txt
+repetitions: 5
+conditions: [information_all_unrestricted_navigation, information_all_aria_restricted_navigation]
+sites: [mdn_js, wikipedia, usa_gov]
+external_search: false
+url_guessing: false
+runner_task_file: docs/information_equivalent_nav_control_prompts_v1.json
+evaluator_task_file: docs/information_equivalent_nav_control_tasks_v1.json
+task_suite_manifest_file: docs/information_equivalent_nav_control_task_manifest_v1.json
+run_manifest_file: docs/information_equivalent_nav_control_run_manifest_v1.json
+formal_freeze_file: docs/information_equivalent_nav_control_freeze_v1.json
+readiness_report_file: docs/information_equivalent_nav_control_readiness_v1.json
+agent_run_output_dir: results/information_equivalent_nav_control_v1
+interface_snapshot_output_dir: data/runs/agent_interface_aria_v1_2026-09-20
+frozen_snapshots:
+  mdn_js: data/runs/agent_interface_aria_v1_2026-09-20
+  wikipedia: data/runs/agent_interface_aria_v1_2026-09-20
+  usa_gov: data/runs/agent_interface_aria_v1_2026-09-20

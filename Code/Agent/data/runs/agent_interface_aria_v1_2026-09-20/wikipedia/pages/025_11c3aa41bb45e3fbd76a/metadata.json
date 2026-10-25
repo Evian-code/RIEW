@@ -1,0 +1,34 @@
+{
+  "rendered": {
+    "title": "Cite This Page - Wikipedia",
+    "canonical": "https://en.wikipedia.org/w/index.php?id=1373879962&page=Web_crawler&title=Special%3ACiteThisPage&wpFormIdentifier=titleform",
+    "alternates": [
+      {
+        "href": "https://en.wikipedia.org/w/index.php?title=Special:RecentChanges&feed=atom",
+        "type": "application/atom+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [],
+    "open_graph": {
+      "og:title": "Cite This Page - Wikipedia",
+      "og:type": "website"
+    },
+    "meta": {
+      "generator": "MediaWiki 1.47.0-wmf.20",
+      "referrer": "origin-when-cross-origin",
+      "robots": "noindex,nofollow,max-image-preview:standard",
+      "format-detection": "telephone=no",
+      "viewport": "width=1120",
+      "og:title": "Cite This Page - Wikipedia",
+      "og:type": "website"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://en.wikipedia.org/w/index.php?id=1373879962&page=Web_crawler&title=Special%3ACiteThisPage&wpFormIdentifier=titleform",
+    "expected_normalized_url": "https://en.wikipedia.org/w/index.php?id=1373879962&page=Web_crawler&title=Special%3ACiteThisPage&wpFormIdentifier=titleform",
+    "live_final_url": "https://en.wikipedia.org/w/index.php?id=1373879962&page=Web_crawler&title=Special%3ACiteThisPage&wpFormIdentifier=titleform",
+    "captured_at": "2026-09-20T13:30:21.635Z"
+  }
+}

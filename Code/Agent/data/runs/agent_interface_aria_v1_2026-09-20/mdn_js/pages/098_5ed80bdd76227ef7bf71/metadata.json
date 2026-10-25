@@ -1,0 +1,67 @@
+{
+  "rendered": {
+    "title": "JavaScript frameworks and libraries - Learn web development | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Frameworks_libraries",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Learn Core learning modules JavaScript frameworks and libraries",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+          "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core",
+          "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Frameworks_libraries"
+        ]
+      },
+      {
+        "text": "Learn Core learning modules JavaScript frameworks and libraries",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+          "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core",
+          "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Frameworks_libraries"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Frameworks_libraries",
+      "og:title": "JavaScript frameworks and libraries - Learn web development | MDN",
+      "og:locale": "en_US",
+      "og:description": "JavaScript frameworks are an essential part of modern front-end web development, providing developers with tried and tested tools for building scalable, interactive web applications. Many modern companies use frameworks as a standard part of their tooling, so many front-end development jobs now require framework experience. This set of articles provides a comfortable starting point to help you begin learning frameworks.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "JavaScript frameworks are an essential part of modern front-end web development, providing developers with tried and tested tools for building scalable, interactive web applications. Many modern companies use frameworks as a standard part of their tooling, so many front-end development jobs now require framework experience. This set of articles provides a comfortable starting point to help you begin learning frameworks.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Frameworks_libraries",
+      "og:title": "JavaScript frameworks and libraries - Learn web development | MDN",
+      "og:locale": "en_US",
+      "og:description": "JavaScript frameworks are an essential part of modern front-end web development, providing developers with tried and tested tools for building scalable, interactive web applications. Many modern companies use frameworks as a standard part of their tooling, so many front-end development jobs now require framework experience. This set of articles provides a comfortable starting point to help you begin learning frameworks.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "3"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Frameworks_libraries",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Frameworks_libraries",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Frameworks_libraries",
+    "captured_at": "2026-09-20T13:00:14.191Z"
+  }
+}

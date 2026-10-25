@@ -1,0 +1,69 @@
+{
+  "rendered": {
+    "title": "Statements and declarations - JavaScript | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Web JavaScript Reference Statements and declarations",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements"
+        ]
+      },
+      {
+        "text": "Web JavaScript Reference Statements and declarations",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements",
+      "og:title": "Statements and declarations - JavaScript | MDN",
+      "og:locale": "en_US",
+      "og:description": "JavaScript code is built from statements and declarations, which can contain expressions. This reference groups the constructs used to control execution and declare bindings. A statement can span multiple lines, and a line can contain multiple statements.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "JavaScript code is built from statements and declarations, which can contain expressions. This reference groups the constructs used to control execution and declare bindings. A statement can span multiple lines, and a line can contain multiple statements.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements",
+      "og:title": "Statements and declarations - JavaScript | MDN",
+      "og:locale": "en_US",
+      "og:description": "JavaScript code is built from statements and declarations, which can contain expressions. This reference groups the constructs used to control execution and declare bindings. A statement can span multiple lines, and a line can contain multiple statements.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "4"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements",
+    "captured_at": "2026-09-20T12:56:02.187Z"
+  }
+}

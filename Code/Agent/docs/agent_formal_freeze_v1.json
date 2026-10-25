@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "status": "FROZEN_READY_FOR_FORMAL_RUN",
+  "suite_id": "agent-formal-aria-v1",
+  "generated_at": "2026-09-28T06:02:30.578Z",
+  "config_path": "config/agent_formal_aria_v1.yaml",
+  "protocol": {
+    "provider": "alibaba_model_studio",
+    "region": "cn-beijing",
+    "api_protocol": "openai_chat_completions",
+    "api_base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "model": "qwen3.7-plus-2026-05-26",
+    "model_version": "qwen3.7-plus-2026-05-26",
+    "thinking_mode": "disabled",
+    "temperature": 0,
+    "max_tool_steps": 10,
+    "token_budget": 100000,
+    "timeout_ms": 120000,
+    "answer_format": "plain_text",
+    "conditions": [
+      "rendered_all",
+      "rendered_aria_followable"
+    ],
+    "repetitions": 5,
+    "external_search": false,
+    "url_guessing": false
+  },
+  "task_count": 18,
+  "run_count": 180,
+  "canonical_files": [
+    {
+      "path": "config/agent_formal_aria_v1.yaml",
+      "sha256": "41d5f8fd1bc33b635a82789d6c355b0399ff90a9ff6829b1324ecc7773bcbf3e",
+      "status": "PRESENT"
+    },
+    {
+      "path": "config/agent_system_prompt.txt",
+      "sha256": "a8192c2e8a53f12f3e6008776a5ca69078cd55ffd4c6a28ec8b6a49254f7cb1d",
+      "status": "PRESENT"
+    },
+    {
+      "path": "docs/agent_formal_task_prompts_v1.json",
+      "sha256": "911978f6ce2808f368a69aa51cbcf4de1ec67a9ef100ce37b007bac29362a600",
+      "status": "PRESENT"
+    },
+    {
+      "path": "docs/agent_formal_task_suite_v1.json",
+      "sha256": "c20b3d7e9b7edac9af77f2c934931ad6fffacf16aa55d7cf8bb25b738610def0",
+      "status": "PRESENT"
+    },
+    {
+      "path": "docs/agent_formal_task_suite_manifest_v1.json",
+      "sha256": "e86fc6db487d6f97934ab349ef10a57d020e13ae8b584dfaf34759f87e4f76fd",
+      "status": "PRESENT"
+    },
+    {
+      "path": "docs/agent_formal_run_manifest_v1.json",
+      "sha256": "ce8018fa9b9110ec4e35b95b912a5c0cb218eaad640a7ff36772004c09cd6582",
+      "status": "PRESENT"
+    },
+    {
+      "path": "package.json",
+      "sha256": "35a267f72552705a4062d13e53df64eda93a75015c840ad6082dc9ecb2c27996",
+      "status": "PRESENT"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "25d30d37bfb9a37f4b2bfe33e41280541d5a3bfab20b37f2752f5992cc2881fa",
+      "status": "PRESENT"
+    },
+    {
+      "path": "src/agent_runner.mjs",
+      "sha256": "5380cab6663fee3addf271c840f46a6b1552d4b50af452a4f712555fd9f51e52",
+      "status": "PRESENT"
+    },
+    {
+      "path": "src/agent_environment.mjs",
+      "sha256": "330b5e81f939db7a8a5afe2c15b4f5db9214b5afa95b81727fb6bb5b0bd6151c",
+      "status": "PRESENT"
+    },
+    {
+      "path": "src/agent_executor.mjs",
+      "sha256": "e02af94c9fd9cc74302d99ca1a91aeb87cf01bc2a543a65b7b69a0a249353f7a",
+      "status": "PRESENT"
+    },
+    {
+      "path": "src/agent_run_log.mjs",
+      "sha256": "cfff5605abaa695f0547d7dcd85357d57ba6e279e50293f1eb4d932f4d65fd1f",
+      "status": "PRESENT"
+    },
+    {
+      "path": "src/agent_trajectory_metrics.mjs",
+      "sha256": "82bf4f06dce865bd72073f05e2cda0cb8c6523da1a97af0a7fec2264932d288b",
+      "status": "PRESENT"
+    },
+    {
+      "path": "src/agent_task_evaluator.mjs",
+      "sha256": "34851a318516f3fb3643b06935048cb547be3810835308e725c5904ff5f69d49",
+      "status": "PRESENT"
+    },
+    {
+      "path": "src/agent_prompt_loader.mjs",
+      "sha256": "b0a3689e944a254477910f46dff5d31e7b86e0b87021294e660ae600b2455bd2",
+      "status": "PRESENT"
+    },
+    {
+      "path": "src/agent_batch_runner.mjs",
+      "sha256": "ff52018619abd07793fca25e2c2641989c8d4d62e30bec098a0fd07f3d866240",
+      "status": "PRESENT"
+    },
+    {
+      "path": "src/agent_result_writer.mjs",
+      "sha256": "86fd251477e8f936003206a5aead2c74ffa0df9fe2d09a94cbce13c7f8da8631",
+      "status": "PRESENT"
+    },
+    {
+      "path": "src/analyze_agent_runs.mjs",
+      "sha256": "0e44532525fcdd712121a27d09d5650873cdee06468f01bcf9aba8286fcc96be",
+      "status": "PRESENT"
+    },
+    {
+      "path": "src/frozen_snapshot_loader.mjs",
+      "sha256": "9db899860b17190679c12d85b6aa643b078b69f034de6b55fef8b91916a7a48f",
+      "status": "PRESENT"
+    },
+    {
+      "path": "src/providers/configured_agent_provider.mjs",
+      "sha256": "fbfb3a45b4044aa639ec81f7a9840d06b3f75f3713b14b488bed551ed3742cd0",
+      "status": "PRESENT"
+    },
+    {
+      "path": "src/providers/alibaba_model_studio_provider.mjs",
+      "sha256": "11d4d54120ecd7203a3864275664711bddcbd27cbd64b5b8ba290fe52d8452e2",
+      "status": "PRESENT"
+    },
+    {
+      "path": "src/providers/openai_compatible_agent_provider.mjs",
+      "sha256": "95bdec859b6b2552342ac1721b45833c1dab2311f58943f08abf29cb11047f03",
+      "status": "PRESENT"
+    },
+    {
+      "path": "src/local_env.mjs",
+      "sha256": "a6e8576961b1320791275085c47237df1bf512f3fbed9d15d79bf24a49815d92",
+      "status": "PRESENT"
+    },
+    {
+      "path": "src/run_agent_formal.mjs",
+      "sha256": "7ad0aba20d24e94dadae6995d9507379af5c5ac05392dbde2e1dcfe45a1d0d10",
+      "status": "PRESENT"
+    },
+    {
+      "path": "src/agent_formal_readiness.mjs",
+      "sha256": "37c64336d98316b706e990daa0349330fef22b916e7e33c5ee81164ae0c349d5",
+      "status": "PRESENT"
+    },
+    {
+      "path": "src/config.mjs",
+      "sha256": "06e32e11633a9117157b5a15d132cb6abb670913e80e068957b377f58d4b3ceb",
+      "status": "PRESENT"
+    },
+    {
+      "path": "src/normalize.mjs",
+      "sha256": "bee0f926dd47b4f5899bf6a1b200d5b0014e25b05a3f9fe0f095f5cdd5417dba",
+      "status": "PRESENT"
+    },
+    {
+      "path": "src/node_identity.mjs",
+      "sha256": "b8cf7f0d51e95e652e32b9f894ddd2abde931cd99307f6c25df28f55d1c116e2",
+      "status": "PRESENT"
+    }
+  ],
+  "web_snapshots": {
+    "mdn_js": {
+      "path": "data/runs/agent_interface_aria_v1_2026-09-20/mdn_js",
+      "file_count": 203,
+      "aggregate_sha256": "348dc8f626191284a36ae84f239ce4990d50d4e86c4a441690620026590e5bdb"
+    },
+    "wikipedia": {
+      "path": "data/runs/agent_interface_aria_v1_2026-09-20/wikipedia",
+      "file_count": 105,
+      "aggregate_sha256": "84c69ced540a4798c48cd7673283bc7bc2df1c7b3312a7c2df541b51cc89e381"
+    },
+    "usa_gov": {
+      "path": "data/runs/agent_interface_aria_v1_2026-09-20/usa_gov",
+      "file_count": 105,
+      "aggregate_sha256": "8096c36cd798a0bc597c9e980772edaed852a01ad8366088bb31c8cbc784d985"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "web-navigation-experiments",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "plan:formal": "node src/run_agent_formal.mjs",
+    "plan:control": "node src/run_information_equivalent_nav_control.mjs",
+    "run:formal": "node src/run_agent_formal.mjs --execute",
+    "run:control": "node src/run_information_equivalent_nav_control.mjs --execute"
+  },
+  "dependencies": {
+    "yaml": "2.9.1",
+    "playwright": "1.57.0",
+    "parquetjs-lite": "0.8.7"
+  }
+}

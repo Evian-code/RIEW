@@ -1,0 +1,71 @@
+{
+  "rendered": {
+    "title": "Object - JavaScript | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Web JavaScript Reference Standard built-in objects Object",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object"
+        ]
+      },
+      {
+        "text": "Web JavaScript Reference Standard built-in objects Object",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+      "og:title": "Object - JavaScript | MDN",
+      "og:locale": "en_US",
+      "og:description": "The Object type represents one of JavaScript's data types. It is used to store various keyed collections and more complex entities. Objects can be created using the Object() constructor or the object initializer / literal syntax.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "The Object type represents one of JavaScript's data types. It is used to store various keyed collections and more complex entities. Objects can be created using the Object() constructor or the object initializer / literal syntax.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+      "og:title": "Object - JavaScript | MDN",
+      "og:locale": "en_US",
+      "og:description": "The Object type represents one of JavaScript's data types. It is used to store various keyed collections and more complex entities. Objects can be created using the Object() constructor or the object initializer / literal syntax.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "5"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "captured_at": "2026-09-20T12:59:48.524Z"
+  }
+}

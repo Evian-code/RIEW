@@ -1,0 +1,31 @@
+provider: alibaba_model_studio
+region: cn-beijing
+api_protocol: openai_chat_completions
+api_base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+model: qwen3.7-plus-2026-05-26
+model_version: qwen3.7-plus-2026-05-26
+thinking_mode: disabled
+temperature: 0
+max_tool_steps: 10
+token_budget: 100000
+timeout_ms: 120000
+answer_format: plain_text
+system_prompt_file: config/agent_system_prompt.txt
+repetitions: 2
+conditions: [rendered_all, rendered_aria_followable]
+robustness_condition: rendered_visible_followable
+sites: [mdn_js, wikipedia, usa_gov]
+external_search: false
+url_guessing: false
+runner_task_file: docs/agent_task_prompts_aria_pilot.json
+evaluator_task_file: docs/agent_task_suite_aria_pilot.json
+agent_run_output_dir: results/agent_pilot_aria
+interface_snapshot_output_dir: data/runs/agent_interface_aria_v1_2026-09-20
+source_frozen_snapshots:
+  mdn_js: data/runs/agent_task_mdn_100_2026-09-15
+  wikipedia: data/runs/sampling_50_v12_2026-09-14
+  usa_gov: data/runs/sampling_50_v12_2026-09-14
+frozen_snapshots:
+  mdn_js: data/runs/agent_interface_aria_v1_2026-09-20
+  wikipedia: data/runs/agent_interface_aria_v1_2026-09-20
+  usa_gov: data/runs/agent_interface_aria_v1_2026-09-20

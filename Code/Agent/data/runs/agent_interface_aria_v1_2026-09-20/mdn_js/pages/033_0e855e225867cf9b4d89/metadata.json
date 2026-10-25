@@ -1,0 +1,69 @@
+{
+  "rendered": {
+    "title": "Functions - JavaScript | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Web JavaScript Reference Functions",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions"
+        ]
+      },
+      {
+        "text": "Web JavaScript Reference Functions",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions",
+      "og:title": "Functions - JavaScript | MDN",
+      "og:locale": "en_US",
+      "og:description": "Generally speaking, a function is a \"subprogram\" that can be called by code external (or internal, in the case of recursion) to the function. Like the program itself, a function is composed of a sequence of statements called the function body. Values can be passed to a function as parameters, and the function will return a value.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "Generally speaking, a function is a \"subprogram\" that can be called by code external (or internal, in the case of recursion) to the function. Like the program itself, a function is composed of a sequence of statements called the function body. Values can be passed to a function as parameters, and the function will return a value.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions",
+      "og:title": "Functions - JavaScript | MDN",
+      "og:locale": "en_US",
+      "og:description": "Generally speaking, a function is a \"subprogram\" that can be called by code external (or internal, in the case of recursion) to the function. Like the program itself, a function is composed of a sequence of statements called the function body. Values can be passed to a function as parameters, and the function will return a value.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "4"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions",
+    "captured_at": "2026-09-20T12:56:05.726Z"
+  }
+}

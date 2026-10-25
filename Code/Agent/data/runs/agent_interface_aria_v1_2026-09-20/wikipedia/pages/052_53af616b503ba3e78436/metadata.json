@@ -1,0 +1,46 @@
+{
+  "rendered": {
+    "title": "Recursion - Wikipedia",
+    "canonical": "https://en.wikipedia.org/wiki/Recursion",
+    "alternates": [
+      {
+        "href": "https://en.wikipedia.org/w/index.php?title=Special:RecentChanges&feed=atom",
+        "type": "application/atom+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [],
+    "open_graph": {
+      "og:image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Droste_Cacao_Alcalinise_blikje%2C_foto4.JPG/960px-Droste_Cacao_Alcalinise_blikje%2C_foto4.JPG?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+      "og:image:width": "901",
+      "og:image:height": "1200",
+      "og:title": "Recursion - Wikipedia",
+      "og:type": "website"
+    },
+    "meta": {
+      "generator": "MediaWiki 1.47.0-wmf.20",
+      "referrer": "origin-when-cross-origin",
+      "robots": "max-image-preview:standard",
+      "format-detection": "telephone=no",
+      "og:image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Droste_Cacao_Alcalinise_blikje%2C_foto4.JPG/960px-Droste_Cacao_Alcalinise_blikje%2C_foto4.JPG?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+      "og:image:width": "901",
+      "og:image:height": "1200",
+      "viewport": "width=1120",
+      "og:title": "Recursion - Wikipedia",
+      "og:type": "website"
+    },
+    "json_ld": [
+      {
+        "index": 0,
+        "raw": "{\"@context\":\"https:\\/\\/schema.org\",\"@type\":\"Article\",\"name\":\"Recursion\",\"url\":\"https:\\/\\/en.wikipedia.org\\/wiki\\/Recursion\",\"sameAs\":\"http:\\/\\/www.wikidata.org\\/entity\\/Q179976\",\"mainEntity\":\"http:\\/\\/www.wikidata.org\\/entity\\/Q179976\",\"author\":{\"@type\":\"Organization\",\"name\":\"Contributors to Wikimedia projects\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Wikimedia Foundation, Inc.\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https:\\/\\/www.wikimedia.org\\/static\\/images\\/wmf-hor-googpub.png\"}},\"datePublished\":\"2001-11-10T23:05:26Z\",\"dateModified\":\"2026-08-27T20:24:16Z\",\"image\":\"https:\\/\\/upload.wikimedia.org\\/wikipedia\\/commons\\/d\\/d9\\/Droste_Cacao_Alcalinise_blikje%2C_foto4.JPG?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original\",\"headline\":\"process of repeating items in a self-similar way\"}",
+        "parse_error": null
+      }
+    ]
+  },
+  "capture": {
+    "requested_url": "https://en.wikipedia.org/wiki/Recursion",
+    "expected_normalized_url": "https://en.wikipedia.org/wiki/Recursion",
+    "live_final_url": "https://en.wikipedia.org/wiki/Recursion",
+    "captured_at": "2026-09-20T13:31:06.022Z"
+  }
+}

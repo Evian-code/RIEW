@@ -1,0 +1,71 @@
+{
+  "rendered": {
+    "title": "Border-image generator - CSS | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Backgrounds_and_borders/Border-image_generator",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Web CSS Guides Backgrounds and borders Border-image generator",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Backgrounds_and_borders",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Backgrounds_and_borders/Border-image_generator"
+        ]
+      },
+      {
+        "text": "Web CSS Guides Backgrounds and borders Border-image generator",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Backgrounds_and_borders",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Backgrounds_and_borders/Border-image_generator"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Backgrounds_and_borders/Border-image_generator",
+      "og:title": "Border-image generator - CSS | MDN",
+      "og:locale": "en_US",
+      "og:description": "This tool can be used to generate CSS border-image values.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "This tool can be used to generate CSS border-image values.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Backgrounds_and_borders/Border-image_generator",
+      "og:title": "Border-image generator - CSS | MDN",
+      "og:locale": "en_US",
+      "og:description": "This tool can be used to generate CSS border-image values.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "5"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Backgrounds_and_borders/Border-image_generator",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Backgrounds_and_borders/Border-image_generator",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Backgrounds_and_borders/Border-image_generator",
+    "captured_at": "2026-09-20T12:58:10.116Z"
+  }
+}

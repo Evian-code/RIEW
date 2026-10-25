@@ -1,0 +1,259 @@
+{
+  "schema_version": "1.0",
+  "status": "READY_FOR_FORMAL_RUN",
+  "audited_at": "2026-09-28T06:18:05.137Z",
+  "api_or_model_calls_made": false,
+  "config_path": "config/agent_formal_aria_v1.yaml",
+  "task_count": 18,
+  "run_count": 180,
+  "checks": [
+    {
+      "name": "formal_task_count_is_18",
+      "passed": true,
+      "detail": {
+        "evaluator": 18,
+        "prompts": 18
+      }
+    },
+    {
+      "name": "task_ids_unique_and_matched",
+      "passed": true,
+      "detail": {
+        "evaluator_ids": [
+          "mdn_formal_01",
+          "usa_gov_formal_01",
+          "wikipedia_formal_01",
+          "mdn_formal_02",
+          "usa_gov_formal_02",
+          "wikipedia_formal_02",
+          "mdn_formal_03",
+          "mdn_formal_04",
+          "usa_gov_formal_03",
+          "usa_gov_formal_04",
+          "wikipedia_formal_03",
+          "wikipedia_formal_04",
+          "mdn_formal_05",
+          "mdn_formal_06",
+          "mdn_formal_07",
+          "usa_gov_formal_05",
+          "wikipedia_formal_05",
+          "wikipedia_formal_06"
+        ],
+        "prompt_ids": [
+          "mdn_formal_01",
+          "usa_gov_formal_01",
+          "wikipedia_formal_01",
+          "mdn_formal_02",
+          "usa_gov_formal_02",
+          "wikipedia_formal_02",
+          "mdn_formal_03",
+          "mdn_formal_04",
+          "usa_gov_formal_03",
+          "usa_gov_formal_04",
+          "wikipedia_formal_03",
+          "wikipedia_formal_04",
+          "mdn_formal_05",
+          "mdn_formal_06",
+          "mdn_formal_07",
+          "usa_gov_formal_05",
+          "wikipedia_formal_05",
+          "wikipedia_formal_06"
+        ]
+      }
+    },
+    {
+      "name": "structural_tier_counts_match_confirmed_suite",
+      "passed": true,
+      "detail": {
+        "delta_0_stable": 3,
+        "delta_0_redundancy_reduced": 3,
+        "delta_plus_1": 6,
+        "delta_plus_2": 6
+      }
+    },
+    {
+      "name": "site_counts_match_confirmed_suite",
+      "passed": true,
+      "detail": {
+        "mdn_js": 7,
+        "usa_gov": 5,
+        "wikipedia": 6
+      }
+    },
+    {
+      "name": "suite_rebuild_matches_frozen_snapshot",
+      "passed": true,
+      "detail": "All endpoints, answers, paths, d, SP, and FH values match the configured frozen snapshot."
+    },
+    {
+      "name": "task_manifest_matches_suite",
+      "passed": true,
+      "detail": {
+        "suite_id": "agent-formal-aria-v1",
+        "task_count": 18
+      }
+    },
+    {
+      "name": "run_manifest_has_exact_180_run_plan",
+      "passed": true,
+      "detail": {
+        "run_count": 180
+      }
+    },
+    {
+      "name": "each_task_has_10_runs",
+      "passed": true,
+      "detail": {
+        "mdn_formal_01": 10,
+        "usa_gov_formal_01": 10,
+        "wikipedia_formal_01": 10,
+        "mdn_formal_02": 10,
+        "usa_gov_formal_02": 10,
+        "wikipedia_formal_02": 10,
+        "mdn_formal_03": 10,
+        "mdn_formal_04": 10,
+        "usa_gov_formal_03": 10,
+        "usa_gov_formal_04": 10,
+        "wikipedia_formal_03": 10,
+        "wikipedia_formal_04": 10,
+        "mdn_formal_05": 10,
+        "mdn_formal_06": 10,
+        "mdn_formal_07": 10,
+        "usa_gov_formal_05": 10,
+        "wikipedia_formal_05": 10,
+        "wikipedia_formal_06": 10
+      }
+    },
+    {
+      "name": "each_condition_has_90_runs",
+      "passed": true,
+      "detail": {
+        "rendered_all": 90,
+        "rendered_aria_followable": 90
+      }
+    },
+    {
+      "name": "each_task_condition_has_repetitions_1_to_5",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "model_and_protocol_are_locked",
+      "passed": true,
+      "detail": {
+        "expected": {
+          "provider": "alibaba_model_studio",
+          "region": "cn-beijing",
+          "api_protocol": "openai_chat_completions",
+          "api_base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+          "model": "qwen3.7-plus-2026-05-26",
+          "model_version": "qwen3.7-plus-2026-05-26",
+          "thinking_mode": "disabled",
+          "temperature": 0,
+          "max_tool_steps": 10,
+          "token_budget": 100000,
+          "timeout_ms": 120000,
+          "answer_format": "plain_text",
+          "conditions": [
+            "rendered_all",
+            "rendered_aria_followable"
+          ],
+          "repetitions": 5,
+          "external_search": false,
+          "url_guessing": false
+        },
+        "actual": {
+          "provider": "alibaba_model_studio",
+          "region": "cn-beijing",
+          "api_protocol": "openai_chat_completions",
+          "api_base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+          "model": "qwen3.7-plus-2026-05-26",
+          "model_version": "qwen3.7-plus-2026-05-26",
+          "thinking_mode": "disabled",
+          "temperature": 0,
+          "max_tool_steps": 10,
+          "token_budget": 100000,
+          "timeout_ms": 120000,
+          "answer_format": "plain_text",
+          "conditions": [
+            "rendered_all",
+            "rendered_aria_followable"
+          ],
+          "repetitions": 5,
+          "external_search": false,
+          "url_guessing": false
+        }
+      }
+    },
+    {
+      "name": "pilot_prompt_tool_budget_and_snapshot_protocol_unchanged",
+      "passed": true,
+      "detail": {
+        "compared_fields": [
+          "provider",
+          "region",
+          "api_protocol",
+          "api_base_url",
+          "model",
+          "model_version",
+          "thinking_mode",
+          "temperature",
+          "max_tool_steps",
+          "token_budget",
+          "timeout_ms",
+          "answer_format",
+          "system_prompt_file",
+          "conditions",
+          "robustness_condition",
+          "sites",
+          "external_search",
+          "url_guessing",
+          "frozen_snapshots"
+        ],
+        "drift": []
+      }
+    },
+    {
+      "name": "formal_output_directory_is_separate_and_empty",
+      "passed": true,
+      "detail": {
+        "formal_output_dir": "results/agent_formal_aria_v1",
+        "pilot_output_dir": "results/agent_pilot_aria",
+        "artifacts": []
+      }
+    },
+    {
+      "name": "formal_config_does_not_reference_old_task_files",
+      "passed": true,
+      "detail": {
+        "files": [
+          "docs/agent_formal_task_prompts_v1.json",
+          "docs/agent_formal_task_suite_v1.json",
+          "docs/agent_formal_task_suite_manifest_v1.json",
+          "docs/agent_formal_run_manifest_v1.json"
+        ]
+      }
+    },
+    {
+      "name": "all_canonical_files_present",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "formal_freeze_present",
+      "passed": true,
+      "detail": "docs/agent_formal_freeze_v1.json"
+    },
+    {
+      "name": "formal_freeze_matches_canonical_files",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "formal_freeze_matches_web_snapshots",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,67 @@
+{
+  "rendered": {
+    "title": "Advanced JavaScript objects - Learn web development | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Learn Extension modules Advanced JavaScript objects",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+          "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions",
+          "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects"
+        ]
+      },
+      {
+        "text": "Learn Extension modules Advanced JavaScript objects",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+          "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions",
+          "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects",
+      "og:title": "Advanced JavaScript objects - Learn web development | MDN",
+      "og:locale": "en_US",
+      "og:description": "In JavaScript, most things are objects, from core JavaScript features like arrays to the browser APIs built on top of JavaScript. You can also create your own objects to encapsulate related functions and variables into efficient packages and act as handy data containers.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "In JavaScript, most things are objects, from core JavaScript features like arrays to the browser APIs built on top of JavaScript. You can also create your own objects to encapsulate related functions and variables into efficient packages and act as handy data containers.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects",
+      "og:title": "Advanced JavaScript objects - Learn web development | MDN",
+      "og:locale": "en_US",
+      "og:description": "In JavaScript, most things are objects, from core JavaScript features like arrays to the browser APIs built on top of JavaScript. You can also create your own objects to encapsulate related functions and variables into efficient packages and act as handy data containers.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "3"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects",
+    "captured_at": "2026-09-20T13:00:16.360Z"
+  }
+}

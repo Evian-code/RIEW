@@ -1,0 +1,655 @@
+{
+  "schema_version": "1.0",
+  "experiment_kind": "information_equivalent_navigation_control",
+  "suite_id": "information-equivalent-nav-control-v1",
+  "batch_id": "information-equivalent-nav-control-v1-attempt01",
+  "config_path": "config/information_equivalent_nav_control_v1.yaml",
+  "provider": "alibaba_model_studio",
+  "region": "cn-beijing",
+  "model": "qwen3.7-plus-2026-05-26",
+  "model_version": "qwen3.7-plus-2026-05-26",
+  "thinking_mode": "disabled",
+  "temperature": 0,
+  "max_tool_steps": 10,
+  "token_budget": 100000,
+  "trajectory_schema_version": "1.2",
+  "conditions": [
+    "information_all_unrestricted_navigation",
+    "information_all_aria_restricted_navigation"
+  ],
+  "repetitions": 5,
+  "task_count": 9,
+  "run_count": 90,
+  "runs": [
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_01__information_all_unrestricted_navigation__r01",
+      "task_id": "mdn_formal_01",
+      "site": "mdn_js",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 1
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_01__information_all_aria_restricted_navigation__r01",
+      "task_id": "mdn_formal_01",
+      "site": "mdn_js",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 1
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_01__information_all_unrestricted_navigation__r02",
+      "task_id": "mdn_formal_01",
+      "site": "mdn_js",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 2
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_01__information_all_aria_restricted_navigation__r02",
+      "task_id": "mdn_formal_01",
+      "site": "mdn_js",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 2
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_01__information_all_unrestricted_navigation__r03",
+      "task_id": "mdn_formal_01",
+      "site": "mdn_js",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 3
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_01__information_all_aria_restricted_navigation__r03",
+      "task_id": "mdn_formal_01",
+      "site": "mdn_js",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 3
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_01__information_all_unrestricted_navigation__r04",
+      "task_id": "mdn_formal_01",
+      "site": "mdn_js",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 4
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_01__information_all_aria_restricted_navigation__r04",
+      "task_id": "mdn_formal_01",
+      "site": "mdn_js",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 4
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_01__information_all_unrestricted_navigation__r05",
+      "task_id": "mdn_formal_01",
+      "site": "mdn_js",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 5
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_01__information_all_aria_restricted_navigation__r05",
+      "task_id": "mdn_formal_01",
+      "site": "mdn_js",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 5
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_01__information_all_unrestricted_navigation__r01",
+      "task_id": "usa_gov_formal_01",
+      "site": "usa_gov",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 1
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_01__information_all_aria_restricted_navigation__r01",
+      "task_id": "usa_gov_formal_01",
+      "site": "usa_gov",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 1
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_01__information_all_unrestricted_navigation__r02",
+      "task_id": "usa_gov_formal_01",
+      "site": "usa_gov",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 2
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_01__information_all_aria_restricted_navigation__r02",
+      "task_id": "usa_gov_formal_01",
+      "site": "usa_gov",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 2
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_01__information_all_unrestricted_navigation__r03",
+      "task_id": "usa_gov_formal_01",
+      "site": "usa_gov",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 3
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_01__information_all_aria_restricted_navigation__r03",
+      "task_id": "usa_gov_formal_01",
+      "site": "usa_gov",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 3
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_01__information_all_unrestricted_navigation__r04",
+      "task_id": "usa_gov_formal_01",
+      "site": "usa_gov",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 4
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_01__information_all_aria_restricted_navigation__r04",
+      "task_id": "usa_gov_formal_01",
+      "site": "usa_gov",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 4
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_01__information_all_unrestricted_navigation__r05",
+      "task_id": "usa_gov_formal_01",
+      "site": "usa_gov",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 5
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_01__information_all_aria_restricted_navigation__r05",
+      "task_id": "usa_gov_formal_01",
+      "site": "usa_gov",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 5
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_01__information_all_unrestricted_navigation__r01",
+      "task_id": "wikipedia_formal_01",
+      "site": "wikipedia",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 1
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_01__information_all_aria_restricted_navigation__r01",
+      "task_id": "wikipedia_formal_01",
+      "site": "wikipedia",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 1
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_01__information_all_unrestricted_navigation__r02",
+      "task_id": "wikipedia_formal_01",
+      "site": "wikipedia",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 2
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_01__information_all_aria_restricted_navigation__r02",
+      "task_id": "wikipedia_formal_01",
+      "site": "wikipedia",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 2
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_01__information_all_unrestricted_navigation__r03",
+      "task_id": "wikipedia_formal_01",
+      "site": "wikipedia",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 3
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_01__information_all_aria_restricted_navigation__r03",
+      "task_id": "wikipedia_formal_01",
+      "site": "wikipedia",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 3
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_01__information_all_unrestricted_navigation__r04",
+      "task_id": "wikipedia_formal_01",
+      "site": "wikipedia",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 4
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_01__information_all_aria_restricted_navigation__r04",
+      "task_id": "wikipedia_formal_01",
+      "site": "wikipedia",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 4
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_01__information_all_unrestricted_navigation__r05",
+      "task_id": "wikipedia_formal_01",
+      "site": "wikipedia",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 5
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_01__information_all_aria_restricted_navigation__r05",
+      "task_id": "wikipedia_formal_01",
+      "site": "wikipedia",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 5
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_03__information_all_unrestricted_navigation__r01",
+      "task_id": "mdn_formal_03",
+      "site": "mdn_js",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 1
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_03__information_all_aria_restricted_navigation__r01",
+      "task_id": "mdn_formal_03",
+      "site": "mdn_js",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 1
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_03__information_all_unrestricted_navigation__r02",
+      "task_id": "mdn_formal_03",
+      "site": "mdn_js",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 2
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_03__information_all_aria_restricted_navigation__r02",
+      "task_id": "mdn_formal_03",
+      "site": "mdn_js",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 2
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_03__information_all_unrestricted_navigation__r03",
+      "task_id": "mdn_formal_03",
+      "site": "mdn_js",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 3
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_03__information_all_aria_restricted_navigation__r03",
+      "task_id": "mdn_formal_03",
+      "site": "mdn_js",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 3
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_03__information_all_unrestricted_navigation__r04",
+      "task_id": "mdn_formal_03",
+      "site": "mdn_js",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 4
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_03__information_all_aria_restricted_navigation__r04",
+      "task_id": "mdn_formal_03",
+      "site": "mdn_js",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 4
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_03__information_all_unrestricted_navigation__r05",
+      "task_id": "mdn_formal_03",
+      "site": "mdn_js",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 5
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_03__information_all_aria_restricted_navigation__r05",
+      "task_id": "mdn_formal_03",
+      "site": "mdn_js",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 5
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_03__information_all_unrestricted_navigation__r01",
+      "task_id": "usa_gov_formal_03",
+      "site": "usa_gov",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 1
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_03__information_all_aria_restricted_navigation__r01",
+      "task_id": "usa_gov_formal_03",
+      "site": "usa_gov",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 1
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_03__information_all_unrestricted_navigation__r02",
+      "task_id": "usa_gov_formal_03",
+      "site": "usa_gov",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 2
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_03__information_all_aria_restricted_navigation__r02",
+      "task_id": "usa_gov_formal_03",
+      "site": "usa_gov",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 2
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_03__information_all_unrestricted_navigation__r03",
+      "task_id": "usa_gov_formal_03",
+      "site": "usa_gov",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 3
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_03__information_all_aria_restricted_navigation__r03",
+      "task_id": "usa_gov_formal_03",
+      "site": "usa_gov",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 3
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_03__information_all_unrestricted_navigation__r04",
+      "task_id": "usa_gov_formal_03",
+      "site": "usa_gov",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 4
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_03__information_all_aria_restricted_navigation__r04",
+      "task_id": "usa_gov_formal_03",
+      "site": "usa_gov",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 4
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_03__information_all_unrestricted_navigation__r05",
+      "task_id": "usa_gov_formal_03",
+      "site": "usa_gov",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 5
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_03__information_all_aria_restricted_navigation__r05",
+      "task_id": "usa_gov_formal_03",
+      "site": "usa_gov",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 5
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_03__information_all_unrestricted_navigation__r01",
+      "task_id": "wikipedia_formal_03",
+      "site": "wikipedia",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 1
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_03__information_all_aria_restricted_navigation__r01",
+      "task_id": "wikipedia_formal_03",
+      "site": "wikipedia",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 1
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_03__information_all_unrestricted_navigation__r02",
+      "task_id": "wikipedia_formal_03",
+      "site": "wikipedia",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 2
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_03__information_all_aria_restricted_navigation__r02",
+      "task_id": "wikipedia_formal_03",
+      "site": "wikipedia",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 2
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_03__information_all_unrestricted_navigation__r03",
+      "task_id": "wikipedia_formal_03",
+      "site": "wikipedia",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 3
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_03__information_all_aria_restricted_navigation__r03",
+      "task_id": "wikipedia_formal_03",
+      "site": "wikipedia",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 3
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_03__information_all_unrestricted_navigation__r04",
+      "task_id": "wikipedia_formal_03",
+      "site": "wikipedia",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 4
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_03__information_all_aria_restricted_navigation__r04",
+      "task_id": "wikipedia_formal_03",
+      "site": "wikipedia",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 4
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_03__information_all_unrestricted_navigation__r05",
+      "task_id": "wikipedia_formal_03",
+      "site": "wikipedia",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 5
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_03__information_all_aria_restricted_navigation__r05",
+      "task_id": "wikipedia_formal_03",
+      "site": "wikipedia",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 5
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_05__information_all_unrestricted_navigation__r01",
+      "task_id": "mdn_formal_05",
+      "site": "mdn_js",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 1
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_05__information_all_aria_restricted_navigation__r01",
+      "task_id": "mdn_formal_05",
+      "site": "mdn_js",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 1
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_05__information_all_unrestricted_navigation__r02",
+      "task_id": "mdn_formal_05",
+      "site": "mdn_js",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 2
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_05__information_all_aria_restricted_navigation__r02",
+      "task_id": "mdn_formal_05",
+      "site": "mdn_js",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 2
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_05__information_all_unrestricted_navigation__r03",
+      "task_id": "mdn_formal_05",
+      "site": "mdn_js",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 3
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_05__information_all_aria_restricted_navigation__r03",
+      "task_id": "mdn_formal_05",
+      "site": "mdn_js",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 3
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_05__information_all_unrestricted_navigation__r04",
+      "task_id": "mdn_formal_05",
+      "site": "mdn_js",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 4
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_05__information_all_aria_restricted_navigation__r04",
+      "task_id": "mdn_formal_05",
+      "site": "mdn_js",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 4
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_05__information_all_unrestricted_navigation__r05",
+      "task_id": "mdn_formal_05",
+      "site": "mdn_js",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 5
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__mdn_formal_05__information_all_aria_restricted_navigation__r05",
+      "task_id": "mdn_formal_05",
+      "site": "mdn_js",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 5
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_05__information_all_unrestricted_navigation__r01",
+      "task_id": "usa_gov_formal_05",
+      "site": "usa_gov",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 1
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_05__information_all_aria_restricted_navigation__r01",
+      "task_id": "usa_gov_formal_05",
+      "site": "usa_gov",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 1
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_05__information_all_unrestricted_navigation__r02",
+      "task_id": "usa_gov_formal_05",
+      "site": "usa_gov",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 2
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_05__information_all_aria_restricted_navigation__r02",
+      "task_id": "usa_gov_formal_05",
+      "site": "usa_gov",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 2
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_05__information_all_unrestricted_navigation__r03",
+      "task_id": "usa_gov_formal_05",
+      "site": "usa_gov",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 3
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_05__information_all_aria_restricted_navigation__r03",
+      "task_id": "usa_gov_formal_05",
+      "site": "usa_gov",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 3
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_05__information_all_unrestricted_navigation__r04",
+      "task_id": "usa_gov_formal_05",
+      "site": "usa_gov",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 4
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_05__information_all_aria_restricted_navigation__r04",
+      "task_id": "usa_gov_formal_05",
+      "site": "usa_gov",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 4
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_05__information_all_unrestricted_navigation__r05",
+      "task_id": "usa_gov_formal_05",
+      "site": "usa_gov",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 5
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__usa_gov_formal_05__information_all_aria_restricted_navigation__r05",
+      "task_id": "usa_gov_formal_05",
+      "site": "usa_gov",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 5
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_05__information_all_unrestricted_navigation__r01",
+      "task_id": "wikipedia_formal_05",
+      "site": "wikipedia",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 1
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_05__information_all_aria_restricted_navigation__r01",
+      "task_id": "wikipedia_formal_05",
+      "site": "wikipedia",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 1
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_05__information_all_unrestricted_navigation__r02",
+      "task_id": "wikipedia_formal_05",
+      "site": "wikipedia",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 2
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_05__information_all_aria_restricted_navigation__r02",
+      "task_id": "wikipedia_formal_05",
+      "site": "wikipedia",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 2
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_05__information_all_unrestricted_navigation__r03",
+      "task_id": "wikipedia_formal_05",
+      "site": "wikipedia",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 3
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_05__information_all_aria_restricted_navigation__r03",
+      "task_id": "wikipedia_formal_05",
+      "site": "wikipedia",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 3
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_05__information_all_unrestricted_navigation__r04",
+      "task_id": "wikipedia_formal_05",
+      "site": "wikipedia",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 4
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_05__information_all_aria_restricted_navigation__r04",
+      "task_id": "wikipedia_formal_05",
+      "site": "wikipedia",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 4
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_05__information_all_unrestricted_navigation__r05",
+      "task_id": "wikipedia_formal_05",
+      "site": "wikipedia",
+      "condition": "information_all_unrestricted_navigation",
+      "repetition": 5
+    },
+    {
+      "run_id": "information-equivalent-nav-control-v1-attempt01__wikipedia_formal_05__information_all_aria_restricted_navigation__r05",
+      "task_id": "wikipedia_formal_05",
+      "site": "wikipedia",
+      "condition": "information_all_aria_restricted_navigation",
+      "repetition": 5
+    }
+  ]
+}

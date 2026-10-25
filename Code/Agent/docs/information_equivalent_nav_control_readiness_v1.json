@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0",
+  "status": "READY_FOR_INFORMATION_EQUIVALENT_NAV_CONTROL",
+  "audited_at": "2026-09-28T08:58:51.639Z",
+  "api_or_model_calls_made": false,
+  "config_path": "config/information_equivalent_nav_control_v1.yaml",
+  "task_count": 9,
+  "run_count": 90,
+  "checks": [
+    {
+      "name": "control_task_ids_are_exact_predeclared_subset",
+      "passed": true,
+      "detail": {
+        "evaluator_ids": [
+          "mdn_formal_01",
+          "usa_gov_formal_01",
+          "wikipedia_formal_01",
+          "mdn_formal_03",
+          "usa_gov_formal_03",
+          "wikipedia_formal_03",
+          "mdn_formal_05",
+          "usa_gov_formal_05",
+          "wikipedia_formal_05"
+        ],
+        "prompt_ids": [
+          "mdn_formal_01",
+          "usa_gov_formal_01",
+          "wikipedia_formal_01",
+          "mdn_formal_03",
+          "usa_gov_formal_03",
+          "wikipedia_formal_03",
+          "mdn_formal_05",
+          "usa_gov_formal_05",
+          "wikipedia_formal_05"
+        ]
+      }
+    },
+    {
+      "name": "control_tasks_and_prompts_match_frozen_formal_subset",
+      "passed": true,
+      "detail": "The nine tasks and public prompts are exact ordered subsets of formal-aria-v1."
+    },
+    {
+      "name": "three_sites_by_three_delta_d_tiers",
+      "passed": true,
+      "detail": {
+        "sites": {
+          "mdn_js": 3,
+          "usa_gov": 3,
+          "wikipedia": 3
+        },
+        "delta_d": {
+          "0": 3,
+          "1": 3,
+          "2": 3
+        }
+      }
+    },
+    {
+      "name": "task_manifest_matches_prepared_control",
+      "passed": true,
+      "detail": {
+        "suite_id": "information-equivalent-nav-control-v1",
+        "task_count": 9
+      }
+    },
+    {
+      "name": "run_manifest_has_exact_90_run_plan",
+      "passed": true,
+      "detail": {
+        "run_count": 90
+      }
+    },
+    {
+      "name": "each_task_has_10_runs",
+      "passed": true,
+      "detail": {
+        "mdn_formal_01": 10,
+        "usa_gov_formal_01": 10,
+        "wikipedia_formal_01": 10,
+        "mdn_formal_03": 10,
+        "usa_gov_formal_03": 10,
+        "wikipedia_formal_03": 10,
+        "mdn_formal_05": 10,
+        "usa_gov_formal_05": 10,
+        "wikipedia_formal_05": 10
+      }
+    },
+    {
+      "name": "each_condition_has_45_runs",
+      "passed": true,
+      "detail": {
+        "information_all_unrestricted_navigation": 45,
+        "information_all_aria_restricted_navigation": 45
+      }
+    },
+    {
+      "name": "each_task_condition_has_repetitions_1_to_5",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "control_model_and_protocol_are_locked",
+      "passed": true,
+      "detail": {
+        "expected": {
+          "provider": "alibaba_model_studio",
+          "region": "cn-beijing",
+          "api_protocol": "openai_chat_completions",
+          "api_base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+          "model": "qwen3.7-plus-2026-05-26",
+          "model_version": "qwen3.7-plus-2026-05-26",
+          "thinking_mode": "disabled",
+          "temperature": 0,
+          "max_tool_steps": 10,
+          "token_budget": 100000,
+          "timeout_ms": 120000,
+          "answer_format": "plain_text",
+          "trajectory_schema_version": "1.2",
+          "conditions": [
+            "information_all_unrestricted_navigation",
+            "information_all_aria_restricted_navigation"
+          ],
+          "repetitions": 5,
+          "external_search": false,
+          "url_guessing": false
+        },
+        "actual": {
+          "provider": "alibaba_model_studio",
+          "region": "cn-beijing",
+          "api_protocol": "openai_chat_completions",
+          "api_base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+          "model": "qwen3.7-plus-2026-05-26",
+          "model_version": "qwen3.7-plus-2026-05-26",
+          "thinking_mode": "disabled",
+          "temperature": 0,
+          "max_tool_steps": 10,
+          "token_budget": 100000,
+          "timeout_ms": 120000,
+          "answer_format": "plain_text",
+          "trajectory_schema_version": "1.2",
+          "conditions": [
+            "information_all_unrestricted_navigation",
+            "information_all_aria_restricted_navigation"
+          ],
+          "repetitions": 5,
+          "external_search": false,
+          "url_guessing": false
+        }
+      }
+    },
+    {
+      "name": "formal_model_prompt_budget_scoring_inputs_and_snapshots_unchanged",
+      "passed": true,
+      "detail": {
+        "compared_fields": [
+          "provider",
+          "region",
+          "api_protocol",
+          "api_base_url",
+          "model",
+          "model_version",
+          "thinking_mode",
+          "temperature",
+          "max_tool_steps",
+          "token_budget",
+          "timeout_ms",
+          "answer_format",
+          "system_prompt_file",
+          "sites",
+          "external_search",
+          "url_guessing",
+          "frozen_snapshots",
+          "interface_snapshot_output_dir"
+        ],
+        "drift": []
+      }
+    },
+    {
+      "name": "control_output_namespace_is_new_and_empty",
+      "passed": true,
+      "detail": {
+        "control_output_dir": "results/information_equivalent_nav_control_v1",
+        "formal_output_dir": "results/agent_formal_aria_v1",
+        "artifacts": []
+      }
+    },
+    {
+      "name": "all_control_canonical_files_present",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "control_freeze_present",
+      "passed": true,
+      "detail": "docs/information_equivalent_nav_control_freeze_v1.json"
+    },
+    {
+      "name": "control_freeze_matches_canonical_files",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "control_freeze_matches_web_snapshots",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,284 @@
+[
+  {
+    "task_id": "mdn_formal_01",
+    "site": "mdn_js",
+    "structural_tier": "delta_0_stable",
+    "start_url": "https://developer.mozilla.org/en-US/docs/Web",
+    "target_url": "https://developer.mozilla.org/en-US/docs/Glossary/Node.js",
+    "question": "Starting from the supplied MDN Web technology page, navigate within MDN to find the glossary page about the cross-platform JavaScript runtime commonly used for server-side applications. Report the main visible heading on the destination page.",
+    "answer_key": {
+      "field": "main_visible_heading",
+      "value": "Node.js"
+    },
+    "d_all": 2,
+    "d_aria": 2,
+    "delta_d": 0,
+    "shortest_path_count_rendered_all": 1,
+    "shortest_path_count_rendered_aria": 1,
+    "first_hop_count_rendered_all": 1,
+    "first_hop_count_rendered_aria": 1,
+    "reference_path_rendered_all": [
+      "https://developer.mozilla.org/en-US/docs/Web",
+      "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "https://developer.mozilla.org/en-US/docs/Glossary/Node.js"
+    ],
+    "reference_path_rendered_aria": [
+      "https://developer.mozilla.org/en-US/docs/Web",
+      "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "https://developer.mozilla.org/en-US/docs/Glossary/Node.js"
+    ],
+    "snapshot_ref": "data/runs/agent_interface_aria_v1_2026-09-20",
+    "editorial_status": "supervisor_confirmed_formal_v1"
+  },
+  {
+    "task_id": "usa_gov_formal_01",
+    "site": "usa_gov",
+    "structural_tier": "delta_0_stable",
+    "start_url": "https://www.usa.gov/about",
+    "target_url": "https://www.usa.gov/education",
+    "question": "Starting from the supplied USA.gov page about USAGov, navigate within USA.gov to find the topic page that collects information about schools, financial aid, student loans, and studying in the United States. Report the main visible heading on the destination page.",
+    "answer_key": {
+      "field": "main_visible_heading",
+      "value": "Education"
+    },
+    "d_all": 2,
+    "d_aria": 2,
+    "delta_d": 0,
+    "shortest_path_count_rendered_all": 1,
+    "shortest_path_count_rendered_aria": 1,
+    "first_hop_count_rendered_all": 1,
+    "first_hop_count_rendered_aria": 1,
+    "reference_path_rendered_all": [
+      "https://www.usa.gov/about",
+      "https://www.usa.gov/",
+      "https://www.usa.gov/education"
+    ],
+    "reference_path_rendered_aria": [
+      "https://www.usa.gov/about",
+      "https://www.usa.gov/",
+      "https://www.usa.gov/education"
+    ],
+    "snapshot_ref": "data/runs/agent_interface_aria_v1_2026-09-20",
+    "editorial_status": "supervisor_confirmed_formal_v1"
+  },
+  {
+    "task_id": "wikipedia_formal_01",
+    "site": "wikipedia",
+    "structural_tier": "delta_0_stable",
+    "start_url": "https://en.wikipedia.org/wiki/Crawl_frontier",
+    "target_url": "https://en.wikipedia.org/wiki/Website",
+    "question": "Starting from the supplied Wikipedia article about a crawl frontier, navigate within Wikipedia to find the article about a collection of interlinked web pages and related content identified by a common domain name. Report the main visible heading on the destination page.",
+    "answer_key": {
+      "field": "main_visible_heading",
+      "value": "Website"
+    },
+    "d_all": 2,
+    "d_aria": 2,
+    "delta_d": 0,
+    "shortest_path_count_rendered_all": 2,
+    "shortest_path_count_rendered_aria": 2,
+    "first_hop_count_rendered_all": 2,
+    "first_hop_count_rendered_aria": 2,
+    "reference_path_rendered_all": [
+      "https://en.wikipedia.org/wiki/Crawl_frontier",
+      "https://en.wikipedia.org/wiki/Wikipedia:About",
+      "https://en.wikipedia.org/wiki/Website"
+    ],
+    "reference_path_rendered_aria": [
+      "https://en.wikipedia.org/wiki/Crawl_frontier",
+      "https://en.wikipedia.org/wiki/Web_crawler",
+      "https://en.wikipedia.org/wiki/Website"
+    ],
+    "snapshot_ref": "data/runs/agent_interface_aria_v1_2026-09-20",
+    "editorial_status": "supervisor_confirmed_formal_v1"
+  },
+  {
+    "task_id": "mdn_formal_03",
+    "site": "mdn_js",
+    "structural_tier": "delta_plus_1",
+    "start_url": "https://developer.mozilla.org/en-US/docs/Glossary/DOM",
+    "target_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "question": "Starting from the supplied MDN glossary page about the DOM, navigate within MDN to find the JavaScript reference page for the fundamental object type from which many other objects inherit. Report the main visible heading on the destination page.",
+    "answer_key": {
+      "field": "main_visible_heading",
+      "value": "Object"
+    },
+    "d_all": 2,
+    "d_aria": 3,
+    "delta_d": 1,
+    "shortest_path_count_rendered_all": 11,
+    "shortest_path_count_rendered_aria": 3,
+    "first_hop_count_rendered_all": 11,
+    "first_hop_count_rendered_aria": 3,
+    "reference_path_rendered_all": [
+      "https://developer.mozilla.org/en-US/docs/Glossary/DOM",
+      "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object"
+    ],
+    "reference_path_rendered_aria": [
+      "https://developer.mozilla.org/en-US/docs/Glossary/DOM",
+      "https://developer.mozilla.org/en-US",
+      "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object"
+    ],
+    "snapshot_ref": "data/runs/agent_interface_aria_v1_2026-09-20",
+    "editorial_status": "supervisor_confirmed_formal_v1"
+  },
+  {
+    "task_id": "usa_gov_formal_03",
+    "site": "usa_gov",
+    "structural_tier": "delta_plus_1",
+    "start_url": "https://www.usa.gov/website-analytics",
+    "target_url": "https://www.usa.gov/benefit-finder",
+    "question": "Starting from the supplied USA.gov website-analytics page, navigate within USA.gov to find the tool for locating government benefits and financial assistance. Report the main visible heading on the destination page.",
+    "answer_key": {
+      "field": "main_visible_heading",
+      "value": "Find government benefits and financial help"
+    },
+    "d_all": 2,
+    "d_aria": 3,
+    "delta_d": 1,
+    "shortest_path_count_rendered_all": 1,
+    "shortest_path_count_rendered_aria": 4,
+    "first_hop_count_rendered_all": 1,
+    "first_hop_count_rendered_aria": 2,
+    "reference_path_rendered_all": [
+      "https://www.usa.gov/website-analytics",
+      "https://www.usa.gov/",
+      "https://www.usa.gov/benefit-finder"
+    ],
+    "reference_path_rendered_aria": [
+      "https://www.usa.gov/website-analytics",
+      "https://www.usa.gov/",
+      "https://www.usa.gov/benefits",
+      "https://www.usa.gov/benefit-finder"
+    ],
+    "snapshot_ref": "data/runs/agent_interface_aria_v1_2026-09-20",
+    "editorial_status": "supervisor_confirmed_formal_v1"
+  },
+  {
+    "task_id": "wikipedia_formal_03",
+    "site": "wikipedia",
+    "structural_tier": "delta_plus_1",
+    "start_url": "https://en.wikipedia.org/wiki/Internet_bot",
+    "target_url": "https://en.wikipedia.org/wiki/FOAF",
+    "question": "Starting from the supplied Wikipedia article about Internet bots, navigate within Wikipedia to find the article about the machine-readable ontology for describing people, their activities, and relations to other people and objects. Report the main visible heading on the destination page.",
+    "answer_key": {
+      "field": "main_visible_heading",
+      "value": "FOAF"
+    },
+    "d_all": 2,
+    "d_aria": 3,
+    "delta_d": 1,
+    "shortest_path_count_rendered_all": 1,
+    "shortest_path_count_rendered_aria": 2,
+    "first_hop_count_rendered_all": 1,
+    "first_hop_count_rendered_aria": 2,
+    "reference_path_rendered_all": [
+      "https://en.wikipedia.org/wiki/Internet_bot",
+      "https://en.wikipedia.org/wiki/World_Wide_Web",
+      "https://en.wikipedia.org/wiki/FOAF"
+    ],
+    "reference_path_rendered_aria": [
+      "https://en.wikipedia.org/wiki/Internet_bot",
+      "https://en.wikipedia.org/wiki/Web_server",
+      "https://en.wikipedia.org/wiki/Web_crawler",
+      "https://en.wikipedia.org/wiki/FOAF"
+    ],
+    "snapshot_ref": "data/runs/agent_interface_aria_v1_2026-09-20",
+    "editorial_status": "supervisor_confirmed_formal_v1"
+  },
+  {
+    "task_id": "mdn_formal_05",
+    "site": "mdn_js",
+    "structural_tier": "delta_plus_2",
+    "start_url": "https://developer.mozilla.org/en-US/docs/Glossary/API",
+    "target_url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch",
+    "question": "Starting from the supplied MDN glossary page about APIs, navigate within MDN to find the guide explaining how to make network requests with the Fetch API. Report the main visible heading on the destination page.",
+    "answer_key": {
+      "field": "main_visible_heading",
+      "value": "Using the Fetch API"
+    },
+    "d_all": 1,
+    "d_aria": 3,
+    "delta_d": 2,
+    "shortest_path_count_rendered_all": 1,
+    "shortest_path_count_rendered_aria": 1,
+    "first_hop_count_rendered_all": 1,
+    "first_hop_count_rendered_aria": 1,
+    "reference_path_rendered_all": [
+      "https://developer.mozilla.org/en-US/docs/Glossary/API",
+      "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch"
+    ],
+    "reference_path_rendered_aria": [
+      "https://developer.mozilla.org/en-US/docs/Glossary/API",
+      "https://developer.mozilla.org/en-US/docs/Web/API",
+      "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+      "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch"
+    ],
+    "snapshot_ref": "data/runs/agent_interface_aria_v1_2026-09-20",
+    "editorial_status": "supervisor_confirmed_formal_v1"
+  },
+  {
+    "task_id": "usa_gov_formal_05",
+    "site": "usa_gov",
+    "structural_tier": "delta_plus_2",
+    "start_url": "https://www.usa.gov/es/llamenos",
+    "target_url": "https://www.usa.gov/phone",
+    "question": "Starting from the supplied Spanish USA.gov contact-by-phone page, navigate within USA.gov to find the English page with USAGov phone contact details and operating hours. Report the main visible heading on the destination page.",
+    "answer_key": {
+      "field": "main_visible_heading",
+      "value": "Call USAGov"
+    },
+    "d_all": 1,
+    "d_aria": 3,
+    "delta_d": 2,
+    "shortest_path_count_rendered_all": 1,
+    "shortest_path_count_rendered_aria": 13,
+    "first_hop_count_rendered_all": 1,
+    "first_hop_count_rendered_aria": 1,
+    "reference_path_rendered_all": [
+      "https://www.usa.gov/es/llamenos",
+      "https://www.usa.gov/phone"
+    ],
+    "reference_path_rendered_aria": [
+      "https://www.usa.gov/es/llamenos",
+      "https://www.usa.gov/blog",
+      "https://www.usa.gov/",
+      "https://www.usa.gov/phone"
+    ],
+    "snapshot_ref": "data/runs/agent_interface_aria_v1_2026-09-20",
+    "editorial_status": "supervisor_confirmed_formal_v1"
+  },
+  {
+    "task_id": "wikipedia_formal_05",
+    "site": "wikipedia",
+    "structural_tier": "delta_plus_2",
+    "start_url": "https://en.wikipedia.org/wiki/List_of_search_engines",
+    "target_url": "https://en.wikipedia.org/wiki/Search_engine_indexing",
+    "question": "Starting from the supplied Wikipedia list of search engines, navigate within Wikipedia to find the article about collecting, parsing, and storing data to support fast information retrieval by a search engine. Report the main visible heading on the destination page.",
+    "answer_key": {
+      "field": "main_visible_heading",
+      "value": "Search engine indexing"
+    },
+    "d_all": 1,
+    "d_aria": 3,
+    "delta_d": 2,
+    "shortest_path_count_rendered_all": 1,
+    "shortest_path_count_rendered_aria": 1,
+    "first_hop_count_rendered_all": 1,
+    "first_hop_count_rendered_aria": 1,
+    "reference_path_rendered_all": [
+      "https://en.wikipedia.org/wiki/List_of_search_engines",
+      "https://en.wikipedia.org/wiki/Search_engine_indexing"
+    ],
+    "reference_path_rendered_aria": [
+      "https://en.wikipedia.org/wiki/List_of_search_engines",
+      "https://en.wikipedia.org/wiki/WebCrawler",
+      "https://en.wikipedia.org/wiki/Web_crawler",
+      "https://en.wikipedia.org/wiki/Search_engine_indexing"
+    ],
+    "snapshot_ref": "data/runs/agent_interface_aria_v1_2026-09-20",
+    "editorial_status": "supervisor_confirmed_formal_v1"
+  }
+]

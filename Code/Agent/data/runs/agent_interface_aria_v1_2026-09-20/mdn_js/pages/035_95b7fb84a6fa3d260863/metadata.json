@@ -1,0 +1,69 @@
+{
+  "rendered": {
+    "title": "Control flow and error handling - JavaScript | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Web JavaScript Guide Control flow and error handling",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling"
+        ]
+      },
+      {
+        "text": "Web JavaScript Guide Control flow and error handling",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling",
+      "og:title": "Control flow and error handling - JavaScript | MDN",
+      "og:locale": "en_US",
+      "og:description": "JavaScript supports a compact set of statements, specifically\ncontrol flow statements, that you can use to incorporate a great deal of interactivity\nin your application. This chapter provides an overview of these statements.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "JavaScript supports a compact set of statements, specifically\ncontrol flow statements, that you can use to incorporate a great deal of interactivity\nin your application. This chapter provides an overview of these statements.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling",
+      "og:title": "Control flow and error handling - JavaScript | MDN",
+      "og:locale": "en_US",
+      "og:description": "JavaScript supports a compact set of statements, specifically\ncontrol flow statements, that you can use to incorporate a great deal of interactivity\nin your application. This chapter provides an overview of these statements.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "4"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling",
+    "captured_at": "2026-09-20T12:56:12.760Z"
+  }
+}

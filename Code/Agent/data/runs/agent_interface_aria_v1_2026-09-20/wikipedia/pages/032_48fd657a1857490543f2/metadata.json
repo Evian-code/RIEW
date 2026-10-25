@@ -1,0 +1,51 @@
+{
+  "rendered": {
+    "title": "Arac (video game) - Wikipedia",
+    "canonical": "https://en.wikipedia.org/wiki/Arac_(video_game)",
+    "alternates": [
+      {
+        "href": "https://en.wikipedia.org/w/index.php?title=Arac_(video_game)&action=edit",
+        "type": "application/x-wiki",
+        "hreflang": null
+      },
+      {
+        "href": "https://en.wikipedia.org/w/index.php?title=Special:RecentChanges&feed=atom",
+        "type": "application/atom+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [],
+    "open_graph": {
+      "og:image": "https://upload.wikimedia.org/wikipedia/en/5/51/Spiderbot_%28video_game_box_art%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+      "og:image:width": "1119",
+      "og:image:height": "1200",
+      "og:title": "Arac (video game) - Wikipedia",
+      "og:type": "website"
+    },
+    "meta": {
+      "generator": "MediaWiki 1.47.0-wmf.20",
+      "referrer": "origin-when-cross-origin",
+      "robots": "max-image-preview:standard",
+      "format-detection": "telephone=no",
+      "og:image": "https://upload.wikimedia.org/wikipedia/en/5/51/Spiderbot_%28video_game_box_art%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+      "og:image:width": "1119",
+      "og:image:height": "1200",
+      "viewport": "width=1120",
+      "og:title": "Arac (video game) - Wikipedia",
+      "og:type": "website"
+    },
+    "json_ld": [
+      {
+        "index": 0,
+        "raw": "{\"@context\":\"https:\\/\\/schema.org\",\"@type\":\"Article\",\"name\":\"Arac (video game)\",\"url\":\"https:\\/\\/en.wikipedia.org\\/wiki\\/Arac_(video_game)\",\"sameAs\":\"http:\\/\\/www.wikidata.org\\/entity\\/Q28452053\",\"mainEntity\":\"http:\\/\\/www.wikidata.org\\/entity\\/Q28452053\",\"author\":{\"@type\":\"Organization\",\"name\":\"Contributors to Wikimedia projects\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Wikimedia Foundation, Inc.\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https:\\/\\/www.wikimedia.org\\/static\\/images\\/wmf-hor-googpub.png\"}},\"datePublished\":\"2016-09-10T20:33:46Z\",\"dateModified\":\"2025-07-27T19:24:49Z\",\"image\":\"https:\\/\\/upload.wikimedia.org\\/wikipedia\\/en\\/5\\/51\\/Spiderbot_%28video_game_box_art%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original\",\"headline\":\"1986 action-adventure game\"}",
+        "parse_error": null
+      }
+    ]
+  },
+  "capture": {
+    "requested_url": "https://en.wikipedia.org/wiki/Spiderbot_(video_game)",
+    "expected_normalized_url": "https://en.wikipedia.org/wiki/Spiderbot_(video_game)",
+    "live_final_url": "https://en.wikipedia.org/wiki/Arac_(video_game)",
+    "captured_at": "2026-09-20T13:30:33.988Z"
+  }
+}

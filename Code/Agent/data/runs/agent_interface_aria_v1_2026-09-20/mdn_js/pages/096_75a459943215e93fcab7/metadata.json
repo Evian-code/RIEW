@@ -1,0 +1,69 @@
+{
+  "rendered": {
+    "title": "JavaScript technologies overview - JavaScript | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/JavaScript_technologies_overview",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Web JavaScript Reference JavaScript technologies overview",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/JavaScript_technologies_overview"
+        ]
+      },
+      {
+        "text": "Web JavaScript Reference JavaScript technologies overview",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/JavaScript_technologies_overview"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/JavaScript_technologies_overview",
+      "og:title": "JavaScript technologies overview - JavaScript | MDN",
+      "og:locale": "en_US",
+      "og:description": "Whereas HTML defines a webpage's structure and content and CSS sets the formatting and appearance, JavaScript adds interactivity to a webpage and creates rich web applications.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "Whereas HTML defines a webpage's structure and content and CSS sets the formatting and appearance, JavaScript adds interactivity to a webpage and creates rich web applications.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/JavaScript_technologies_overview",
+      "og:title": "JavaScript technologies overview - JavaScript | MDN",
+      "og:locale": "en_US",
+      "og:description": "Whereas HTML defines a webpage's structure and content and CSS sets the formatting and appearance, JavaScript adds interactivity to a webpage and creates rich web applications.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "4"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/JavaScript_technologies_overview",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/JavaScript_technologies_overview",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/JavaScript_technologies_overview",
+    "captured_at": "2026-09-20T13:00:09.378Z"
+  }
+}

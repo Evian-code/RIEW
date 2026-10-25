@@ -1,0 +1,45 @@
+{
+  "rendered": {
+    "title": "URL - Wikipedia",
+    "canonical": "https://en.wikipedia.org/wiki/URL",
+    "alternates": [
+      {
+        "href": "https://en.wikipedia.org/w/index.php?title=URL&action=edit",
+        "type": "application/x-wiki",
+        "hreflang": null
+      },
+      {
+        "href": "https://en.wikipedia.org/w/index.php?title=Special:RecentChanges&feed=atom",
+        "type": "application/atom+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [],
+    "open_graph": {
+      "og:title": "URL - Wikipedia",
+      "og:type": "website"
+    },
+    "meta": {
+      "generator": "MediaWiki 1.47.0-wmf.20",
+      "referrer": "origin-when-cross-origin",
+      "robots": "max-image-preview:standard",
+      "format-detection": "telephone=no",
+      "viewport": "width=1120",
+      "og:title": "URL - Wikipedia",
+      "og:type": "website"
+    },
+    "json_ld": [
+      {
+        "index": 0,
+        "raw": "{\"@context\":\"https:\\/\\/schema.org\",\"@type\":\"Article\",\"name\":\"URL\",\"url\":\"https:\\/\\/en.wikipedia.org\\/wiki\\/URL\",\"sameAs\":\"http:\\/\\/www.wikidata.org\\/entity\\/Q42253\",\"mainEntity\":\"http:\\/\\/www.wikidata.org\\/entity\\/Q42253\",\"author\":{\"@type\":\"Organization\",\"name\":\"Contributors to Wikimedia projects\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Wikimedia Foundation, Inc.\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https:\\/\\/www.wikimedia.org\\/static\\/images\\/wmf-hor-googpub.png\"}},\"datePublished\":\"2001-03-23T19:26:19Z\",\"dateModified\":\"2026-09-17T07:41:01Z\",\"headline\":\"web address to a particular file or page\"}",
+        "parse_error": null
+      }
+    ]
+  },
+  "capture": {
+    "requested_url": "https://en.wikipedia.org/wiki/URL",
+    "expected_normalized_url": "https://en.wikipedia.org/wiki/URL",
+    "live_final_url": "https://en.wikipedia.org/wiki/URL",
+    "captured_at": "2026-09-20T13:31:01.246Z"
+  }
+}

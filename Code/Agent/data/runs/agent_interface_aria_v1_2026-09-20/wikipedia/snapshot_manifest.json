@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "site": "wikipedia",
+  "generated_at": "2026-09-20T13:31:06.534Z",
+  "method": "live same-state browser capture",
+  "source_run_dir": "data/runs/sampling_50_v12_2026-09-14",
+  "attempted_pages": 50,
+  "captured_pages": 50,
+  "representations": [
+    "rendered_all_anchors",
+    "rendered_visible_followable",
+    "rendered_aria_followable"
+  ],
+  "browser_version": "153.0.8010.12"
+}

@@ -1,0 +1,36 @@
+{
+  "rendered": {
+    "title": "USAGov Web Analytics | USAGov",
+    "canonical": "https://www.usa.gov/website-analytics/",
+    "alternates": [],
+    "breadcrumbs": [],
+    "open_graph": {
+      "og:type": "website",
+      "og:url": "https://www.usa.gov/website-analytics/",
+      "og:title": "USAGov Web Analytics | USAGov",
+      "og:site_name": "USAGov Web Analytics | USAGov",
+      "og:description": "Official data on web traffic to USAGov government websites.",
+      "og:image": "/website-analytics/images/share-image.png"
+    },
+    "meta": {
+      "twitter:site": "@usagov",
+      "twitter:creator": "@usagov",
+      "og:type": "website",
+      "og:url": "https://www.usa.gov/website-analytics/",
+      "og:title": "USAGov Web Analytics | USAGov",
+      "og:site_name": "USAGov Web Analytics | USAGov",
+      "description": "Official data on web traffic to USAGov government websites.",
+      "og:description": "Official data on web traffic to USAGov government websites.",
+      "twitter:card": "summary_large_image",
+      "og:image": "/website-analytics/images/share-image.png",
+      "viewport": "width=device-width, initial-scale=1.0"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://www.usa.gov/website-analytics",
+    "expected_normalized_url": "https://www.usa.gov/website-analytics",
+    "live_final_url": "https://www.usa.gov/website-analytics",
+    "captured_at": "2026-09-20T13:06:49.481Z"
+  }
+}

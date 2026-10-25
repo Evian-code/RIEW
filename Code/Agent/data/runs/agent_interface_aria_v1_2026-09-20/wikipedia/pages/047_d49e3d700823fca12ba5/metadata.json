@@ -1,0 +1,51 @@
+{
+  "rendered": {
+    "title": "FOAF - Wikipedia",
+    "canonical": "https://en.wikipedia.org/wiki/FOAF",
+    "alternates": [
+      {
+        "href": "https://en.wikipedia.org/w/index.php?title=FOAF&action=edit",
+        "type": "application/x-wiki",
+        "hreflang": null
+      },
+      {
+        "href": "https://en.wikipedia.org/w/index.php?title=Special:RecentChanges&feed=atom",
+        "type": "application/atom+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [],
+    "open_graph": {
+      "og:image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/FoafLogo.svg/1280px-FoafLogo.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+      "og:image:width": "1200",
+      "og:image:height": "849",
+      "og:title": "FOAF - Wikipedia",
+      "og:type": "website"
+    },
+    "meta": {
+      "generator": "MediaWiki 1.47.0-wmf.20",
+      "referrer": "origin-when-cross-origin",
+      "robots": "max-image-preview:standard",
+      "format-detection": "telephone=no",
+      "og:image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/FoafLogo.svg/1280px-FoafLogo.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+      "og:image:width": "1200",
+      "og:image:height": "849",
+      "viewport": "width=1120",
+      "og:title": "FOAF - Wikipedia",
+      "og:type": "website"
+    },
+    "json_ld": [
+      {
+        "index": 0,
+        "raw": "{\"@context\":\"https:\\/\\/schema.org\",\"@type\":\"Article\",\"name\":\"FOAF\",\"url\":\"https:\\/\\/en.wikipedia.org\\/wiki\\/FOAF\",\"sameAs\":\"http:\\/\\/www.wikidata.org\\/entity\\/Q1389366\",\"mainEntity\":\"http:\\/\\/www.wikidata.org\\/entity\\/Q1389366\",\"author\":{\"@type\":\"Organization\",\"name\":\"Contributors to Wikimedia projects\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Wikimedia Foundation, Inc.\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https:\\/\\/www.wikimedia.org\\/static\\/images\\/wmf-hor-googpub.png\"}},\"datePublished\":\"2005-09-10T12:44:07Z\",\"dateModified\":\"2025-12-30T17:46:14Z\",\"image\":\"https:\\/\\/upload.wikimedia.org\\/wikipedia\\/commons\\/b\\/b1\\/FoafLogo.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original\",\"headline\":\"Semantic Web ontology to describe relations between people\"}",
+        "parse_error": null
+      }
+    ]
+  },
+  "capture": {
+    "requested_url": "https://en.wikipedia.org/wiki/FOAF_(software)",
+    "expected_normalized_url": "https://en.wikipedia.org/wiki/FOAF_(software)",
+    "live_final_url": "https://en.wikipedia.org/wiki/FOAF",
+    "captured_at": "2026-09-20T13:30:58.347Z"
+  }
+}

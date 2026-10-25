@@ -1,0 +1,67 @@
+{
+  "rendered": {
+    "title": "Fetch API - Web APIs | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Web Web APIs Fetch API",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/API",
+          "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+        ]
+      },
+      {
+        "text": "Web Web APIs Fetch API",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/API",
+          "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+      "og:title": "Fetch API - Web APIs | MDN",
+      "og:locale": "en_US",
+      "og:description": "The Fetch API provides an interface for fetching resources (including across the network). It is a more powerful and flexible replacement for XMLHttpRequest.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "The Fetch API provides an interface for fetching resources (including across the network). It is a more powerful and flexible replacement for XMLHttpRequest.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+      "og:title": "Fetch API - Web APIs | MDN",
+      "og:locale": "en_US",
+      "og:description": "The Fetch API provides an interface for fetching resources (including across the network). It is a more powerful and flexible replacement for XMLHttpRequest.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "3"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+    "captured_at": "2026-09-20T12:56:50.600Z"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "rendered": {
+    "title": "Column layouts - CSS | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Column_layouts",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Web CSS How to Layout cookbook Column layouts",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Column_layouts"
+        ]
+      },
+      {
+        "text": "Web CSS How to Layout cookbook Column layouts",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Column_layouts"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Column_layouts",
+      "og:title": "Column layouts - CSS | MDN",
+      "og:locale": "en_US",
+      "og:description": "You will often need to create a layout which has a number of columns, and CSS provides several ways to do this. Whether you use Multi-column, Flexbox, or Grid layout will depend on what you are trying to achieve, and in this recipe we explore these options.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "You will often need to create a layout which has a number of columns, and CSS provides several ways to do this. Whether you use Multi-column, Flexbox, or Grid layout will depend on what you are trying to achieve, and in this recipe we explore these options.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Column_layouts",
+      "og:title": "Column layouts - CSS | MDN",
+      "og:locale": "en_US",
+      "og:description": "You will often need to create a layout which has a number of columns, and CSS provides several ways to do this. Whether you use Multi-column, Flexbox, or Grid layout will depend on what you are trying to achieve, and in this recipe we explore these options.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "5"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Column_layouts",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Column_layouts",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Column_layouts",
+    "captured_at": "2026-09-20T12:55:29.428Z"
+  }
+}

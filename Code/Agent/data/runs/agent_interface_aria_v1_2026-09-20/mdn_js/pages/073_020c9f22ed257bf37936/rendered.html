@@ -1,0 +1,756 @@
+<!DOCTYPE html><html lang="en-US" data-theme="light dark" data-renderer="SpaObservatoryLanding"><head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>HTTP Header Security Test - HTTP Observatory | MDN</title>
+          
+          <script>try {
+  document.documentElement.dataset.theme =
+    localStorage.getItem("theme") || "light dark";
+} catch (error) {
+  console.warn("Unable to set theme", error);
+}
+
+try {
+  if (localStorage.getItem("nop") === "yes") {
+    document.documentElement.dataset["nop"] = "yes";
+  }
+} catch (error) {
+  console.warn("Unable to set nop", error);
+}
+</script>
+          <link rel="stylesheet" href="/static/client/styles-global.13616ebb1fc8ee2f.css" fetchpriority="high"><link rel="stylesheet" href="/static/client/4067.3063844c36550399.css" fetchpriority="high"><link rel="stylesheet" href="/static/client/styles-observatory-landing.55565f28f568d9fe.css" fetchpriority="high"><link rel="stylesheet" href="/static/client/3391.b611fbe2dc694a57.css" fetchpriority="high"><link rel="stylesheet" href="/static/client/styles-page-layout.5a4354f33e894319.css" fetchpriority="high"><link rel="stylesheet" href="/static/client/styles-a11y-menu.5796ee87cb69f93f.css" fetchpriority="high"><link rel="stylesheet" href="/static/client/styles-navigation.c3ebf384e65df345.css" fetchpriority="high"><link rel="stylesheet" href="/static/client/styles-logo.aea5ff6edf1b9cfb.css" fetchpriority="high"><link rel="stylesheet" href="/static/client/styles-menu.e2c5c8a53a8854c2.css" fetchpriority="high"><link rel="stylesheet" href="/static/client/styles-breadcrumbs-bar.9a51a3c76a6231d0.css" fetchpriority="high"><link rel="stylesheet" href="/static/client/styles-breadcrumbs.87eb742f4e711dc3.css" fetchpriority="high"><link rel="stylesheet" href="/static/client/styles-footer.66072dd619a4ef50.css" fetchpriority="high">
+          <link rel="preload" href="/static/client/jetbrains-mono-latin.119994ed445212c7.woff2" as="font" type="font/woff2" crossorigin="anonymous" fetchpriority="low"><link rel="preload" href="/static/client/inter-latin.9a3b1bc220d426ef.woff2" as="font" type="font/woff2" crossorigin="anonymous" fetchpriority="low">
+          
+          <script src="/static/client/runtime.9ed0e12ebe978c41.js" type="module"></script><script src="/static/client/5909.489e266d049aa182.js" type="module"></script><script src="/static/client/4585.e30f706b333273cd.js" type="module"></script><script src="/static/client/1216.2fdb44f0bb574bc2.js" type="module"></script><script src="/static/client/index.d3c4f9bf5f07adca.js" type="module"></script>
+          
+    <link rel="icon" sizes="32x32" href="https://developer.mozilla.org/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="https://developer.mozilla.org/favicon.svg">
+   <meta name="description" content="Test your site’s HTTP headers, including CSP and HSTS, to find security problems and get actionable recommendations to make your website more secure. Test other websites to see how you compare."><meta name="og:url" content="https://developer.mozilla.org/en-US/observatory"><meta name="og:title" content="HTTP Header Security Test - HTTP Observatory | MDN"><meta name="og:locale" content="en_US"><meta name="og:description" content="Test your site’s HTTP headers, including CSP and HSTS, to find security problems and get actionable recommendations to make your website more secure. Test other websites to see how you compare."><meta name="og:image" content="https://developer.mozilla.org/mdn-social-image.46ac2375.png"><meta name="og:image:type" content="image/png"><meta name="og:image:height" content="1024"><meta name="og:image:width" content="1024"><meta name="og:image:alt" content="The MDN logo"><meta name="og:site_name" content="MDN Web Docs"><meta name="twitter:card" content="summary"><meta name="twitter:creator" content="MozDevNet">
+          <link rel="canonical" href="https://developer.mozilla.org/en-US/observatory">
+          <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+          <link rel="manifest" href="/manifest.json">
+          <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml?locale=en-US" title="MDN">
+          <link rel="alternate" type="application/rss+xml" title="MDN Blog RSS Feed" href="https://developer.mozilla.org/en-US/blog/rss.xml">
+        </head>
+        
+      <body class="page-layout">
+        <ul class="a11y-menu">
+      <li>
+        <a href="#content" data-glean-id="a11y_menu: click #content">Skip to main content</a>
+      </li>
+      <li>
+        <a href="#mdn-search" data-glean-id="a11y_menu: click #search">Skip to search</a>
+      </li>
+    </ul>
+        <div class="page-layout__banner" data-scheme="">
+          <mdn-placement-top></mdn-placement-top>
+        </div>
+        <header class="page-layout__header">
+          
+      <nav class="navigation" data-scheme="" data-open="false">
+        <div class="navigation__logo">
+      <a href="/en-US/" class="logo">
+        <svg class="logo__image" width="83" height="24" viewBox="0 0 83 24" role="img">
+          <title>MDN</title>
+          <path class="logo__letter" d="M9.4 0 2.81 21.17H.12L6.69 0H9.4Zm2.38 0v21.17H9.4V0h2.4Zm9.27 0-6.56 21.17H11.8L18.36 0h2.69Zm2.39 0v21.17h-2.4V0h2.4Z"></path>
+          <path class="logo__text" d="M45.55 16.83h-3.93v-1.27h.87v-3.63c0-.85-.16-1.45-.48-1.82a1.65 1.65 0 0 0-1.3-.52c-.74 0-1.3.25-1.66.78a2.98 2.98 0 0 0-.58 1.58v3.59h1.38v1.26h-3.93v-1.26h.87v-3.6c0-.88-.16-1.48-.48-1.83a1.7 1.7 0 0 0-1.29-.52 1.93 1.93 0 0 0-1.65.75 2.85 2.85 0 0 0-.58 1.6v3.62h1.59v1.27h-4.64v-1.27h1.37V9.75h-1.4V8.46h3.08v1.47c.28-.48.62-.87 1.08-1.2a3 3 0 0 1 1.68-.45c.67 0 1.22.16 1.73.48.5.32.85.8 1.03 1.47.25-.57.62-1.03 1.13-1.4.5-.37 1.1-.55 1.81-.55.8 0 1.5.25 2.05.75.55.51.85 1.3.85 2.35v4.18h1.4v1.27Zm9.77 0H52.3v-1.66c-.27.51-.66.95-1.13 1.29-.56.4-1.23.59-1.9.55-1.11 0-2-.37-2.67-1.12a4.41 4.41 0 0 1-1-3.06c0-1.15.3-2.2.93-3.15.6-.94 1.58-1.43 2.94-1.43 1.36 0 2.25.5 2.83 1.5V5.22h-2V3.93h3.63v11.63h1.38v1.27Zm-3.06-3.86v-1.02a2.28 2.28 0 0 0-.73-1.67 2.4 2.4 0 0 0-1.66-.65 2.18 2.18 0 0 0-1.88.9 3.63 3.63 0 0 0-.65 2.2c0 .95.23 1.68.7 2.19.45.5 1.03.76 1.7.76.73 0 1.33-.3 1.79-.88.48-.6.71-1.21.73-1.83Zm14.14 3.86h-4.43v-1.27h1.37v-3.63c0-.85-.16-1.45-.5-1.82a1.68 1.68 0 0 0-1.31-.52c-.71 0-1.29.23-1.7.69a2.52 2.52 0 0 0-.67 1.6v3.66h1.38v1.26H56.1v-1.26h1.38v-5.8h-1.42V8.47h3.12V9.9c.6-1.06 1.57-1.6 2.92-1.6.83 0 1.54.26 2.12.77.57.5.85 1.28.85 2.34v4.19h1.38v1.24h-.05Z"></path>
+          <path class="logo__cursor" d="M67.71 21.98H83V24H67.71v-2.02Z"></path>
+        </svg>
+      </a>
+    </div>
+        <div class="navigation__search" data-view="mobile">
+          <mdn-search-button></mdn-search-button>
+        </div>
+        <button class="navigation__button" type="button" aria-expanded="false" aria-controls="navigation__popup" aria-label="Toggle navigation"></button>
+        <div class="navigation__popup" id="navigation__popup">
+          <div class="navigation__menu">
+      <nav class="menu">
+        <div class="menu__tab" data-section="html">
+            <mdn-dropdown data-glean-toggle-open="menu_toggle: html" loaded="">
+                    <button class="menu__tab-button" type="button" slot="button" aria-expanded="false" aria-controls="uid_qty6ic62ar7">
+                      <span class="menu__tab-label">HTML</span>
+                    </button>
+                    <div class="menu__panel" slot="dropdown" id="uid_qty6ic62ar7">
+                      <p class="menu__panel-title">
+                        <a href="/en-US/docs/Web/HTML" data-glean-id="menu_click_menu: html -&gt; /en-US/docs/Web/HTML">HTML: Markup language</a>
+                      </p>
+                      <div class="menu__panel-content">
+                        <dl>
+                                <dt>HTML reference</dt>
+                                <dd><ul>
+                            <li>
+                                  <a href="/en-US/docs/Web/HTML/Reference/Elements" data-glean-id="menu_click_submenu: html -&gt; /en-US/docs/Web/HTML/Reference/Elements">Elements</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/HTML/Reference/Global_attributes" data-glean-id="menu_click_submenu: html -&gt; /en-US/docs/Web/HTML/Reference/Global_attributes">Global attributes</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/HTML/Reference/Attributes" data-glean-id="menu_click_submenu: html -&gt; /en-US/docs/Web/HTML/Reference/Attributes">Attributes</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/HTML/Reference" aria-label="See all HTML references" title="See all HTML references" data-glean-id="menu_click_submenu: html -&gt; /en-US/docs/Web/HTML/Reference">See all…</a>
+                                </li>
+                          </ul></dd>
+                              </dl><dl>
+                                <dt>HTML guides</dt>
+                                <dd><ul>
+                            <li>
+                                  <a href="/en-US/docs/Web/HTML/Guides/Responsive_images" data-glean-id="menu_click_submenu: html -&gt; /en-US/docs/Web/HTML/Guides/Responsive_images">Responsive images</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/HTML/Guides/Cheatsheet" data-glean-id="menu_click_submenu: html -&gt; /en-US/docs/Web/HTML/Guides/Cheatsheet">HTML cheatsheet</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/HTML/Guides/Date_and_time_formats" data-glean-id="menu_click_submenu: html -&gt; /en-US/docs/Web/HTML/Guides/Date_and_time_formats">Date &amp; time formats</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/HTML/Guides" aria-label="See all HTML guides" title="See all HTML guides" data-glean-id="menu_click_submenu: html -&gt; /en-US/docs/Web/HTML/Guides">See all…</a>
+                                </li>
+                          </ul></dd>
+                              </dl><dl>
+                                <dt>Markup languages</dt>
+                                <dd><ul>
+                            <li>
+                                  <a href="/en-US/docs/Web/SVG" data-glean-id="menu_click_submenu: html -&gt; /en-US/docs/Web/SVG">SVG</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/MathML" data-glean-id="menu_click_submenu: html -&gt; /en-US/docs/Web/MathML">MathML</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/XML" data-glean-id="menu_click_submenu: html -&gt; /en-US/docs/Web/XML">XML</a>
+                                </li>
+                          </ul></dd>
+                              </dl>
+                      </div>
+                    </div>
+                  </mdn-dropdown>
+          </div><div class="menu__tab" data-section="css">
+            <mdn-dropdown data-glean-toggle-open="menu_toggle: css" loaded="">
+                    <button class="menu__tab-button" type="button" slot="button" aria-expanded="false" aria-controls="uid_pabd69g67d">
+                      <span class="menu__tab-label">CSS</span>
+                    </button>
+                    <div class="menu__panel" slot="dropdown" id="uid_pabd69g67d">
+                      <p class="menu__panel-title">
+                        <a href="/en-US/docs/Web/CSS" data-glean-id="menu_click_menu: css -&gt; /en-US/docs/Web/CSS">CSS: Styling language</a>
+                      </p>
+                      <div class="menu__panel-content">
+                        <dl>
+                                <dt>CSS reference</dt>
+                                <dd><ul>
+                            <li>
+                                  <a href="/en-US/docs/Web/CSS/Reference/Properties" data-glean-id="menu_click_submenu: css -&gt; /en-US/docs/Web/CSS/Reference/Properties">Properties</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/CSS/Reference/Selectors" data-glean-id="menu_click_submenu: css -&gt; /en-US/docs/Web/CSS/Reference/Selectors">Selectors</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/CSS/Reference/At-rules" data-glean-id="menu_click_submenu: css -&gt; /en-US/docs/Web/CSS/Reference/At-rules">At-rules</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/CSS/Reference/Values" data-glean-id="menu_click_submenu: css -&gt; /en-US/docs/Web/CSS/Reference/Values">Values</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/CSS/Reference" aria-label="See all CSS references" title="See all CSS references" data-glean-id="menu_click_submenu: css -&gt; /en-US/docs/Web/CSS/Reference">See all…</a>
+                                </li>
+                          </ul></dd>
+                              </dl><dl>
+                                <dt>CSS guides</dt>
+                                <dd><ul>
+                            <li>
+                                  <a href="/en-US/docs/Web/CSS/Guides/Box_model/Introduction" data-glean-id="menu_click_submenu: css -&gt; /en-US/docs/Web/CSS/Guides/Box_model/Introduction">Box model</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/CSS/Guides/Animations/Using" data-glean-id="menu_click_submenu: css -&gt; /en-US/docs/Web/CSS/Guides/Animations/Using">Animations</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Basic_concepts" data-glean-id="menu_click_submenu: css -&gt; /en-US/docs/Web/CSS/Guides/Flexible_box_layout/Basic_concepts">Flexbox</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/CSS/Guides/Colors/Applying_color" data-glean-id="menu_click_submenu: css -&gt; /en-US/docs/Web/CSS/Guides/Colors/Applying_color">Colors</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/CSS/Guides" aria-label="See all CSS guides" title="See all CSS guides" data-glean-id="menu_click_submenu: css -&gt; /en-US/docs/Web/CSS/Guides">See all…</a>
+                                </li>
+                          </ul></dd>
+                              </dl><dl>
+                                <dt>Layout cookbook</dt>
+                                <dd><ul>
+                            <li>
+                                  <a href="/en-US/docs/Web/CSS/How_to/Layout_cookbook/Column_layouts" data-glean-id="menu_click_submenu: css -&gt; /en-US/docs/Web/CSS/How_to/Layout_cookbook/Column_layouts">Column layouts</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/CSS/How_to/Layout_cookbook/Center_an_element" data-glean-id="menu_click_submenu: css -&gt; /en-US/docs/Web/CSS/How_to/Layout_cookbook/Center_an_element">Centering an element</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/CSS/How_to/Layout_cookbook/Card" data-glean-id="menu_click_submenu: css -&gt; /en-US/docs/Web/CSS/How_to/Layout_cookbook/Card">Card component</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/CSS/How_to/Layout_cookbook" data-glean-id="menu_click_submenu: css -&gt; /en-US/docs/Web/CSS/How_to/Layout_cookbook">See all…</a>
+                                </li>
+                          </ul></dd>
+                              </dl>
+                      </div>
+                    </div>
+                  </mdn-dropdown>
+          </div><div class="menu__tab" data-section="javascript">
+            <mdn-dropdown data-glean-toggle-open="menu_toggle: javascript" loaded="">
+                    <button class="menu__tab-button" type="button" slot="button" aria-expanded="false" aria-controls="uid_puuc59h7a77">
+                      <span class="menu__tab-label" data-type="long">JavaScript</span><span class="menu__tab-label" data-type="short">JS</span>
+                    </button>
+                    <div class="menu__panel" slot="dropdown" id="uid_puuc59h7a77">
+                      <p class="menu__panel-title">
+                        <a href="/en-US/docs/Web/JavaScript" data-glean-id="menu_click_menu: javascript -&gt; /en-US/docs/Web/JavaScript">JavaScript: Scripting language</a>
+                      </p>
+                      <div class="menu__panel-content">
+                        <dl>
+                                <dt>JS reference</dt>
+                                <dd><ul>
+                            <li>
+                                  <a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects" data-glean-id="menu_click_submenu: javascript -&gt; /en-US/docs/Web/JavaScript/Reference/Global_Objects">Standard built-in objects</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/JavaScript/Reference/Operators" data-glean-id="menu_click_submenu: javascript -&gt; /en-US/docs/Web/JavaScript/Reference/Operators">Expressions &amp; operators</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/JavaScript/Reference/Statements" data-glean-id="menu_click_submenu: javascript -&gt; /en-US/docs/Web/JavaScript/Reference/Statements">Statements &amp; declarations</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/JavaScript/Reference/Functions" data-glean-id="menu_click_submenu: javascript -&gt; /en-US/docs/Web/JavaScript/Reference/Functions">Functions</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/JavaScript/Reference" aria-label="See all JavaScript references" title="See all JavaScript references" data-glean-id="menu_click_submenu: javascript -&gt; /en-US/docs/Web/JavaScript/Reference">See all…</a>
+                                </li>
+                          </ul></dd>
+                              </dl><dl>
+                                <dt>JS guides</dt>
+                                <dd><ul>
+                            <li>
+                                  <a href="/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling" data-glean-id="menu_click_submenu: javascript -&gt; /en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling">Control flow &amp; error handing</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration" data-glean-id="menu_click_submenu: javascript -&gt; /en-US/docs/Web/JavaScript/Guide/Loops_and_iteration">Loops and iteration</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/JavaScript/Guide/Working_with_objects" data-glean-id="menu_click_submenu: javascript -&gt; /en-US/docs/Web/JavaScript/Guide/Working_with_objects">Working with objects</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/JavaScript/Guide/Using_classes" data-glean-id="menu_click_submenu: javascript -&gt; /en-US/docs/Web/JavaScript/Guide/Using_classes">Using classes</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/JavaScript/Guide" aria-label="See all JavaScript guides" title="See all JavaScript guides" data-glean-id="menu_click_submenu: javascript -&gt; /en-US/docs/Web/JavaScript/Guide">See all…</a>
+                                </li>
+                          </ul></dd>
+                              </dl>
+                      </div>
+                    </div>
+                  </mdn-dropdown>
+          </div><div class="menu__tab" data-section="webapis">
+            <mdn-dropdown data-glean-toggle-open="menu_toggle: webapis" loaded="">
+                    <button class="menu__tab-button" type="button" slot="button" aria-expanded="false" aria-controls="uid_ov7p9k29bd9">
+                      <span class="menu__tab-label">Web APIs</span>
+                    </button>
+                    <div class="menu__panel" slot="dropdown" id="uid_ov7p9k29bd9">
+                      <p class="menu__panel-title">
+                        <a href="/en-US/docs/Web/API" data-glean-id="menu_click_menu: webapis -&gt; /en-US/docs/Web/API">Web APIs: Programming interfaces</a>
+                      </p>
+                      <div class="menu__panel-content">
+                        <dl>
+                                <dt>Web API reference</dt>
+                                <dd><ul>
+                            <li>
+                                  <a href="/en-US/docs/Web/API/File_System_API" data-glean-id="menu_click_submenu: webapis -&gt; /en-US/docs/Web/API/File_System_API">File system API</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/API/Fetch_API" data-glean-id="menu_click_submenu: webapis -&gt; /en-US/docs/Web/API/Fetch_API">Fetch API</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/API/Geolocation_API" data-glean-id="menu_click_submenu: webapis -&gt; /en-US/docs/Web/API/Geolocation_API">Geolocation API</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/API/HTML_DOM_API" data-glean-id="menu_click_submenu: webapis -&gt; /en-US/docs/Web/API/HTML_DOM_API">HTML DOM API</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/API/Push_API" data-glean-id="menu_click_submenu: webapis -&gt; /en-US/docs/Web/API/Push_API">Push API</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/API/Service_Worker_API" data-glean-id="menu_click_submenu: webapis -&gt; /en-US/docs/Web/API/Service_Worker_API">Service worker API</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/API" aria-label="See all Web API guides" title="See all Web API guides" data-glean-id="menu_click_submenu: webapis -&gt; /en-US/docs/Web/API">See all…</a>
+                                </li>
+                          </ul></dd>
+                              </dl><dl>
+                                <dt>Web API guides</dt>
+                                <dd><ul>
+                            <li>
+                                  <a href="/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API" data-glean-id="menu_click_submenu: webapis -&gt; /en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API">Using the Web animation API</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/API/Fetch_API/Using_Fetch" data-glean-id="menu_click_submenu: webapis -&gt; /en-US/docs/Web/API/Fetch_API/Using_Fetch">Using the Fetch API</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/API/History_API/Working_with_the_History_API" data-glean-id="menu_click_submenu: webapis -&gt; /en-US/docs/Web/API/History_API/Working_with_the_History_API">Working with the History API</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API" data-glean-id="menu_click_submenu: webapis -&gt; /en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API">Using the Web speech API</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/API/Web_Workers_API/Using_web_workers" data-glean-id="menu_click_submenu: webapis -&gt; /en-US/docs/Web/API/Web_Workers_API/Using_web_workers">Using web workers</a>
+                                </li>
+                          </ul></dd>
+                              </dl>
+                      </div>
+                    </div>
+                  </mdn-dropdown>
+          </div><div class="menu__tab" data-section="all">
+            <mdn-dropdown data-glean-toggle-open="menu_toggle: all" loaded="">
+                    <button class="menu__tab-button" type="button" slot="button" aria-expanded="false" aria-controls="uid_tiqggnoxq1">
+                      <span class="menu__tab-label">All</span>
+                    </button>
+                    <div class="menu__panel" slot="dropdown" id="uid_tiqggnoxq1">
+                      <p class="menu__panel-title">
+                        <a href="/en-US/docs/Web" data-glean-id="menu_click_menu: all -&gt; /en-US/docs/Web">All web technology</a>
+                      </p>
+                      <div class="menu__panel-content">
+                        <dl>
+                                <dt>Technologies</dt>
+                                <dd><ul>
+                            <li>
+                                  <a href="/en-US/docs/Web/Accessibility" data-glean-id="menu_click_submenu: all -&gt; /en-US/docs/Web/Accessibility">Accessibility</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/HTTP" data-glean-id="menu_click_submenu: all -&gt; /en-US/docs/Web/HTTP">HTTP</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/URI" data-glean-id="menu_click_submenu: all -&gt; /en-US/docs/Web/URI">URI</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Mozilla/Add-ons/WebExtensions" data-glean-id="menu_click_submenu: all -&gt; /en-US/docs/Mozilla/Add-ons/WebExtensions">Web extensions</a>
+                                </li><li>
+                                  <a href="/en-US/docs/WebAssembly" data-glean-id="menu_click_submenu: all -&gt; /en-US/docs/WebAssembly">WebAssembly</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/WebDriver" data-glean-id="menu_click_submenu: all -&gt; /en-US/docs/Web/WebDriver">WebDriver</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web" aria-label="See all web technology references" title="See all web technology references" data-glean-id="menu_click_submenu: all -&gt; /en-US/docs/Web">See all…</a>
+                                </li>
+                          </ul></dd>
+                              </dl><dl>
+                                <dt>Topics</dt>
+                                <dd><ul>
+                            <li>
+                                  <a href="/en-US/docs/Web/Media" data-glean-id="menu_click_submenu: all -&gt; /en-US/docs/Web/Media">Media</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/Performance" data-glean-id="menu_click_submenu: all -&gt; /en-US/docs/Web/Performance">Performance</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/Privacy" data-glean-id="menu_click_submenu: all -&gt; /en-US/docs/Web/Privacy">Privacy</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/Security" data-glean-id="menu_click_submenu: all -&gt; /en-US/docs/Web/Security">Security</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/Progressive_web_apps" data-glean-id="menu_click_submenu: all -&gt; /en-US/docs/Web/Progressive_web_apps">Progressive web apps</a>
+                                </li>
+                          </ul></dd>
+                              </dl>
+                      </div>
+                    </div>
+                  </mdn-dropdown>
+          </div><div class="menu__tab" data-section="learn">
+            <mdn-dropdown data-glean-toggle-open="menu_toggle: learn" loaded="">
+                    <button class="menu__tab-button" type="button" slot="button" aria-expanded="false" aria-controls="uid_q3gmorrfpp">
+                      <span class="menu__tab-label">Learn</span>
+                    </button>
+                    <div class="menu__panel" slot="dropdown" id="uid_q3gmorrfpp">
+                      <p class="menu__panel-title">
+                        <a href="/en-US/docs/Learn_web_development" data-glean-id="menu_click_menu: learn -&gt; /en-US/docs/Learn_web_development">Learn web development</a>
+                      </p>
+                      <div class="menu__panel-content">
+                        <dl>
+                                <dt>Frontend developer course</dt>
+                                <dd><ul>
+                            <li>
+                                  <a href="/en-US/docs/Learn_web_development/Getting_started" data-glean-id="menu_click_submenu: learn -&gt; /en-US/docs/Learn_web_development/Getting_started">Getting started modules</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Learn_web_development/Core" data-glean-id="menu_click_submenu: learn -&gt; /en-US/docs/Learn_web_development/Core">Core modules</a>
+                                </li><li>
+                                  <a class="" href="/en-US/curriculum/" data-glean-id="menu_click_submenu: learn -&gt; /en-US/curriculum/">MDN Curriculum</a>
+                                </li><li>
+                                  <a class="external" href="https://scrimba.com/frontend-path-c0j?via=mdn-learn-navbar" data-glean-id="menu_click_submenu: learn -&gt; https://scrimba.com/frontend-path-c0j?via=mdn-learn-navbar">Check out the video course from Scrimba, our partner</a>
+                                </li>
+                          </ul></dd>
+                              </dl><dl>
+                                <dt>Learn HTML</dt>
+                                <dd><ul>
+                            <li>
+                                  <a href="/en-US/docs/Learn_web_development/Core/Structuring_content" data-glean-id="menu_click_submenu: learn -&gt; /en-US/docs/Learn_web_development/Core/Structuring_content">Structuring content with HTML module</a>
+                                </li>
+                          </ul></dd>
+                              </dl><dl>
+                                <dt>Learn CSS</dt>
+                                <dd><ul>
+                            <li>
+                                  <a href="/en-US/docs/Learn_web_development/Core/Styling_basics" data-glean-id="menu_click_submenu: learn -&gt; /en-US/docs/Learn_web_development/Core/Styling_basics">CSS styling basics module</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Learn_web_development/Core/CSS_layout" data-glean-id="menu_click_submenu: learn -&gt; /en-US/docs/Learn_web_development/Core/CSS_layout">CSS layout module</a>
+                                </li>
+                          </ul></dd>
+                              </dl><dl>
+                                <dt>Learn JavaScript</dt>
+                                <dd><ul>
+                            <li>
+                                  <a href="/en-US/docs/Learn_web_development/Core/Scripting" data-glean-id="menu_click_submenu: learn -&gt; /en-US/docs/Learn_web_development/Core/Scripting">Dynamic scripting with JavaScript module</a>
+                                </li>
+                          </ul></dd>
+                              </dl>
+                      </div>
+                    </div>
+                  </mdn-dropdown>
+          </div><div class="menu__tab" data-section="tools">
+            <mdn-dropdown data-glean-toggle-open="menu_toggle: tools" loaded="">
+                    <button class="menu__tab-button" type="button" slot="button" aria-expanded="false" aria-controls="uid_1xqk27ur95v">
+                      <span class="menu__tab-label">Tools</span>
+                    </button>
+                    <div class="menu__panel" slot="dropdown" id="uid_1xqk27ur95v">
+                      <p class="menu__panel-title">
+                        Discover our tools
+                      </p>
+                      <div class="menu__panel-content">
+                        <ul>
+                            <li>
+                                  <a class="menu__panel-icon" data-icon="circle-play" href="/en-US/play" data-glean-id="menu_click_submenu: tools -&gt; /en-US/play">Playground</a>
+                                </li><li>
+                                  <a class="menu__panel-icon" data-icon="shield-check" href="/en-US/observatory" data-glean-id="menu_click_submenu: tools -&gt; /en-US/observatory">HTTP Observatory</a>
+                                </li>
+                          </ul><ul>
+                            <li>
+                                  <a href="/en-US/docs/Web/CSS/Guides/Backgrounds_and_borders/Border-image_generator" data-glean-id="menu_click_submenu: tools -&gt; /en-US/docs/Web/CSS/Guides/Backgrounds_and_borders/Border-image_generator">Border-image generator</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/CSS/Guides/Backgrounds_and_borders/Border-radius_generator" data-glean-id="menu_click_submenu: tools -&gt; /en-US/docs/Web/CSS/Guides/Backgrounds_and_borders/Border-radius_generator">Border-radius generator</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/CSS/Guides/Backgrounds_and_borders/Box-shadow_generator" data-glean-id="menu_click_submenu: tools -&gt; /en-US/docs/Web/CSS/Guides/Backgrounds_and_borders/Box-shadow_generator">Box-shadow generator</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/CSS/Guides/Colors/Color_format_converter" data-glean-id="menu_click_submenu: tools -&gt; /en-US/docs/Web/CSS/Guides/Colors/Color_format_converter">Color format converter</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/CSS/Guides/Colors/Color_mixer" data-glean-id="menu_click_submenu: tools -&gt; /en-US/docs/Web/CSS/Guides/Colors/Color_mixer">Color mixer</a>
+                                </li><li>
+                                  <a href="/en-US/docs/Web/CSS/Guides/Shapes/Shape_generator" data-glean-id="menu_click_submenu: tools -&gt; /en-US/docs/Web/CSS/Guides/Shapes/Shape_generator">Shape generator</a>
+                                </li>
+                          </ul>
+                      </div>
+                    </div>
+                  </mdn-dropdown>
+          </div><div class="menu__tab" data-section="about">
+            <mdn-dropdown data-glean-toggle-open="menu_toggle: about" loaded="">
+                    <button class="menu__tab-button" type="button" slot="button" aria-expanded="false" aria-controls="uid_lchaf6v2wcr">
+                      <span class="menu__tab-label">About</span>
+                    </button>
+                    <div class="menu__panel" slot="dropdown" id="uid_lchaf6v2wcr">
+                      <p class="menu__panel-title">
+                        Get to know MDN better
+                      </p>
+                      <div class="menu__panel-content">
+                        <ul>
+                            <li>
+                                  <a class="menu__panel-icon" data-icon="mdn-m" href="/en-US/about" data-glean-id="menu_click_submenu: about -&gt; /en-US/about">About MDN</a>
+                                </li><li>
+                                  <a class="menu__panel-icon" data-icon="chart-no-axes-combined" href="/en-US/advertising" data-glean-id="menu_click_submenu: about -&gt; /en-US/advertising">Advertise with us</a>
+                                </li>
+                          </ul><ul>
+                            <li>
+                                  <a class="menu__panel-icon" data-icon="users" href="/en-US/community" data-glean-id="menu_click_submenu: about -&gt; /en-US/community">Community</a>
+                                </li><li>
+                                  <a class="menu__panel-icon external" data-icon="github" href="https://github.com/mdn" data-glean-id="menu_click_submenu: about -&gt; https://github.com/mdn">MDN on GitHub</a>
+                                </li>
+                          </ul>
+                      </div>
+                    </div>
+                  </mdn-dropdown>
+          </div><div class="menu__tab" data-section="blog">
+            <a class="menu__tab-link" href="/en-US/blog/" data-glean-id="menu_click_link: top-level -&gt; /en-US/blog/">Blog</a>
+          </div>
+      </nav>
+    </div>
+          <div class="navigation__search" data-view="desktop">
+            <mdn-search-button></mdn-search-button>
+          </div>
+          <mdn-user-menu></mdn-user-menu>
+        </div>
+      </nav>
+      <mdn-search-modal id="mdn-search"></mdn-search-modal>
+     
+      <div class="breadcrumbs-bar" data-scheme="">
+         
+      <ol class="breadcrumbs" vocab="https://schema.org/" typeof="BreadcrumbList">
+        
+            <li property="itemListElement" typeof="ListItem">
+              <a href="/en-US/observatory" property="item" typeof="WebPage" data-glean-id="breadcrumb_click: 1/1"><span property="name">HTTP Observatory</span></a>
+              <meta property="position" content="1">
+            </li>
+          
+      </ol>
+    
+        
+        <mdn-color-theme></mdn-color-theme>
+        <mdn-language-switcher locale="en-US" native="English (US)" translations="[{&quot;locale&quot;:&quot;en-US&quot;,&quot;title&quot;:&quot;HTTP Header Security Test - HTTP Observatory | MDN&quot;,&quot;native&quot;:&quot;English (US)&quot;},{&quot;locale&quot;:&quot;es&quot;,&quot;title&quot;:&quot;HTTP Header Security Test - HTTP Observatory | MDN&quot;,&quot;native&quot;:&quot;Español&quot;},{&quot;locale&quot;:&quot;fr&quot;,&quot;title&quot;:&quot;HTTP Header Security Test - HTTP Observatory | MDN&quot;,&quot;native&quot;:&quot;Français&quot;},{&quot;locale&quot;:&quot;ja&quot;,&quot;title&quot;:&quot;HTTP Header Security Test - HTTP Observatory | MDN&quot;,&quot;native&quot;:&quot;日本語&quot;},{&quot;locale&quot;:&quot;ko&quot;,&quot;title&quot;:&quot;HTTP Header Security Test - HTTP Observatory | MDN&quot;,&quot;native&quot;:&quot;한국어&quot;},{&quot;locale&quot;:&quot;pt-BR&quot;,&quot;title&quot;:&quot;HTTP Header Security Test - HTTP Observatory | MDN&quot;,&quot;native&quot;:&quot;Português (do&nbsp;Brasil)&quot;},{&quot;locale&quot;:&quot;ru&quot;,&quot;title&quot;:&quot;HTTP Header Security Test - HTTP Observatory | MDN&quot;,&quot;native&quot;:&quot;Русский&quot;},{&quot;locale&quot;:&quot;zh-CN&quot;,&quot;title&quot;:&quot;HTTP Header Security Test - HTTP Observatory | MDN&quot;,&quot;native&quot;:&quot;中文 (简体)&quot;},{&quot;locale&quot;:&quot;zh-TW&quot;,&quot;title&quot;:&quot;HTTP Header Security Test - HTTP Observatory | MDN&quot;,&quot;native&quot;:&quot;正體中文 (繁體)&quot;},{&quot;locale&quot;:&quot;de&quot;,&quot;title&quot;:&quot;HTTP Header Security Test - HTTP Observatory | MDN&quot;,&quot;native&quot;:&quot;Deutsch&quot;}]" url="/en-US/observatory"></mdn-language-switcher>
+      </div>
+    
+        </header>
+        <div class="page-layout__main">
+        <main id="content" class="observatory">
+          <section class="observatory-top">
+            <div class="observatory-top__form">
+              <h1 class="observatory-top-form__title">
+                HTTP Observatory
+              </h1>
+              <p class="observatory-top-form__description">
+                Launched in 2016, the HTTP Observatory enhances web security by analyzing compliance with best security practices. It has provided insights to over 6.9 million websites through 47 million scans.
+              </p>
+              <mdn-observatory-form class="observatory-top-form__form"></mdn-observatory-form>
+            </div>
+            <section class="observatory-top__illustration">
+              <!--lit-part s7GR1yCPQP8=--><svg xmlns="http://www.w3.org/2000/svg" width="345" height="318" fill="none" role="presentation" viewBox="0 0 345 318"><path fill="url(#paint0_linear_6797_502)" fill-rule="evenodd" d="M202.364 217.973c24.338-7.764 95.821-46.342 106.084-68.913 10.811-23.777-7.958-58.538-34.718-77.516-26.274-18.633-56.151.104-80.38-6.015-21.996-5.555-44.186-13.935-65.99-5.492-23.244 9 1.981 45.132-44.556 57.644-48.27 12.978-48.71 59.189-35.237 79.619 12.861 19.501 67.474-.01 90.887 6.434 21.798 5.999 41.699 21.325 63.91 14.239" clip-rule="evenodd"></path><path fill="#d5d5d5" fill-rule="evenodd" d="M187.165 304.049c-37.85-.274-75.132.633-103.468 1.908-29.852 1.344-56.708 6.052-52.917 8.043 1.144 4.249 41.986.073 70.784 1.343 26.145 1.153 50.738 2.516 85.601 2.654 37.166.147 56.681-5.122 100.409-1.919 47.487 3.478 60.929-.145 55.835-2.078-4.862-1.845-51.574-5.472-79.063-6.738-25.592-1.178-42.639-2.964-77.181-3.213" clip-rule="evenodd"></path><path fill="#b5b1f8" d="m268.422 156 62 27.818v41.727c0 38.598-26.453 74.692-62 83.455-35.547-8.763-62-44.857-62-83.455v-41.727zm0 41.727c-9.645 0-19.289 7.65-19.289 17.387v10.431c-4.133 0-8.267 4.173-8.267 9.041v24.341c0 4.173 4.134 8.346 8.956 8.346h37.889c4.133 0 8.266-4.173 8.266-9.041v-24.341c0-4.173-4.133-8.346-8.266-8.346v-10.431c0-9.737-9.645-17.387-19.289-17.387m0 8.346c5.511 0 10.333 3.477 10.333 9.041v10.431h-20.666v-10.431c0-5.564 4.822-9.041 10.333-9.041"></path><path fill="#d99654" d="m179.308 155.193 13.512-4.394-4.504 12.45-17.265 1.464-3.003-2.929s-3.908-5.664-6.005-9.521c-3.266-6.005-7.507-24.167-7.507-24.167l6.006-.733z"></path><path fill="#0d086c" d="m217.157 303.844 7.405 1.452v4.358l-14.81.726s-.291-1.377 0-2.179c.706-1.945 3.527-.178 5.184-1.452 1.137-.875 2.221-2.905 2.221-2.905m-23.344-.934 7.406 1.453v4.357l-14.811.726s-.291-1.377 0-2.178c.706-1.946 3.527-.178 5.184-1.453 1.137-.875 2.221-2.905 2.221-2.905"></path><path fill="#000" stroke="#000" d="m201.692 138.958 5.208-2.232s5.953-6.697.745-9.674 2.261-3.823.744-5.208c-1.563-1.426-3.444 2.654-5.209 1.488-1.94-1.282 5.953-5.953 0-5.953s-.517-2.113-1.488-2.977c-1.738-1.544-4.751-1.989-5.953 0-.13.216-.208.461-.246.722-.576-1.396-1.448-2.705-2.731-2.954-1.454-.282-3.72.744-3.72.744v1.488s-1.589.662-2.232 1.489c-.399.513-.794.84-.745 1.488.063.819 1.165.733 1.489 1.488.343.801-.044 1.362 0 2.232.432 8.615 11.905 18.603 11.905 18.603z"></path><path fill="#f2ae9b" d="M178.307 128.409c-.121 2.037 2.329 2.546 2.957 3.381 3.189 4.241-.258 7.649 5.894 9.035 4.805-1.092 5.508.049 8.047-8.636.635-9.12-2.226-10.29-6.145-11.189-3.368-.199-3.454 3.213-5.457 5.814-2.159 1.918-2.857 1.392-5.296 1.595"></path><path stroke="#000" stroke-width=".5" d="m197.227 130.027-7.441-1.488"></path><path fill="#f2ae9b" d="m202.332 143.032-3.062-9.189s1.412-.391 2.042-1.021c.891-.892 1.199-1.816 1.02-3.064-.126-.882-.308-1.506-1.021-2.041-.957-.717-1.966-.478-3.063 0-1.519.663-2.299 3.567-2.299 3.567l-.951-1.254-7.84 10.799s3.846-2.072 5.984-1.044c2.86 1.375 1.856 7.911 1.856 7.911 1.529-1.705 5.804-2.959 7.334-4.664"></path><path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".2" d="M188.125 135.93s-3.002 1.798-5.055.82"></path><path stroke="#000" stroke-width=".5" d="M185.33 126.66c-.753 1.341-.367 2.935.787 3.582 1.155.647 2.716.146 3.468-1.195.753-1.342.367-2.935-.787-3.582-1.155-.648-2.716-.147-3.468 1.195Zm-.01-.349s-.744-.746-1.488-.745"></path><ellipse cx=".744" cy="1.488" fill="#000" rx=".744" ry="1.488" transform="rotate(-148.018 112.253 36.195)scale(1 -1)"></ellipse><path fill="#ea9541" d="M187.35 256.591c-3.065-16.999 7.785-41.736 7.785-41.736s-.926 3.09 13.615 3.091c14.541 0 15.5-2.761 15.5-2.761s-.307 19.887.657 33.009c1.33 18.12 0 57.454 0 57.454l-9.082.732-11.922-58.186v57.454l-10.568-2.929s-3.74-33.681-5.985-46.128"></path><path fill="#e8672c" d="m204.664 250.001-8.929-33.681s-11.162 16.109-8.185 35.878c2.976 19.769 6.697 51.254 6.697 51.254l10.417 2.929z"></path><path fill="#f7e7cd" d="M195.759 216.506c.32 3.508 18.692 3.835 29.739 0 0 0 .102-16.1-1.232-26.291-1.643-12.557-4.56-19.228-7.482-31.549-.38-1.636-9.727-13.521-11.223-14.272l-2.993-1.502c-1.317 0-6.687 4.069-7.96 5.048l.076-.1-.347.31.271-.21c-.789 1.047-7.556 9.999-9.249 11.477-2.239 1.954-3.742 2.254-3.742 2.254l-12.549-30.941-4.659 1.036 6.734 31.407s3.339 6.953 7.482 8.263c2.789.882 4.68.535 7.482-.307 2.582-.776 5.986-3.449 5.986-3.449z"></path><path stroke="#000" stroke-linecap="round" stroke-width=".5" d="m160.949 126.367-5.754 2.275s-3.912-6.293-3.994-7.238.139-.38.139-.38m4.228-3.941s-.583-.749-.39.479c.194 1.227 1.745 5.176 1.745 5.176m-3.439-5.813s-.472-.466-.39.478c.083.945 2.468 5.544 2.468 5.544m-3.136-4.304s-.722-.368-.278.761 2.524 4.219 2.524 4.219"></path><path fill="#fe987b" d="M160.133 126.636s4.918-5.403 2.829-4.371c-1.792.886-2.789.854-3.267.723l-.365-.17-3.07-5.556s-1.212-1.111-1.086.077 1.454 5.035 1.454 5.035l-2.755-5.509s-.793-.649-.762.263c.03.912 2.152 5.409 2.152 5.409l-2.281-4.134s-1.301-.474-.921.626 2.28 4.134 2.28 4.134l-2.663-2.772s-.698-.374-.667.538c.03.913 4.147 7.629 4.147 7.629z"></path><path stroke="#000" stroke-linecap="round" stroke-width=".5" d="M156.56 125.367s.493-.994 1.008-1.549c.458-.492 1.746-.862 1.746-.862"></path><path fill="#d9d9d9" d="m176.175 121.545-67.556-28.728s-20.008-2.462-21.048.86c-1.132 3.618 15.075 14.46 15.075 14.46l27.659 7.229 44.336 12.077z"></path><path fill="#3e7ad8" d="M112.039 94.29s-4.908-3.568-9.521-5.913c-4.088-2.078-10.777-4.492-10.777-4.492s-2.489 4.758-3.919 7.913c-1.556 3.435-3.548 9.19-3.548 9.19s6.492 4.678 11.24 5.425c4.657.733 7.13 1.722 7.13 1.722s3.661-3.421 5.855-6.136c2.187-2.706 3.54-7.71 3.54-7.71"></path><path stroke="#90bae1" d="M142.375 115.157s-8.669 5.25-13.485 4.5-5.779-9.001-5.779-9.001.673 9.562 4.816 9.001c3.869-.524.963-4.5.963-4.5"></path><path fill="#90bae1" d="M132.745 124.157c-2.774-.955-3.852-5.251-3.852-5.251-1.542 1.2-1.927 2-1.927 2.25s.634 2.536 1.927 3.751c1.399 1.315 2.704 1.788 4.815 2.25.574.126 1.247.185 1.927.204v77.028a32 32 0 0 0-3.853.775l-2.889 3.751-5.78 42.754-4.815 54.755h4.815l2.89-54.755 5.779-42.754 3.853-.75v98.259h3.853v-98.259l3.852.75 4.816 43.504.963 54.005h5.779l-2.889-54.755-5.779-42.754s-1.224-2.639-2.89-3.751c-.993-.663-2.381-.941-3.852-1.003v-80.004l-3.853.431s-1.839-.07-2.89-.431"></path><path stroke="#000" stroke-linecap="round" stroke-width=".5" d="m169.695 129.945-3.954.962s-3.763-6.772-3.759-7.737.159-.361.159-.361m4.189-3.327s-.47-.844-.396.422 1.16 5.482 1.16 5.482m-2.653-6.381s-.392-.542-.396.423c-.004.964 1.788 5.961 1.788 5.961m-2.501-4.814s-.629-.481-.318.724c.31 1.205 1.95 4.635 1.95 4.635m4.094.232s.186-1.314.481-2.051c.262-.654.873-1.509.873-1.509"></path><path fill="#f2ae9b" d="M169.448 129.704s2.353-8.299.806-6.739c-.334.336-.573.899-.742 1.475-.291.991-.375 2.023-.375 2.023l-2.494-6.742s-.783-1.084-.71.182 1.16 5.481 1.16 5.481l-2.339-6.14s-.705-.782-.709.183c-.004.964 1.788 5.961 1.788 5.961l-1.951-4.635s-1.179-.66-.869.545 1.951 4.635 1.951 4.635l-2.351-3.248s-.628-.481-.632.484 3.759 7.737 3.759 7.737z"></path><path fill="#f9cd6b" fill-rule="evenodd" d="M0 48.5C0 62.583 11.193 74 25 74s25-11.417 25-25.5S38.807 23 25 23 0 34.417 0 48.5m27.802 3.324 2.278 6.407-1.922.684-2.279-6.408.327-.686-.12-.355a6.22 6.22 0 0 1-4.322-.383 6.252 6.252 0 1 1 8.33-2.962 6.22 6.22 0 0 1-3.11 3.026l.132.35zm-1.289-10.73-.49-.201c-.423.352-1.108.964-1.784 1.782l2.484 1.181c.207-1.041.25-1.958.255-2.509-.144-.1-.3-.175-.465-.253m2.729 3.96a4.75 4.75 0 0 0-1.411-3.035c-.01.559-.06 1.356-.24 2.25zm-7.523-3.577 1.65.785a12.7 12.7 0 0 1 1.595-1.606 4.75 4.75 0 0 0-3.244.821m-1.614 1.895a4.9 4.9 0 0 0-.42 1.398l1.86.884.515-1.353.723-1.253-1.859-.884a4.9 4.9 0 0 0-.819 1.208m7.867 5.338c.325-.347.613-.774.82-1.208s.355-.928.42-1.398l-1.86-.884a9.1 9.1 0 0 1-1.239 2.606zm-4.32-5.249-.724 1.253-.515 1.353 2.832 1.346a9.1 9.1 0 0 0 1.239-2.606zm-1.268 6.32c.156.074.312.148.472.192a13 13 0 0 0 1.802-1.774l-2.484-1.18a13 13 0 0 0-.238 2.516zm4.793-.384-1.65-.785a12.6 12.6 0 0 1-1.595 1.606 4.75 4.75 0 0 0 3.245-.821m-7.522-3.576a4.75 4.75 0 0 0 1.411 3.035c.01-.56.06-1.357.24-2.25zm-1.203-16.084a2.47 2.47 0 0 0-1.403 1.266l-2.12 4.459 2.23 1.06 2.12-4.46 4.459 2.12 1.06-2.229-4.46-2.12a2.47 2.47 0 0 0-1.886-.096m13.35 37.546a2.47 2.47 0 0 0 1.403-1.266l2.12-4.459-2.23-1.06-2.12 4.46-4.46-2.12-1.059 2.229 4.46 2.12c.59.28 1.27.316 1.886.096M6.354 55.185c.22.617.675 1.121 1.266 1.403l4.459 2.12 1.06-2.23-4.46-2.12L10.8 49.9l-2.229-1.06-2.12 4.46a2.47 2.47 0 0 0-.096 1.886M43.9 41.835a2.47 2.47 0 0 0-1.266-1.402l-4.459-2.12-1.06 2.23 4.46 2.12-2.12 4.458 2.229 1.06 2.12-4.459a2.47 2.47 0 0 0 .096-1.887M99.5 67C89.283 67 81 58.717 81 48.5S89.283 30 99.5 30 118 38.283 118 48.5 109.717 67 99.5 67m2.683-22.5 1.933-.886s.58-.265 1.091.086c.318.439.54.922.761 1.405a9.53 9.53 0 0 1-4.717 12.684 9.53 9.53 0 0 1-12.684-4.717 9.53 9.53 0 0 1 4.717-12.684s.967-.442 1.41.524l.885 1.934.966-.443s.967-.442 1.41.524l.442.967 1.934-.885s.966-.443 1.409.524zm-11.904 7.203c.354.774 1.34 1.14 2.114.787.773-.354 1.14-1.34.786-2.114s-1.34-1.14-2.114-.786-1.14 1.34-.786 2.113m1.916-7.308c-.773.354-1.14 1.34-.786 2.114s1.34 1.14 2.114.786 1.14-1.34.786-2.114-1.34-1.14-2.114-.786m5.09 11.117c.354.773 1.34 1.14 2.114.786s1.14-1.34.786-2.114-1.34-1.14-2.114-.786-1.14 1.34-.786 2.114m-1.73-5.055c.354.774 1.341 1.14 2.114.786.774-.354 1.14-1.34.787-2.114-.355-.773-1.341-1.14-2.115-.786-.773.354-1.14 1.34-.786 2.114m5.719-.28c.354.774 1.341 1.14 2.114.787.774-.354 1.14-1.34.786-2.114s-1.34-1.14-2.114-.786-1.14 1.34-.786 2.114m9.889-3.942-1.934.885.885 1.934 1.934-.886zm-.886-1.933-2.655-5.8-1.934.884 2.656 5.8zM47 100.5c0 8.008 6.492 14.5 14.5 14.5S76 108.508 76 100.5 69.508 86 61.5 86 47 92.492 47 100.5m22.105-2.903a25 25 0 0 1-1.528 3.141c-.544.941-1.198 1.913-1.943 2.73-.749.82-1.564 1.46-2.426 1.776-.826.304-1.823.358-2.884.247-1.057-.111-2.145-.383-3.133-.701a25 25 0 0 1-3.08-1.231q.099-.234.252-.569c.281-.608.691-1.435 1.21-2.306 1.054-1.773 2.488-3.614 4.109-4.307.834-.356 1.855-.466 2.95-.41 1.09.055 2.221.273 3.25.543a26 26 0 0 1 3.223 1.087m-15.635 6.202-.233.442.002.001.004.002.015.008.056.029.21.105a26 26 0 0 0 3.36 1.356c1.029.331 2.187.623 3.335.744 1.144.12 2.31.073 3.334-.303 1.069-.393 2.013-1.156 2.82-2.041.81-.888 1.505-1.925 2.07-2.903a26.5 26.5 0 0 0 1.74-3.657l.024-.062.006-.017.002-.004v-.002l-.47-.17.208-.454h-.002l-.004-.003-.016-.007-.058-.026-.221-.096a27 27 0 0 0-3.515-1.199c-1.07-.28-2.273-.514-3.454-.574-1.178-.06-2.368.051-3.394.49-1.94.828-3.513 2.927-4.576 4.715a26 26 0 0 0-1.678 3.368l-.023.056-.006.016-.002.004v.001zm0 0-.466-.18-.16.415.393.207zm16.275-6.472.47.17.156-.433-.418-.191zm-10.624 4.566a3.211 3.211 0 1 0 5.967-2.374 3.211 3.211 0 0 0-5.967 2.374m.45-.509a1.377 1.377 0 1 0 2.559-1.019 1.377 1.377 0 0 0-2.558 1.019" clip-rule="evenodd"></path><defs><linearGradient id="paint0_linear_6797_502" x1="127.551" x2="202.834" y1="45.621" y2="204.145" gradientUnits="userSpaceOnUse"><stop stop-color="#090968"></stop><stop offset="1" stop-color="#a388ff"></stop></linearGradient></defs></svg><!--/lit-part-->
+            </section>
+          </section>
+          <section class="observatory-about-wrapper">
+            <div class="observatory-about">
+              <h2 class="observatory-about__title">
+                About the HTTP Observatory
+              </h2>
+              <div class="observatory-about__content">
+                <figure class="assessment">
+                  <!--lit-part GuS/hy6PSFQ=--><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" role="presentation" viewBox="0 0 50 50"><path d="m33.926 30.302 10.715 10.714-3.215 3.215-10.714-10.715v-1.693l-.578-.6a13.87 13.87 0 0 1-9.065 3.365 13.929 13.929 0 1 1 13.929-13.929c0 3.45-1.264 6.622-3.364 9.064l.6.579zM21.07 9.945l-1.178.064c-.515 1.114-1.307 3-1.886 5.293h6.129a31 31 0 0 0-1.886-5.293c-.386-.064-.772-.064-1.179-.064m9.279 5.357a10.6 10.6 0 0 0-5.743-4.757 28 28 0 0 1 1.671 4.757zm-18.557 0h4.071a28 28 0 0 1 1.672-4.757 10.6 10.6 0 0 0-5.743 4.757m-1.436 5.357c0 1.072.171 2.207.493 3.214h4.586l-.258-3.214.258-3.214h-4.586a10.8 10.8 0 0 0-.493 3.214m20.936 3.214c.321-1.007.492-2.143.492-3.214s-.17-2.207-.492-3.214h-4.586q.257 1.607.257 3.214 0 1.608-.257 3.214zm-13.715-6.428-.257 3.214.257 3.214h6.986a20.3 20.3 0 0 0 0-6.428zm3.493 13.928c.386 0 .772 0 1.136-.064.536-1.114 1.35-3 1.929-5.293h-6.13a28.6 28.6 0 0 0 1.93 5.293zm9.279-5.357h-4.072a28 28 0 0 1-1.671 4.757 10.6 10.6 0 0 0 5.743-4.757m-18.557 0a10.6 10.6 0 0 0 5.743 4.757 28 28 0 0 1-1.672-4.757z"></path></svg><!--/lit-part-->
+                  <figcaption>
+                    <p>Developed by Mozilla, the HTTP Observatory performs an in-depth assessment of a site’s HTTP headers and other key security configurations.</p>
+                  </figcaption>
+                </figure>
+                <!--lit-part Uq/HBCMpvx0=-->
+  <!--lit-node 0--><svg width="75" class="lines assessment" height="75" viewBox="-25 0 75 75" version="1.1" role="presentation">
+   <path d="M 1,0 V 35 H 48 V 75" stroke="url(#gradient)" stroke-width="2" stroke-dasharray="4, 4" fill="none" style="stroke-linejoin:miter;stroke-linecap:butt;stroke-width:2;stroke-dasharray:4, 3.992;stroke-dashoffset:0;stroke:url(#gradient)" id="path1"></path>
+   <defs id="defs3">
+      <linearGradient id="gradient" x1="25.321022" y1="0" x2="48" y2="75" gradientUnits="userSpaceOnUse">
+         <stop offset="0.01046867" stop-color="#7171E1" id="stop1"></stop>
+         <stop offset="0.57600665" stop-color="#CFCFF5" id="stop2"></stop>
+         <stop offset="1" stop-color="#ECECFB" id="stop3"></stop>
+      </linearGradient>
+   </defs>
+</svg><!--/lit-part-->
+                <figure class="scanning">
+                  <!--lit-part OGxCZD4cUxg=--><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" role="presentation" viewBox="0 0 50 50"><path fill="#5a23d7" d="M5 8.333A3.333 3.333 0 0 1 8.333 5H15v3.333H8.333V15H5zm40 33.334A3.333 3.333 0 0 1 41.667 45H35v-3.333h6.667V35H45zM8.333 45A3.333 3.333 0 0 1 5 41.667V35h3.333v6.667H15V45zM41.667 5A3.333 3.333 0 0 1 45 8.333V15h-3.333V8.333H35V5zm-6.873 8.266H14.399a2.273 2.273 0 0 0-2.266 2.266V33.66a2.273 2.273 0 0 0 2.266 2.266h20.395a2.273 2.273 0 0 0 2.266-2.266V15.532a2.273 2.273 0 0 0-2.266-2.266m0 20.394H14.399V17.798h20.395z"></path></svg><!--/lit-part-->
+                  <figcaption>
+                    <p>Its automated scanning process provides developers and website administrators with detailed, actionable feedback, focusing on identifying and addressing potential security vulnerabilities.</p>
+                  </figcaption>
+                </figure>
+                <!--lit-part Uq/HBCMpvx0=-->
+  <!--lit-node 0--><svg width="75" class="lines scanning" height="75" viewBox="-25 0 75 75" version="1.1" role="presentation">
+   <path d="M 1,0 V 35 H 48 V 75" stroke="url(#gradient)" stroke-width="2" stroke-dasharray="4, 4" fill="none" style="stroke-linejoin:miter;stroke-linecap:butt;stroke-width:2;stroke-dasharray:4, 3.992;stroke-dashoffset:0;stroke:url(#gradient)" id="path1"></path>
+   <defs id="defs3">
+      <linearGradient id="gradient" x1="25.321022" y1="0" x2="48" y2="75" gradientUnits="userSpaceOnUse">
+         <stop offset="0.01046867" stop-color="#7171E1" id="stop1"></stop>
+         <stop offset="0.57600665" stop-color="#CFCFF5" id="stop2"></stop>
+         <stop offset="1" stop-color="#ECECFB" id="stop3"></stop>
+      </linearGradient>
+   </defs>
+</svg><!--/lit-part-->
+                <figure class="security">
+                  <!--lit-part U1oyqCiDAlc=--><svg xmlns="http://www.w3.org/2000/svg" width="50" height="53" fill="none" role="presentation" viewBox="0 0 50 53"><path fill="#5a23d7" d="M22.917 28.158h4.166v2.208h-4.166zM43.75 10.493V23.74c0 12.145-7.917 23.627-18.75 26.498C14.167 47.37 6.25 35.886 6.25 23.742v-13.25L25 1.66zm-8.333 11.04h-4.584c-.416-1.325-1.25-2.429-2.291-3.312l2.5-2.65-1.459-1.545-2.916 3.091H25c-.417 0-1.042 0-1.458.22l-2.917-3.311-1.667 1.766 2.5 2.65c-1.041.662-1.875 1.767-2.291 3.091h-4.584v2.208h4.167v2.209h-4.167v2.208h4.167v2.208h-4.167v2.208h4.584C20 35.224 22.292 36.99 25 36.99s5-1.766 5.833-4.416h4.584v-2.208H31.25v-2.208h4.167V25.95H31.25v-2.21h4.167zm-12.5 4.417h4.166v-2.21h-4.166z"></path></svg><!--/lit-part-->
+                  <figcaption>
+                    <p>The tool is instrumental in helping developers and website administrators strengthen their sites against common security threats in a constantly advancing digital environment.</p>
+                  </figcaption>
+                </figure>
+                <!--lit-part Uq/HBCMpvx0=-->
+  <!--lit-node 0--><svg width="75" class="lines security" height="75" viewBox="-25 0 75 75" version="1.1" role="presentation">
+   <path d="M 1,0 V 35 H 48 V 75" stroke="url(#gradient)" stroke-width="2" stroke-dasharray="4, 4" fill="none" style="stroke-linejoin:miter;stroke-linecap:butt;stroke-width:2;stroke-dasharray:4, 3.992;stroke-dashoffset:0;stroke:url(#gradient)" id="path1"></path>
+   <defs id="defs3">
+      <linearGradient id="gradient" x1="25.321022" y1="0" x2="48" y2="75" gradientUnits="userSpaceOnUse">
+         <stop offset="0.01046867" stop-color="#7171E1" id="stop1"></stop>
+         <stop offset="0.57600665" stop-color="#CFCFF5" id="stop2"></stop>
+         <stop offset="1" stop-color="#ECECFB" id="stop3"></stop>
+      </linearGradient>
+   </defs>
+</svg><!--/lit-part-->
+                <figure class="mdn">
+                  <!--lit-part WYeqcvQwHlQ=--><svg xmlns="http://www.w3.org/2000/svg" width="50" height="53" fill="none" role="presentation" viewBox="0 -5 50 60"><path fill="#5a23d7" d="M44.17 3.973H6.667C4.375 3.973 2.5 5.96 2.5 8.389v35.334c0 2.429 1.875 4.416 4.167 4.416H44.17c2.292 0 4.167-1.987 4.167-4.416V8.389c0-2.429-1.875-4.416-4.167-4.416m0 39.75H6.667V12.806H44.17z"></path><path fill="#5a23d7" d="m22.95 17.227-5.642 19.255H15l5.622-19.255zm2.05 0v19.255h-2.05V17.227zm7.95 0-5.622 19.255h-2.307l5.621-19.255zm2.052 0v19.255H32.95V17.227z"></path></svg><!--/lit-part-->
+                  <figcaption>
+                    <p>The HTTP Observatory provides effective security insights, guided by Mozilla's expertise and commitment to a safer and more secure internet and based on well-established trends and guidelines.</p>
+                  </figcaption>
+                </figure>
+              </div>
+              <aside class="observatory-about__links">
+                <!--lit-part QWlwWBHAx44=-->
+        <!--lit-node 0--><a class="button" href="/en-US/observatory/docs/faq" target="_blank" rel="noopener" aria-labelledby="label-0u5lclxfpxv" data-variant="plain" part="button">
+          <!--lit-part--><!--lit-part bRP2a5ux/uw=--><span class="icon" part="icon"><!--lit-part mExVKXe/bdM=--><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3m.08 4h.01"></path></svg><!--/lit-part--></span><!--/lit-part--><!--lit-part rI2hX8LXYZM=-->
+    <!--lit-node 0--><span id="label-0u5lclxfpxv" class="label" part="label"><!--lit-part-->Read our FAQ<!--/lit-part--></span>
+  <!--/lit-part--><!--/lit-part-->
+        </a>
+      <!--/lit-part-->
+                <!--lit-part QWlwWBHAx44=-->
+        <!--lit-node 0--><a class="button" href="https://survey.alchemer.com/s3/7897385/MDN-HTTP-Observatory" target="_blank" rel="noopener" aria-labelledby="label-ta61u4n02is" data-variant="plain" part="button">
+          <!--lit-part--><!--lit-part bRP2a5ux/uw=--><span class="icon" part="icon"><!--lit-part 9Xz9b0Idnp4=--><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4m0 4h.01"></path></svg><!--/lit-part--></span><!--/lit-part--><!--lit-part rI2hX8LXYZM=-->
+    <!--lit-node 0--><span id="label-ta61u4n02is" class="label" part="label"><!--lit-part-->Report Feedback<!--/lit-part--></span>
+  <!--/lit-part--><!--/lit-part-->
+        </a>
+      <!--/lit-part-->
+              </aside>
+            </div>
+            <section class="observatory-sidebar">
+              <mdn-placement-sidebar></mdn-placement-sidebar>
+            </section>
+          </section>
+        </main>
+      </div>
+        <div class="page-layout__footer">
+      <mdn-placement-bottom></mdn-placement-bottom>
+      <footer class="footer">
+        <div class="footer__mdn">
+          <div class="footer__intro">
+            <a class="footer__logo" href="/" aria-label="MDN logo"><!--lit-part anjj6IBmI8g=--><svg xmlns="http://www.w3.org/2000/svg" width="83" height="24" viewBox="0 0 83 24"><title>MDN</title><path d="M9.4 0 2.81 21.17H.12L6.69 0zm2.38 0v21.17H9.4V0h2.4Zm9.27 0-6.56 21.17H11.8L18.36 0zm2.39 0v21.17h-2.4V0zm22.11 16.83h-3.93v-1.27h.87v-3.63c0-.85-.16-1.45-.48-1.82a1.65 1.65 0 0 0-1.3-.52c-.74 0-1.3.25-1.66.78a3 3 0 0 0-.58 1.58v3.59h1.38v1.26h-3.93v-1.26h.87v-3.6c0-.88-.16-1.48-.48-1.83a1.7 1.7 0 0 0-1.29-.52 1.93 1.93 0 0 0-1.65.75 2.85 2.85 0 0 0-.58 1.6v3.62h1.59v1.27h-4.64v-1.27h1.37V9.75h-1.4V8.46h3.08v1.47c.28-.48.62-.87 1.08-1.2a3 3 0 0 1 1.68-.45c.67 0 1.22.16 1.73.48.5.32.85.8 1.03 1.47.25-.57.62-1.03 1.13-1.4.5-.37 1.1-.55 1.81-.55.8 0 1.5.25 2.05.75.55.51.85 1.3.85 2.35v4.18h1.4zm9.77 0H52.3v-1.66c-.27.51-.66.95-1.13 1.29-.56.4-1.23.59-1.9.55-1.11 0-2-.37-2.67-1.12a4.4 4.4 0 0 1-1-3.06c0-1.15.3-2.2.93-3.15.6-.94 1.58-1.43 2.94-1.43s2.25.5 2.83 1.5V5.22h-2V3.93h3.63v11.63h1.38v1.27Zm-3.06-3.86v-1.02a2.28 2.28 0 0 0-.73-1.67 2.4 2.4 0 0 0-1.66-.65 2.18 2.18 0 0 0-1.88.9 3.63 3.63 0 0 0-.65 2.2c0 .95.23 1.68.7 2.19.45.5 1.03.76 1.7.76.73 0 1.33-.3 1.79-.88.48-.6.71-1.21.73-1.83m14.14 3.86h-4.43v-1.27h1.37v-3.63c0-.85-.16-1.45-.5-1.82a1.68 1.68 0 0 0-1.31-.52c-.71 0-1.29.23-1.7.69a2.52 2.52 0 0 0-.67 1.6v3.66h1.38v1.26H56.1v-1.26h1.38v-5.8h-1.42V8.47h3.12V9.9c.6-1.06 1.57-1.6 2.92-1.6.83 0 1.54.26 2.12.77.57.5.85 1.28.85 2.34v4.19h1.38v1.24h-.05Zm1.31 5.15H83V24H67.71z"></path></svg><!--/lit-part--></a>
+            <p>
+              Your blueprint for a better internet.
+            </p>
+          </div>
+
+          <ul class="footer__socials">
+            
+                <li>
+                  <a href="https://github.com/mdn/" target="_blank" rel="noopener" aria-label="MDN on GitHub" data-icon="github" data-glean-id="footer: social -&gt; github"></a>
+                </li>
+              
+                <li>
+                  <a href="https://bsky.app/profile/developer.mozilla.org" target="_blank" rel="noopener" aria-label="MDN on Bluesky" data-icon="bluesky" data-glean-id="footer: social -&gt; bluesky"></a>
+                </li>
+              
+                <li>
+                  <a href="https://x.com/mozdevnet" target="_blank" rel="noopener" aria-label="MDN on X" data-icon="x" data-glean-id="footer: social -&gt; x"></a>
+                </li>
+              
+                <li>
+                  <a href="https://mastodon.social/@mdn" target="_blank" rel="noopener" aria-label="MDN on Mastodon" data-icon="mastodon" data-glean-id="footer: social -&gt; mastodon"></a>
+                </li>
+              
+                <li>
+                  <a href="/en-US/blog/rss.xml" target="_blank" rel="noopener" aria-label="MDN blog RSS feed" data-icon="rss" data-glean-id="footer: social -&gt; rss"></a>
+                </li>
+              
+          </ul>
+
+          
+              <dl class="footer__links">
+                <dt>MDN</dt>
+                <dd>
+                  <ul>
+                    
+                        <li>
+                          <a href="/en-US/about" class="" target="" rel="" data-glean-id="footer: link -&gt; /en-US/about">
+                            About
+                          </a>
+                        </li>
+                      
+                        <li>
+                          <a href="/en-US/blog/" class="" target="" rel="" data-glean-id="footer: link -&gt; /en-US/blog/">
+                            Blog
+                          </a>
+                        </li>
+                      
+                        <li>
+                          <a href="https://www.mozilla.org/en-US/careers/listings/" class="external" target="_blank" rel="noopener" data-glean-id="footer: link -&gt; https://www.mozilla.org/en-US/careers/listings/">
+                            Mozilla careers
+                          </a>
+                        </li>
+                      
+                        <li>
+                          <a href="/en-US/advertising" class="" target="" rel="" data-glean-id="footer: link -&gt; /en-US/advertising">
+                            Advertise with us
+                          </a>
+                        </li>
+                      
+                        <li>
+                          <a href="/en-US/plus" class="" target="" rel="" data-glean-id="footer: link -&gt; /en-US/plus">
+                            MDN Plus
+                          </a>
+                        </li>
+                      
+                        <li>
+                          <a href="https://support.mozilla.org/products/mdn-plus" class="external" target="_blank" rel="noopener" data-glean-id="footer: link -&gt; https://support.mozilla.org/products/mdn-plus">
+                            Product help
+                          </a>
+                        </li>
+                      
+                  </ul>
+                </dd>
+              </dl>
+            
+              <dl class="footer__links">
+                <dt>Contribute</dt>
+                <dd>
+                  <ul>
+                    
+                        <li>
+                          <a href="/en-US/community" class="" target="" rel="" data-glean-id="footer: link -&gt; /en-US/community">
+                            MDN Community
+                          </a>
+                        </li>
+                      
+                        <li>
+                          <a href="/en-US/docs/MDN/Community" class="" target="" rel="" data-glean-id="footer: link -&gt; /en-US/docs/MDN/Community">
+                            Community resources
+                          </a>
+                        </li>
+                      
+                        <li>
+                          <a href="/en-US/docs/MDN/Writing_guidelines" class="" target="" rel="" data-glean-id="footer: link -&gt; /en-US/docs/MDN/Writing_guidelines">
+                            Writing guidelines
+                          </a>
+                        </li>
+                      
+                        <li>
+                          <a href="/discord" class="external" target="_blank" rel="noopener" data-glean-id="footer: link -&gt; /discord">
+                            MDN Discord
+                          </a>
+                        </li>
+                      
+                        <li>
+                          <a href="https://github.com/mdn" class="external" target="_blank" rel="noopener" data-glean-id="footer: link -&gt; https://github.com/mdn">
+                            MDN on GitHub
+                          </a>
+                        </li>
+                      
+                  </ul>
+                </dd>
+              </dl>
+            
+              <dl class="footer__links">
+                <dt>Developers</dt>
+                <dd>
+                  <ul>
+                    
+                        <li>
+                          <a href="/en-US/docs/Web" class="" target="" rel="" data-glean-id="footer: link -&gt; /en-US/docs/Web">
+                            Web technologies
+                          </a>
+                        </li>
+                      
+                        <li>
+                          <a href="/en-US/docs/Learn_web_development" class="" target="" rel="" data-glean-id="footer: link -&gt; /en-US/docs/Learn_web_development">
+                            Learn web development
+                          </a>
+                        </li>
+                      
+                        <li>
+                          <a href="/en-US/docs/MDN/Guides" class="" target="" rel="" data-glean-id="footer: link -&gt; /en-US/docs/MDN/Guides">
+                            Guides
+                          </a>
+                        </li>
+                      
+                        <li>
+                          <a href="/en-US/docs/MDN/Tutorials" class="" target="" rel="" data-glean-id="footer: link -&gt; /en-US/docs/MDN/Tutorials">
+                            Tutorials
+                          </a>
+                        </li>
+                      
+                        <li>
+                          <a href="/en-US/docs/Glossary" class="" target="" rel="" data-glean-id="footer: link -&gt; /en-US/docs/Glossary">
+                            Glossary
+                          </a>
+                        </li>
+                      
+                        <li>
+                          <a href="https://hacks.mozilla.org/" class="external" target="_blank" rel="noopener" data-glean-id="footer: link -&gt; https://hacks.mozilla.org/">
+                            Hacks blog
+                          </a>
+                        </li>
+                      
+                  </ul>
+                </dd>
+              </dl>
+            
+        </div>
+
+        <div class="footer__mozilla">
+          <a class="footer__logo" href="https://www.mozilla.org/" aria-label="Mozilla logo"><!--lit-part lm0Fgmo9xYQ=--><svg xmlns="http://www.w3.org/2000/svg" width="128" height="30" viewBox="0 0 256 60"><title>Mozilla</title><path d="m13.32 22.1 5.1 24.3h2.1l5.1-24.3H39.3v37.34h-7.26V28.46h-2.1l-6.96 30.98h-7.02L9.02 28.46h-2.1v31H-.35V22.1h13.66Zm45.12 8.74c8.73 0 13.8 5.15 13.8 14.57S67.14 60 58.44 60c-8.73 0-13.8-5.17-13.8-14.59 0-9.43 5.07-14.57 13.8-14.57m0 23.34c4.1 0 6.16-2.1 6.16-6.73v-4.12c0-4.62-2.06-6.73-6.16-6.73s-6.15 2.1-6.15 6.73v4.12c0 4.63 2.05 6.73 6.15 6.73m17.68-.14 14.82-17.26H76.32v-5.41h23.31v5.4L84.84 54.05h15.03v5.4H76.13v-5.41Zm28.07-22.67h10.7v28.07h-7.25V36.77h-3.48v-5.4zm3.44-9.27h7.26v5.4h-7.25v-5.4Zm12.62 0h10.72v37.34h-7.24V27.5h-3.48zm16.08 0h10.7v37.34h-7.25V27.5h-3.48v-5.4zm27.8 8.74c4.24 0 7.08 2.05 7.87 5.63h2.1v-5.1h8.88v5.4h-3.47v17.28h3.47v5.4h-4.25c-3 0-4.63-1.63-4.63-4.62v-.48H172c-.78 3.58-3.63 5.63-7.88 5.63-6.68 0-11.4-5.59-11.4-14.58 0-9 4.72-14.55 11.4-14.55m2.2 23.34c4.1 0 5.93-2.1 5.93-6.73v-4.12c0-4.62-1.82-6.73-5.94-6.73-3.99 0-5.92 2.1-5.92 6.73v4.13c0 4.62 1.92 6.72 5.93 6.72m46.28 5.27h-7.26V0h7.26zm6.3-28.41h30.8v-2.1l-20.4-7.32v-5.88l20.4-7.33v-2.1h-24.27V0h30.79v12l-16.62 5.63v2.11l16.61 5.64v12H218.9zm0-24.73h6.5v6.52h-6.5z"></path></svg><!--/lit-part--></a>
+          <ul>
+            
+                <li>
+                  <a href="https://www.mozilla.org/privacy/websites/" class="external" data-glean-id="footer: mozilla -&gt; https://www.mozilla.org/privacy/websites/">Website Privacy Notice</a>
+                </li>
+              
+                <li>
+                  <a href="https://www.mozilla.org/en-US/privacy/websites/data-preferences/" class="external" data-glean-id="footer: mozilla -&gt; https://www.mozilla.org/en-US/privacy/websites/data-preferences/">Telemetry Settings</a>
+                </li>
+              
+                <li>
+                  <a href="https://www.mozilla.org/about/legal/terms/mozilla" class="external" data-glean-id="footer: mozilla -&gt; https://www.mozilla.org/about/legal/terms/mozilla">Legal</a>
+                </li>
+              
+                <li>
+                  <a href="https://www.mozilla.org/about/governance/policies/participation/" class="external" data-glean-id="footer: mozilla -&gt; https://www.mozilla.org/about/governance/policies/participation/">Community Participation Guidelines</a>
+                </li>
+              
+          </ul>
+          <p>
+            Portions of this content are ©1998–2026 by individual mozilla.org contributors. Content available under <a href="/docs/MDN/Writing_guidelines/Attrib_copyright_license">a Creative Commons license</a>.
+          </p>
+        </div>
+      </footer>
+    </div>
+      
+    
+      
+    </body></html>

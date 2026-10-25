@@ -1,0 +1,106 @@
+{
+  "rendered": {
+    "title": "Voter registration | USAGov",
+    "canonical": "https://www.usa.gov/voter-registration",
+    "alternates": [
+      {
+        "href": "https://www.usa.gov/es/registro-votar-estados-unidos",
+        "type": null,
+        "hreflang": "es"
+      },
+      {
+        "href": "https://www.usa.gov/voter-registration",
+        "type": null,
+        "hreflang": "en"
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Home Voting and elections Voter registration",
+        "urls": [
+          "https://www.usa.gov/",
+          "https://www.usa.gov/voting-and-elections"
+        ]
+      },
+      {
+        "text": "Home Voting and elections Voter registration",
+        "urls": [
+          "https://www.usa.gov/",
+          "https://www.usa.gov/voting-and-elections"
+        ]
+      },
+      {
+        "text": "Home Voting and elections Voter registration",
+        "urls": [
+          "https://www.usa.gov/",
+          "https://www.usa.gov/voting-and-elections"
+        ]
+      },
+      {
+        "text": "Home Voting and elections Voter registration",
+        "urls": [
+          "https://www.usa.gov/",
+          "https://www.usa.gov/voting-and-elections"
+        ]
+      },
+      {
+        "text": "Home",
+        "urls": [
+          "https://www.usa.gov/"
+        ]
+      },
+      {
+        "text": "Home",
+        "urls": []
+      },
+      {
+        "text": "Voting and elections",
+        "urls": [
+          "https://www.usa.gov/voting-and-elections"
+        ]
+      },
+      {
+        "text": "Voting and elections",
+        "urls": []
+      },
+      {
+        "text": "Voter registration",
+        "urls": []
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://www.usa.gov/voter-registration",
+      "og:type": "website",
+      "og:title": "Voter registration | USAGov",
+      "og:description": "Learn how to register to vote and get a voter registration card. Find your state's registration deadline and how to confirm or change your registration.",
+      "og:image": "https://www.usa.gov/themes/custom/usagov/images/Logo_USAGov.png",
+      "og:image:secure_url": "https://www.usa.gov/themes/custom/usagov/images/Logo_USAGov.png"
+    },
+    "meta": {
+      "MobileOptimized": "width",
+      "HandheldFriendly": "true",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "Learn how to register to vote and get a voter registration card. Find your state's registration deadline and how to confirm or change your registration.",
+      "og:url": "https://www.usa.gov/voter-registration",
+      "og:type": "website",
+      "og:title": "Voter registration | USAGov",
+      "og:description": "Learn how to register to vote and get a voter registration card. Find your state's registration deadline and how to confirm or change your registration.",
+      "og:image": "https://www.usa.gov/themes/custom/usagov/images/Logo_USAGov.png",
+      "og:image:secure_url": "https://www.usa.gov/themes/custom/usagov/images/Logo_USAGov.png",
+      "referrer": "no-referrer-when-downgrade"
+    },
+    "json_ld": [
+      {
+        "index": 0,
+        "raw": "\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"Organization\",\n      \"url\": \"https://usa.gov/\",\n      \"logo\": \"https://www.usa.gov/themes/custom/usagov/images/Logo_USAGov.png\"\n    }\n  ",
+        "parse_error": null
+      }
+    ]
+  },
+  "capture": {
+    "requested_url": "https://www.usa.gov/voter-registration",
+    "expected_normalized_url": "https://www.usa.gov/voter-registration",
+    "live_final_url": "https://www.usa.gov/voter-registration",
+    "captured_at": "2026-09-20T13:07:10.560Z"
+  }
+}

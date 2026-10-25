@@ -1,0 +1,34 @@
+{
+  "rendered": {
+    "title": "Wikipedia:Contents - Wikipedia",
+    "canonical": "https://en.wikipedia.org/wiki/Wikipedia:Contents",
+    "alternates": [
+      {
+        "href": "https://en.wikipedia.org/w/index.php?title=Special:RecentChanges&feed=atom",
+        "type": "application/atom+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [],
+    "open_graph": {
+      "og:title": "Wikipedia:Contents - Wikipedia",
+      "og:type": "website"
+    },
+    "meta": {
+      "generator": "MediaWiki 1.47.0-wmf.19",
+      "referrer": "origin-when-cross-origin",
+      "robots": "max-image-preview:standard",
+      "format-detection": "telephone=no",
+      "viewport": "width=1120",
+      "og:title": "Wikipedia:Contents - Wikipedia",
+      "og:type": "website"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://en.wikipedia.org/wiki/Wikipedia:Contents",
+    "expected_normalized_url": "https://en.wikipedia.org/wiki/Wikipedia:Contents",
+    "live_final_url": "https://en.wikipedia.org/wiki/Wikipedia:Contents",
+    "captured_at": "2026-09-20T13:29:43.618Z"
+  }
+}

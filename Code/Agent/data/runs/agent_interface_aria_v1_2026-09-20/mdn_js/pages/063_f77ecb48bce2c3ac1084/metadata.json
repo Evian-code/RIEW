@@ -1,0 +1,65 @@
+{
+  "rendered": {
+    "title": "Progressive web apps | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Web Progressive web apps",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps"
+        ]
+      },
+      {
+        "text": "Web Progressive web apps",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps",
+      "og:title": "Progressive web apps | MDN",
+      "og:locale": "en_US",
+      "og:description": "A progressive web app (PWA) is an app that's built using web platform technologies, but that provides a user experience like that of a platform-specific app.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "A progressive web app (PWA) is an app that's built using web platform technologies, but that provides a user experience like that of a platform-specific app.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps",
+      "og:title": "Progressive web apps | MDN",
+      "og:locale": "en_US",
+      "og:description": "A progressive web app (PWA) is an app that's built using web platform technologies, but that provides a user experience like that of a platform-specific app.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "2"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps",
+    "captured_at": "2026-09-20T12:57:45.554Z"
+  }
+}

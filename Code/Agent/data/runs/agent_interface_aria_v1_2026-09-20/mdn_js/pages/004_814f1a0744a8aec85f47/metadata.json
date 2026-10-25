@@ -1,0 +1,69 @@
+{
+  "rendered": {
+    "title": "HTML elements reference - HTML | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Web HTML Reference Elements",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/HTML",
+          "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference",
+          "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements"
+        ]
+      },
+      {
+        "text": "Web HTML Reference Elements",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/HTML",
+          "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference",
+          "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements",
+      "og:title": "HTML elements reference - HTML | MDN",
+      "og:locale": "en_US",
+      "og:description": "This page lists all the HTML elements, which are created using tags.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "This page lists all the HTML elements, which are created using tags.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements",
+      "og:title": "HTML elements reference - HTML | MDN",
+      "og:locale": "en_US",
+      "og:description": "This page lists all the HTML elements, which are created using tags.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "4"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements",
+    "captured_at": "2026-09-20T12:53:41.479Z"
+  }
+}

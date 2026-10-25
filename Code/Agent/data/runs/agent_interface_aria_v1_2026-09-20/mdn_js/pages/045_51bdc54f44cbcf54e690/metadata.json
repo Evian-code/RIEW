@@ -1,0 +1,67 @@
+{
+  "rendered": {
+    "title": "Push API - Web APIs | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/Web/API/Push_API",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Web Web APIs Push API",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/API",
+          "https://developer.mozilla.org/en-US/docs/Web/API/Push_API"
+        ]
+      },
+      {
+        "text": "Web Web APIs Push API",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/API",
+          "https://developer.mozilla.org/en-US/docs/Web/API/Push_API"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/API/Push_API",
+      "og:title": "Push API - Web APIs | MDN",
+      "og:locale": "en_US",
+      "og:description": "The Push API gives web applications the ability to receive messages pushed to them from a server, whether or not the web app is in the foreground, or even currently loaded, on a user agent. This lets developers deliver asynchronous notifications and updates to users that opt in, resulting in better engagement with timely new content.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "The Push API gives web applications the ability to receive messages pushed to them from a server, whether or not the web app is in the foreground, or even currently loaded, on a user agent. This lets developers deliver asynchronous notifications and updates to users that opt in, resulting in better engagement with timely new content.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/API/Push_API",
+      "og:title": "Push API - Web APIs | MDN",
+      "og:locale": "en_US",
+      "og:description": "The Push API gives web applications the ability to receive messages pushed to them from a server, whether or not the web app is in the foreground, or even currently loaded, on a user agent. This lets developers deliver asynchronous notifications and updates to users that opt in, resulting in better engagement with timely new content.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "3"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/Web/API/Push_API",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/Web/API/Push_API",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/Web/API/Push_API",
+    "captured_at": "2026-09-20T12:57:07.455Z"
+  }
+}

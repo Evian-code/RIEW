@@ -1,0 +1,71 @@
+{
+  "rendered": {
+    "title": "Card - CSS | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Card",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Web CSS How to Layout cookbook Card",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Card"
+        ]
+      },
+      {
+        "text": "Web CSS How to Layout cookbook Card",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Card"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Card",
+      "og:title": "Card - CSS | MDN",
+      "og:locale": "en_US",
+      "og:description": "This pattern is a list of \"card\" components with optional footers. A card contains a title, an image, a description or other content, and an attribution or footer. Cards are generally displayed within a group or collection.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "This pattern is a list of \"card\" components with optional footers. A card contains a title, an image, a description or other content, and an attribution or footer. Cards are generally displayed within a group or collection.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Card",
+      "og:title": "Card - CSS | MDN",
+      "og:locale": "en_US",
+      "og:description": "This pattern is a list of \"card\" components with optional footers. A card contains a title, an image, a description or other content, and an attribution or footer. Cards are generally displayed within a group or collection.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "5"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Card",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Card",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Card",
+    "captured_at": "2026-09-20T12:55:36.068Z"
+  }
+}

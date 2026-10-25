@@ -1,0 +1,69 @@
+{
+  "rendered": {
+    "title": "Global attributes - HTML | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Web HTML Reference Global attributes",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/HTML",
+          "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference",
+          "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes"
+        ]
+      },
+      {
+        "text": "Web HTML Reference Global attributes",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/HTML",
+          "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference",
+          "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes",
+      "og:title": "Global attributes - HTML | MDN",
+      "og:locale": "en_US",
+      "og:description": "Global attributes are attributes common to all HTML elements; they can be used on all elements, though they may have no effect on some elements.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "Global attributes are attributes common to all HTML elements; they can be used on all elements, though they may have no effect on some elements.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes",
+      "og:title": "Global attributes - HTML | MDN",
+      "og:locale": "en_US",
+      "og:description": "Global attributes are attributes common to all HTML elements; they can be used on all elements, though they may have no effect on some elements.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "4"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes",
+    "captured_at": "2026-09-20T12:53:46.875Z"
+  }
+}

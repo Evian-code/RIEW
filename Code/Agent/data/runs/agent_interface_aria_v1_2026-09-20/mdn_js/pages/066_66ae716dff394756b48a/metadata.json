@@ -1,0 +1,65 @@
+{
+  "rendered": {
+    "title": "Core learning modules - Learn web development | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Learn Core learning modules",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+          "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core"
+        ]
+      },
+      {
+        "text": "Learn Core learning modules",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+          "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core",
+      "og:title": "Core learning modules - Learn web development | MDN",
+      "og:locale": "en_US",
+      "og:description": "Our Core modules cover topics that we feel every web developer should have a good grounding in. This includes all the information they need to design and build a basic, accessible web app that follows modern best practices, and manage and deploy their code using appropriate tools.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "Our Core modules cover topics that we feel every web developer should have a good grounding in. This includes all the information they need to design and build a basic, accessible web app that follows modern best practices, and manage and deploy their code using appropriate tools.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core",
+      "og:title": "Core learning modules - Learn web development | MDN",
+      "og:locale": "en_US",
+      "og:description": "Our Core modules cover topics that we feel every web developer should have a good grounding in. This includes all the information they need to design and build a basic, accessible web app that follows modern best practices, and manage and deploy their code using appropriate tools.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "2"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core",
+    "captured_at": "2026-09-20T12:57:51.426Z"
+  }
+}

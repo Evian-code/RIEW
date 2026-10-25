@@ -1,0 +1,65 @@
+{
+  "rendered": {
+    "title": "URIs | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/Web/URI",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Web URIs",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/URI"
+        ]
+      },
+      {
+        "text": "Web URIs",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web",
+          "https://developer.mozilla.org/en-US/docs/Web/URI"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/URI",
+      "og:title": "URIs | MDN",
+      "og:locale": "en_US",
+      "og:description": "Uniform Resource Identifiers (URI) are used to identify \"resources\" on the web.\nURIs are commonly used as targets of HTTP requests, in which case the URI represents a location for a resource, such as a document, a photo, binary data.\nThe most common type of URI is a Uniform Resource Locator (URL), which is known as the web address.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "Uniform Resource Identifiers (URI) are used to identify \"resources\" on the web.\nURIs are commonly used as targets of HTTP requests, in which case the URI represents a location for a resource, such as a document, a photo, binary data.\nThe most common type of URI is a Uniform Resource Locator (URL), which is known as the web address.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/Web/URI",
+      "og:title": "URIs | MDN",
+      "og:locale": "en_US",
+      "og:description": "Uniform Resource Identifiers (URI) are used to identify \"resources\" on the web.\nURIs are commonly used as targets of HTTP requests, in which case the URI represents a location for a resource, such as a document, a photo, binary data.\nThe most common type of URI is a Uniform Resource Locator (URL), which is known as the web address.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "2"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/Web/URI",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/Web/URI",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/Web/URI",
+    "captured_at": "2026-09-20T12:57:29.283Z"
+  }
+}

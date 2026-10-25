@@ -1,0 +1,1284 @@
+{
+  "schema_version": "1.0",
+  "experiment_kind": "formal_agent_experiment",
+  "suite_id": "agent-formal-aria-v1",
+  "batch_id": "formal-aria-v1-attempt01",
+  "config_path": "config/agent_formal_aria_v1.yaml",
+  "provider": "alibaba_model_studio",
+  "region": "cn-beijing",
+  "model": "qwen3.7-plus-2026-05-26",
+  "model_version": "qwen3.7-plus-2026-05-26",
+  "thinking_mode": "disabled",
+  "temperature": 0,
+  "max_tool_steps": 10,
+  "token_budget": 100000,
+  "conditions": [
+    "rendered_all",
+    "rendered_aria_followable"
+  ],
+  "repetitions": 5,
+  "task_count": 18,
+  "run_count": 180,
+  "runs": [
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_01__rendered_all__r01",
+      "task_id": "mdn_formal_01",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_01__rendered_aria_followable__r01",
+      "task_id": "mdn_formal_01",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_01__rendered_all__r02",
+      "task_id": "mdn_formal_01",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_01__rendered_aria_followable__r02",
+      "task_id": "mdn_formal_01",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_01__rendered_all__r03",
+      "task_id": "mdn_formal_01",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_01__rendered_aria_followable__r03",
+      "task_id": "mdn_formal_01",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_01__rendered_all__r04",
+      "task_id": "mdn_formal_01",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_01__rendered_aria_followable__r04",
+      "task_id": "mdn_formal_01",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_01__rendered_all__r05",
+      "task_id": "mdn_formal_01",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_01__rendered_aria_followable__r05",
+      "task_id": "mdn_formal_01",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_01__rendered_all__r01",
+      "task_id": "usa_gov_formal_01",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_01__rendered_aria_followable__r01",
+      "task_id": "usa_gov_formal_01",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_01__rendered_all__r02",
+      "task_id": "usa_gov_formal_01",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_01__rendered_aria_followable__r02",
+      "task_id": "usa_gov_formal_01",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_01__rendered_all__r03",
+      "task_id": "usa_gov_formal_01",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_01__rendered_aria_followable__r03",
+      "task_id": "usa_gov_formal_01",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_01__rendered_all__r04",
+      "task_id": "usa_gov_formal_01",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_01__rendered_aria_followable__r04",
+      "task_id": "usa_gov_formal_01",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_01__rendered_all__r05",
+      "task_id": "usa_gov_formal_01",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_01__rendered_aria_followable__r05",
+      "task_id": "usa_gov_formal_01",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_01__rendered_all__r01",
+      "task_id": "wikipedia_formal_01",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_01__rendered_aria_followable__r01",
+      "task_id": "wikipedia_formal_01",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_01__rendered_all__r02",
+      "task_id": "wikipedia_formal_01",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_01__rendered_aria_followable__r02",
+      "task_id": "wikipedia_formal_01",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_01__rendered_all__r03",
+      "task_id": "wikipedia_formal_01",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_01__rendered_aria_followable__r03",
+      "task_id": "wikipedia_formal_01",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_01__rendered_all__r04",
+      "task_id": "wikipedia_formal_01",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_01__rendered_aria_followable__r04",
+      "task_id": "wikipedia_formal_01",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_01__rendered_all__r05",
+      "task_id": "wikipedia_formal_01",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_01__rendered_aria_followable__r05",
+      "task_id": "wikipedia_formal_01",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_02__rendered_all__r01",
+      "task_id": "mdn_formal_02",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_02__rendered_aria_followable__r01",
+      "task_id": "mdn_formal_02",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_02__rendered_all__r02",
+      "task_id": "mdn_formal_02",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_02__rendered_aria_followable__r02",
+      "task_id": "mdn_formal_02",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_02__rendered_all__r03",
+      "task_id": "mdn_formal_02",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_02__rendered_aria_followable__r03",
+      "task_id": "mdn_formal_02",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_02__rendered_all__r04",
+      "task_id": "mdn_formal_02",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_02__rendered_aria_followable__r04",
+      "task_id": "mdn_formal_02",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_02__rendered_all__r05",
+      "task_id": "mdn_formal_02",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_02__rendered_aria_followable__r05",
+      "task_id": "mdn_formal_02",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_02__rendered_all__r01",
+      "task_id": "usa_gov_formal_02",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_02__rendered_aria_followable__r01",
+      "task_id": "usa_gov_formal_02",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_02__rendered_all__r02",
+      "task_id": "usa_gov_formal_02",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_02__rendered_aria_followable__r02",
+      "task_id": "usa_gov_formal_02",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_02__rendered_all__r03",
+      "task_id": "usa_gov_formal_02",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_02__rendered_aria_followable__r03",
+      "task_id": "usa_gov_formal_02",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_02__rendered_all__r04",
+      "task_id": "usa_gov_formal_02",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_02__rendered_aria_followable__r04",
+      "task_id": "usa_gov_formal_02",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_02__rendered_all__r05",
+      "task_id": "usa_gov_formal_02",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_02__rendered_aria_followable__r05",
+      "task_id": "usa_gov_formal_02",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_02__rendered_all__r01",
+      "task_id": "wikipedia_formal_02",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_02__rendered_aria_followable__r01",
+      "task_id": "wikipedia_formal_02",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_02__rendered_all__r02",
+      "task_id": "wikipedia_formal_02",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_02__rendered_aria_followable__r02",
+      "task_id": "wikipedia_formal_02",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_02__rendered_all__r03",
+      "task_id": "wikipedia_formal_02",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_02__rendered_aria_followable__r03",
+      "task_id": "wikipedia_formal_02",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_02__rendered_all__r04",
+      "task_id": "wikipedia_formal_02",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_02__rendered_aria_followable__r04",
+      "task_id": "wikipedia_formal_02",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_02__rendered_all__r05",
+      "task_id": "wikipedia_formal_02",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_02__rendered_aria_followable__r05",
+      "task_id": "wikipedia_formal_02",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_03__rendered_all__r01",
+      "task_id": "mdn_formal_03",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_03__rendered_aria_followable__r01",
+      "task_id": "mdn_formal_03",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_03__rendered_all__r02",
+      "task_id": "mdn_formal_03",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_03__rendered_aria_followable__r02",
+      "task_id": "mdn_formal_03",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_03__rendered_all__r03",
+      "task_id": "mdn_formal_03",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_03__rendered_aria_followable__r03",
+      "task_id": "mdn_formal_03",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_03__rendered_all__r04",
+      "task_id": "mdn_formal_03",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_03__rendered_aria_followable__r04",
+      "task_id": "mdn_formal_03",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_03__rendered_all__r05",
+      "task_id": "mdn_formal_03",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_03__rendered_aria_followable__r05",
+      "task_id": "mdn_formal_03",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_04__rendered_all__r01",
+      "task_id": "mdn_formal_04",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_04__rendered_aria_followable__r01",
+      "task_id": "mdn_formal_04",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_04__rendered_all__r02",
+      "task_id": "mdn_formal_04",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_04__rendered_aria_followable__r02",
+      "task_id": "mdn_formal_04",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_04__rendered_all__r03",
+      "task_id": "mdn_formal_04",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_04__rendered_aria_followable__r03",
+      "task_id": "mdn_formal_04",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_04__rendered_all__r04",
+      "task_id": "mdn_formal_04",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_04__rendered_aria_followable__r04",
+      "task_id": "mdn_formal_04",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_04__rendered_all__r05",
+      "task_id": "mdn_formal_04",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_04__rendered_aria_followable__r05",
+      "task_id": "mdn_formal_04",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_03__rendered_all__r01",
+      "task_id": "usa_gov_formal_03",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_03__rendered_aria_followable__r01",
+      "task_id": "usa_gov_formal_03",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_03__rendered_all__r02",
+      "task_id": "usa_gov_formal_03",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_03__rendered_aria_followable__r02",
+      "task_id": "usa_gov_formal_03",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_03__rendered_all__r03",
+      "task_id": "usa_gov_formal_03",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_03__rendered_aria_followable__r03",
+      "task_id": "usa_gov_formal_03",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_03__rendered_all__r04",
+      "task_id": "usa_gov_formal_03",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_03__rendered_aria_followable__r04",
+      "task_id": "usa_gov_formal_03",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_03__rendered_all__r05",
+      "task_id": "usa_gov_formal_03",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_03__rendered_aria_followable__r05",
+      "task_id": "usa_gov_formal_03",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_04__rendered_all__r01",
+      "task_id": "usa_gov_formal_04",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_04__rendered_aria_followable__r01",
+      "task_id": "usa_gov_formal_04",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_04__rendered_all__r02",
+      "task_id": "usa_gov_formal_04",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_04__rendered_aria_followable__r02",
+      "task_id": "usa_gov_formal_04",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_04__rendered_all__r03",
+      "task_id": "usa_gov_formal_04",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_04__rendered_aria_followable__r03",
+      "task_id": "usa_gov_formal_04",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_04__rendered_all__r04",
+      "task_id": "usa_gov_formal_04",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_04__rendered_aria_followable__r04",
+      "task_id": "usa_gov_formal_04",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_04__rendered_all__r05",
+      "task_id": "usa_gov_formal_04",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_04__rendered_aria_followable__r05",
+      "task_id": "usa_gov_formal_04",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_03__rendered_all__r01",
+      "task_id": "wikipedia_formal_03",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_03__rendered_aria_followable__r01",
+      "task_id": "wikipedia_formal_03",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_03__rendered_all__r02",
+      "task_id": "wikipedia_formal_03",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_03__rendered_aria_followable__r02",
+      "task_id": "wikipedia_formal_03",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_03__rendered_all__r03",
+      "task_id": "wikipedia_formal_03",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_03__rendered_aria_followable__r03",
+      "task_id": "wikipedia_formal_03",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_03__rendered_all__r04",
+      "task_id": "wikipedia_formal_03",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_03__rendered_aria_followable__r04",
+      "task_id": "wikipedia_formal_03",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_03__rendered_all__r05",
+      "task_id": "wikipedia_formal_03",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_03__rendered_aria_followable__r05",
+      "task_id": "wikipedia_formal_03",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_04__rendered_all__r01",
+      "task_id": "wikipedia_formal_04",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_04__rendered_aria_followable__r01",
+      "task_id": "wikipedia_formal_04",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_04__rendered_all__r02",
+      "task_id": "wikipedia_formal_04",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_04__rendered_aria_followable__r02",
+      "task_id": "wikipedia_formal_04",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_04__rendered_all__r03",
+      "task_id": "wikipedia_formal_04",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_04__rendered_aria_followable__r03",
+      "task_id": "wikipedia_formal_04",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_04__rendered_all__r04",
+      "task_id": "wikipedia_formal_04",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_04__rendered_aria_followable__r04",
+      "task_id": "wikipedia_formal_04",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_04__rendered_all__r05",
+      "task_id": "wikipedia_formal_04",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_04__rendered_aria_followable__r05",
+      "task_id": "wikipedia_formal_04",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_05__rendered_all__r01",
+      "task_id": "mdn_formal_05",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_05__rendered_aria_followable__r01",
+      "task_id": "mdn_formal_05",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_05__rendered_all__r02",
+      "task_id": "mdn_formal_05",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_05__rendered_aria_followable__r02",
+      "task_id": "mdn_formal_05",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_05__rendered_all__r03",
+      "task_id": "mdn_formal_05",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_05__rendered_aria_followable__r03",
+      "task_id": "mdn_formal_05",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_05__rendered_all__r04",
+      "task_id": "mdn_formal_05",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_05__rendered_aria_followable__r04",
+      "task_id": "mdn_formal_05",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_05__rendered_all__r05",
+      "task_id": "mdn_formal_05",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_05__rendered_aria_followable__r05",
+      "task_id": "mdn_formal_05",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_06__rendered_all__r01",
+      "task_id": "mdn_formal_06",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_06__rendered_aria_followable__r01",
+      "task_id": "mdn_formal_06",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_06__rendered_all__r02",
+      "task_id": "mdn_formal_06",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_06__rendered_aria_followable__r02",
+      "task_id": "mdn_formal_06",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_06__rendered_all__r03",
+      "task_id": "mdn_formal_06",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_06__rendered_aria_followable__r03",
+      "task_id": "mdn_formal_06",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_06__rendered_all__r04",
+      "task_id": "mdn_formal_06",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_06__rendered_aria_followable__r04",
+      "task_id": "mdn_formal_06",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_06__rendered_all__r05",
+      "task_id": "mdn_formal_06",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_06__rendered_aria_followable__r05",
+      "task_id": "mdn_formal_06",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_07__rendered_all__r01",
+      "task_id": "mdn_formal_07",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_07__rendered_aria_followable__r01",
+      "task_id": "mdn_formal_07",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_07__rendered_all__r02",
+      "task_id": "mdn_formal_07",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_07__rendered_aria_followable__r02",
+      "task_id": "mdn_formal_07",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_07__rendered_all__r03",
+      "task_id": "mdn_formal_07",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_07__rendered_aria_followable__r03",
+      "task_id": "mdn_formal_07",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_07__rendered_all__r04",
+      "task_id": "mdn_formal_07",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_07__rendered_aria_followable__r04",
+      "task_id": "mdn_formal_07",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_07__rendered_all__r05",
+      "task_id": "mdn_formal_07",
+      "site": "mdn_js",
+      "condition": "rendered_all",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__mdn_formal_07__rendered_aria_followable__r05",
+      "task_id": "mdn_formal_07",
+      "site": "mdn_js",
+      "condition": "rendered_aria_followable",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_05__rendered_all__r01",
+      "task_id": "usa_gov_formal_05",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_05__rendered_aria_followable__r01",
+      "task_id": "usa_gov_formal_05",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_05__rendered_all__r02",
+      "task_id": "usa_gov_formal_05",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_05__rendered_aria_followable__r02",
+      "task_id": "usa_gov_formal_05",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_05__rendered_all__r03",
+      "task_id": "usa_gov_formal_05",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_05__rendered_aria_followable__r03",
+      "task_id": "usa_gov_formal_05",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_05__rendered_all__r04",
+      "task_id": "usa_gov_formal_05",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_05__rendered_aria_followable__r04",
+      "task_id": "usa_gov_formal_05",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_05__rendered_all__r05",
+      "task_id": "usa_gov_formal_05",
+      "site": "usa_gov",
+      "condition": "rendered_all",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__usa_gov_formal_05__rendered_aria_followable__r05",
+      "task_id": "usa_gov_formal_05",
+      "site": "usa_gov",
+      "condition": "rendered_aria_followable",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_05__rendered_all__r01",
+      "task_id": "wikipedia_formal_05",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_05__rendered_aria_followable__r01",
+      "task_id": "wikipedia_formal_05",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_05__rendered_all__r02",
+      "task_id": "wikipedia_formal_05",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_05__rendered_aria_followable__r02",
+      "task_id": "wikipedia_formal_05",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_05__rendered_all__r03",
+      "task_id": "wikipedia_formal_05",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_05__rendered_aria_followable__r03",
+      "task_id": "wikipedia_formal_05",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_05__rendered_all__r04",
+      "task_id": "wikipedia_formal_05",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_05__rendered_aria_followable__r04",
+      "task_id": "wikipedia_formal_05",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_05__rendered_all__r05",
+      "task_id": "wikipedia_formal_05",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_05__rendered_aria_followable__r05",
+      "task_id": "wikipedia_formal_05",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_06__rendered_all__r01",
+      "task_id": "wikipedia_formal_06",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_06__rendered_aria_followable__r01",
+      "task_id": "wikipedia_formal_06",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 1
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_06__rendered_all__r02",
+      "task_id": "wikipedia_formal_06",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_06__rendered_aria_followable__r02",
+      "task_id": "wikipedia_formal_06",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 2
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_06__rendered_all__r03",
+      "task_id": "wikipedia_formal_06",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_06__rendered_aria_followable__r03",
+      "task_id": "wikipedia_formal_06",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 3
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_06__rendered_all__r04",
+      "task_id": "wikipedia_formal_06",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_06__rendered_aria_followable__r04",
+      "task_id": "wikipedia_formal_06",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 4
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_06__rendered_all__r05",
+      "task_id": "wikipedia_formal_06",
+      "site": "wikipedia",
+      "condition": "rendered_all",
+      "repetition": 5
+    },
+    {
+      "run_id": "formal-aria-v1-attempt01__wikipedia_formal_06__rendered_aria_followable__r05",
+      "task_id": "wikipedia_formal_06",
+      "site": "wikipedia",
+      "condition": "rendered_aria_followable",
+      "repetition": 5
+    }
+  ]
+}

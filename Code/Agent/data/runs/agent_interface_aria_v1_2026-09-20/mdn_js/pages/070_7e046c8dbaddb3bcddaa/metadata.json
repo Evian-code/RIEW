@@ -1,0 +1,67 @@
+{
+  "rendered": {
+    "title": "CSS layout - Learn web development | MDN",
+    "canonical": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout",
+    "alternates": [
+      {
+        "href": "https://developer.mozilla.org/en-US/blog/rss.xml",
+        "type": "application/rss+xml",
+        "hreflang": null
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Learn Core learning modules CSS layout",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+          "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core",
+          "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout"
+        ]
+      },
+      {
+        "text": "Learn Core learning modules CSS layout",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+          "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core",
+          "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout"
+        ]
+      }
+    ],
+    "open_graph": {
+      "og:url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout",
+      "og:title": "CSS layout - Learn web development | MDN",
+      "og:locale": "en_US",
+      "og:description": "In previous modules we looked at how to style and manipulate the boxes that your content sits inside. Now it's time to look at how to correctly lay out your boxes in relation to one another, and the browser viewport. This module looks at floats, positioning, other modern layout tools, and building responsive designs that will adapt to different devices, screen sizes, and resolutions.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs"
+    },
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "In previous modules we looked at how to style and manipulate the boxes that your content sits inside. Now it's time to look at how to correctly lay out your boxes in relation to one another, and the browser viewport. This module looks at floats, positioning, other modern layout tools, and building responsive designs that will adapt to different devices, screen sizes, and resolutions.",
+      "og:url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout",
+      "og:title": "CSS layout - Learn web development | MDN",
+      "og:locale": "en_US",
+      "og:description": "In previous modules we looked at how to style and manipulate the boxes that your content sits inside. Now it's time to look at how to correctly lay out your boxes in relation to one another, and the browser viewport. This module looks at floats, positioning, other modern layout tools, and building responsive designs that will adapt to different devices, screen sizes, and resolutions.",
+      "og:image": "https://developer.mozilla.org/mdn-social-image.46ac2375.png",
+      "og:image:type": "image/png",
+      "og:image:height": "1024",
+      "og:image:width": "1024",
+      "og:image:alt": "The MDN logo",
+      "og:site_name": "MDN Web Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "MozDevNet",
+      "position": "3"
+    },
+    "json_ld": []
+  },
+  "capture": {
+    "requested_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout",
+    "expected_normalized_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout",
+    "live_final_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout",
+    "captured_at": "2026-09-20T12:58:01.567Z"
+  }
+}

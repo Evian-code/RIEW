@@ -1,0 +1,356 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <link rel="stylesheet" href="/website-analytics/css/vendor/css/uswds.css">
+  <link rel="stylesheet" href="/website-analytics/css/public_analytics.css">
+  <link rel="icon" type="image/x-icon" href="/website-analytics/images/analytics-favicon.ico">
+
+  <meta name="twitter:site" content="@usagov">
+  <meta name="twitter:creator" content="@usagov">
+  <meta property="og:type" content="website">
+
+  <meta property="og:url" content="https://www.usa.gov/website-analytics/">
+  <link rel="canonical" href="https://www.usa.gov/website-analytics/">
+
+  <title>USAGov Web Analytics | USAGov</title>
+  <meta property="og:title" content="USAGov Web Analytics | USAGov">
+  <meta property="og:site_name" content="USAGov Web Analytics | USAGov">
+
+  <meta name="description" content="Official data on web traffic to USAGov government websites.">
+  <meta property="og:description" content="Official data on web traffic to USAGov government websites.">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="/website-analytics/images/share-image.png">
+  <script async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-NHDBX4B"></script><script src="/website-analytics/js/vendor/d3.v3.min.js"></script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NHDBX4B');</script>
+  <!-- End Google Tag Manager -->
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-28227333-1', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('set', 'forceSSL', true);
+    ga('send', 'pageview');
+
+    document.addEventListener("DOMContentLoaded", function (event) {
+
+      d3.selectAll('.download-data').on('click', function () {
+        var link = this.href;
+        var text = this.text;
+        ga('send', 'event', 'Download Data', link, text);
+      });
+
+      d3.selectAll('.external-link').on('click', function () {
+        var link = this.href;
+        var text = this.text;
+        ga('send', 'event', 'External Link', link, text);
+      });
+
+      d3.selectAll('.top-download-page').on('click', function () {
+        var link = this.href;
+        var text = this.text;
+        ga('send', 'event', 'Top-Download Page', link, text);
+      });
+
+      d3.selectAll('.top-download-file').on('click', function () {
+        var link = this.href;
+        var text = this.text;
+        ga('send', 'event', 'Top-Download File', link, text);
+      });
+
+    });
+  </script>
+
+  <script src="/website-analytics/js/vendor/q.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="/website-analytics/css/google-fonts.css" rel="stylesheet">
+</head>
+
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHDBX4B" height="0" width="0" style="display:none;visibility:hidden" title="GTM"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header role="banner">
+    <div class="header-parent">
+      <a href="#skip-to-h1" class="skip-to-main-content-link">
+        Skip to main content
+      </a>
+
+      <div class="header-child header-logo">
+        <a href="https://www.usa.gov" class="header-child external-link remove-hover-underline">
+          <img src="/website-analytics/images/usagov.png" alt="USAGOV logo, link to homepage">
+        </a>
+      </div>
+
+      <div class="header-child header-parent header-right">
+        <div class="header-child header-dropdown">
+          <form class="select-agency-form header-parent">
+            <label for="agency-selector" style="color: #323a45;">Languages:</label>
+            <select name="agency-selector" id="agency-selector" title="Agency Selection Dropdown">
+              <option selected="" value="/website-analytics/">USA.gov and USA.gov/es/</option>
+              <option value="/website-analytics/usagov/">USA.gov</option>
+              <option value="/website-analytics/usagov-en-espanol/">USA.gov/es/</option>
+            </select>
+            <button class="usa-button select-agency-form-button" type="button" onclick="goToPage()" style="min-width: 10em;">Apply Filter</button>
+          </form>
+        </div>
+
+        <ul class="header-child header-parent header-links">
+          <li>
+            <a href="#explanation">About <span class="sm-hide">this site</span></a>
+          </li>
+          <li>
+            <a href="/website-analytics/data/">Download Dataset <span class="sm-hide">(CSV/JSON)</span></a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </header>
+
+  <main role="main">
+  <div class="container">
+    <h1 id="skip-to-h1">
+      Analytics Dashboard
+    </h1>
+
+    <div id="main_data" class="width-two-thirds">
+      <!-- begin past 30 days section -->
+      <section class="section_headline">
+        <h2>Total visits in the last 30 days</h2>
+      </section>
+
+      <section id="realtime" data-block="traffic-sources-30-days-totals" data-source="https://s3-us-gov-west-1.amazonaws.com/cg-446f64bd-3bff-4571-aaf3-22e7fb880b2d/usagov-analytics/both/traffic-sources-30-days.json" class="loaded">
+        <h2 id="current_visitors" class="data">5,070,655</h2>
+      </section>
+
+      <section class="section_headline">
+        <h2 id="visits-30days-heading">Visits in the Past 30 Days</h2>
+      </section>
+
+      <figure id="time_series" data-block="traffic-sources-30-days" data-source="https://s3-us-gov-west-1.amazonaws.com/cg-446f64bd-3bff-4571-aaf3-22e7fb880b2d/usagov-analytics/en/traffic-sources-30-days.json" class="loaded">
+        <figcaption>Website Traffic Sources: Aug 21 - Sep 19</figcaption>
+        <svg aria-labelledby="chart-title chart-desc" role="img" class="data time-series" viewBox="0 0 700 150" tabindex="0">
+          <title id="chart-title">Daily Website Visit Counts</title>
+          <desc id="chart-desc">Bar chart showing daily website visits ranging from approximately 100,588 to 234,490 visits. Weekends consistently show lower traffic (around 100,588-124,730 visits) compared to weekdays (138,605-234,490 visits). Peak traffic occurred on Sep 15 with 234,490 visits.</desc>
+          <!-- Existing SVG content -->
+
+        <g class="axis y0" transform="translate(50,0)" aria-hidden="true"><g class="tick" transform="translate(0,125)" style="opacity: 0.00878899;"><line x2="-6" y2="0"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end;">0</text></g><g class="tick" transform="translate(0,100.47869845195956)" style="opacity: 0.00878899;"><line x2="-6" y2="0"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end;">50k</text></g><g class="tick" transform="translate(0,75.95739690391915)" style="opacity: 0.00878899;"><line x2="-6" y2="0"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end;">100k</text></g><g class="tick" transform="translate(0,51.43609535587872)" style="opacity: 0.00878899;"><line x2="-6" y2="0"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end;">150k</text></g><g class="tick" transform="translate(0,26.914793807838286)" style="opacity: 0.00878899;"><line x2="-6" y2="0"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end;">200k</text></g><path class="domain" d="M-6,10H0V125H-6"></path></g><g class="axis y1" transform="translate(650,0)" aria-hidden="true"><g class="tick" transform="translate(0,125)" style="opacity: 0.0083896;"><line x2="6" y2="0"></line><text dy=".32em" x="9" y="0" style="text-anchor: start;">0</text></g><g class="tick" transform="translate(0,100.47869845195956)" style="opacity: 0.0083896;"><line x2="6" y2="0"></line><text dy=".32em" x="9" y="0" style="text-anchor: start;">50k</text></g><g class="tick" transform="translate(0,75.95739690391915)" style="opacity: 0.0083896;"><line x2="6" y2="0"></line><text dy=".32em" x="9" y="0" style="text-anchor: start;">100k</text></g><g class="tick" transform="translate(0,51.43609535587872)" style="opacity: 0.0083896;"><line x2="6" y2="0"></line><text dy=".32em" x="9" y="0" style="text-anchor: start;">150k</text></g><g class="tick" transform="translate(0,26.914793807838286)" style="opacity: 0.0083896;"><line x2="6" y2="0"></line><text dy=".32em" x="9" y="0" style="text-anchor: start;">200k</text></g><path class="domain" d="M6,10H0V125H6"></path></g><g class="series"><g class="bar bar-0" aria-label="164,798 visits on Aug 21" tabindex="0" role="listitem" transform="translate(56,125)"><rect width="19" y="-0.6466913875307263" height="0.6466913875307263"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Aug 21</text><title>164,798 visits on Aug 21</title></g><g class="bar bar-1" aria-label="122,203 visits on Aug 22" tabindex="0" role="listitem" transform="translate(75,125)"><rect width="19" y="-0.4795423951165509" height="0.4795423951165509"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Aug 22</text><title>122,203 visits on Aug 22</title></g><g class="bar bar-2" aria-label="124,730 visits on Aug 23" tabindex="0" role="listitem" transform="translate(94,125)"><rect width="19" y="-0.48945871167555133" height="0.48945871167555133"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Aug 23</text><title>124,730 visits on Aug 23</title></g><g class="bar bar-3" aria-label="189,361 visits on Aug 24" tabindex="0" role="listitem" transform="translate(113,125)"><rect width="19" y="-0.7430801820058852" height="0.7430801820058852"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Aug 24</text><title>189,361 visits on Aug 24</title></g><g class="bar bar-4" aria-label="189,472 visits on Aug 25" tabindex="0" role="listitem" transform="translate(132,125)"><rect width="19" y="-0.7435157621950617" height="0.7435157621950617"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Aug 25</text><title>189,472 visits on Aug 25</title></g><g class="bar bar-5" aria-label="183,854 visits on Aug 26" tabindex="0" role="listitem" transform="translate(151,125)"><rect width="19" y="-0.7214699108185425" height="0.7214699108185425"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Aug 26</text><title>183,854 visits on Aug 26</title></g><g class="bar bar-6" aria-label="161,319 visits on Aug 27" tabindex="0" role="listitem" transform="translate(170,125)"><rect width="19" y="-0.6330392841240139" height="0.6330392841240139"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Aug 27</text><title>161,319 visits on Aug 27</title></g><g class="bar bar-7" aria-label="143,110 visits on Aug 28" tabindex="0" role="listitem" transform="translate(189,125)"><rect width="19" y="-0.561584512369824" height="0.561584512369824"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Aug 28</text><title>143,110 visits on Aug 28</title></g><g class="bar bar-8" aria-label="107,278 visits on Aug 29" tabindex="0" role="listitem" transform="translate(208,125)"><rect width="19" y="-0.42097451832862814" height="0.42097451832862814"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Aug 29</text><title>107,278 visits on Aug 29</title></g><g class="bar bar-9" aria-label="115,929 visits on Aug 30" tabindex="0" role="listitem" transform="translate(227,125)"><rect width="19" y="-0.4549223040634569" height="0.4549223040634569"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Aug 30</text><title>115,929 visits on Aug 30</title></g><g class="bar bar-10" aria-label="155,961 visits on Aug 31" tabindex="0" role="listitem" transform="translate(246,125)"><rect width="19" y="-0.6120137106680883" height="0.6120137106680883"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Aug 31</text><title>155,961 visits on Aug 31</title></g><g class="bar bar-11" aria-label="159,298 visits on Sep  1" tabindex="0" role="listitem" transform="translate(265,125)"><rect width="19" y="-0.6251085853643226" height="0.6251085853643226"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Sep  1</text><title>159,298 visits on Sep  1</title></g><g class="bar bar-12" aria-label="156,207 visits on Sep  2" tabindex="0" role="listitem" transform="translate(284,125)"><rect width="19" y="-0.6129790505468038" height="0.6129790505468038"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Sep  2</text><title>156,207 visits on Sep  2</title></g><g class="bar bar-13" aria-label="153,436 visits on Sep  3" tabindex="0" role="listitem" transform="translate(303,125)"><rect width="19" y="-0.6021052424007848" height="0.6021052424007848"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Sep  3</text><title>153,436 visits on Sep  3</title></g><g class="bar bar-14" aria-label="138,605 visits on Sep  4" tabindex="0" role="listitem" transform="translate(322,125)"><rect width="19" y="-0.5439062353226152" height="0.5439062353226152"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Sep  4</text><title>138,605 visits on Sep  4</title></g><g class="bar bar-15" aria-label="100,588 visits on Sep  5" tabindex="0" role="listitem" transform="translate(341,125)"><rect width="19" y="-0.3947219826025844" height="0.3947219826025844"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Sep  5</text><title>100,588 visits on Sep  5</title></g><g class="bar bar-16" aria-label="103,848 visits on Sep  6" tabindex="0" role="listitem" transform="translate(360,125)"><rect width="19" y="-0.40751469806848906" height="0.40751469806848906"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Sep  6</text><title>103,848 visits on Sep  6</title></g><g class="bar bar-17" aria-label="160,319 visits on Sep  7" tabindex="0" role="listitem" transform="translate(379,125)"><rect width="19" y="-0.629115138275577" height="0.629115138275577"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Sep  7</text><title>160,319 visits on Sep  7</title></g><g class="bar bar-18" aria-label="183,732 visits on Sep  8" tabindex="0" role="listitem" transform="translate(398,125)"><rect width="19" y="-0.7209911650250332" height="0.7209911650250332"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Sep  8</text><title>183,732 visits on Sep  8</title></g><g class="bar bar-19" aria-label="165,778 visits on Sep  9" tabindex="0" role="listitem" transform="translate(417,125)"><rect width="19" y="-0.6505370504621947" height="0.6505370504621947"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Sep  9</text><title>165,778 visits on Sep  9</title></g><g class="bar bar-20" aria-label="159,753 visits on Sep 10" tabindex="0" role="listitem" transform="translate(436,125)"><rect width="19" y="-0.6268940717253616" height="0.6268940717253616"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Sep 10</text><title>159,753 visits on Sep 10</title></g><g class="bar bar-21" aria-label="145,770 visits on Sep 11" tabindex="0" role="listitem" transform="translate(455,125)"><rect width="19" y="-0.5720227403266664" height="0.5720227403266664"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Sep 11</text><title>145,770 visits on Sep 11</title></g><g class="bar bar-22" aria-label="113,179 visits on Sep 12" tabindex="0" role="listitem" transform="translate(474,125)"><rect width="19" y="-0.44413090298025515" height="0.44413090298025515"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Sep 12</text><title>113,179 visits on Sep 12</title></g><g class="bar bar-23" aria-label="121,241 visits on Sep 13" tabindex="0" role="listitem" transform="translate(493,125)"><rect width="19" y="-0.4757673668103545" height="0.4757673668103545"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Sep 13</text><title>121,241 visits on Sep 13</title></g><g class="bar bar-24" aria-label="170,175 visits on Sep 14" tabindex="0" role="listitem" transform="translate(512,125)"><rect width="19" y="-0.6677915197577724" height="0.6677915197577724"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Sep 14</text><title>170,175 visits on Sep 14</title></g><g class="bar bar-25" aria-label="234,490 visits on Sep 15" tabindex="0" role="listitem" transform="translate(531,125)"><rect width="19" y="-0.9201729600000002" height="0.9201729600000002"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Sep 15</text><title>234,490 visits on Sep 15</title></g><g class="bar bar-26" aria-label="163,058 visits on Sep 16" tabindex="0" role="listitem" transform="translate(550,125)"><rect width="19" y="-0.6398633737544459" height="0.6398633737544459"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Sep 16</text><title>163,058 visits on Sep 16</title></g><g class="bar bar-27" aria-label="170,183 visits on Sep 17" tabindex="0" role="listitem" transform="translate(569,125)"><rect width="19" y="-0.6678229129245598" height="0.6678229129245598"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Sep 17</text><title>170,183 visits on Sep 17</title></g><g class="bar bar-28" aria-label="146,287 visits on Sep 18" tabindex="0" role="listitem" transform="translate(588,125)"><rect width="19" y="-0.5740515237303084" height="0.5740515237303084"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Sep 18</text><title>146,287 visits on Sep 18</title></g><g class="bar bar-29" aria-label="110,063 visits on Sep 19" tabindex="0" role="listitem" transform="translate(607,125)"><rect width="19" y="-0.4319032645165253" height="0.4319032645165253"></rect><text class="label" text-anchor="middle" dy="10" dx="9.5">Sep 19</text><title>110,063 visits on Sep 19</title></g></g></svg>
+        <div class="sr-only chart-data-table">
+          <table>
+            <caption>Daily Website Visit Counts: Past 30 Days</caption>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Number of Visits</th>
+              </tr>
+            </thead>
+            <tbody id="time-series-table-body"><tr><td>Aug 21</td><td>164,798</td></tr><tr><td>Aug 22</td><td>122,203</td></tr><tr><td>Aug 23</td><td>124,730</td></tr><tr><td>Aug 24</td><td>189,361</td></tr><tr><td>Aug 25</td><td>189,472</td></tr><tr><td>Aug 26</td><td>183,854</td></tr><tr><td>Aug 27</td><td>161,319</td></tr><tr><td>Aug 28</td><td>143,110</td></tr><tr><td>Aug 29</td><td>107,278</td></tr><tr><td>Aug 30</td><td>115,929</td></tr><tr><td>Aug 31</td><td>155,961</td></tr><tr><td>Sep  1</td><td>159,298</td></tr><tr><td>Sep  2</td><td>156,207</td></tr><tr><td>Sep  3</td><td>153,436</td></tr><tr><td>Sep  4</td><td>138,605</td></tr><tr><td>Sep  5</td><td>100,588</td></tr><tr><td>Sep  6</td><td>103,848</td></tr><tr><td>Sep  7</td><td>160,319</td></tr><tr><td>Sep  8</td><td>183,732</td></tr><tr><td>Sep  9</td><td>165,778</td></tr><tr><td>Sep 10</td><td>159,753</td></tr><tr><td>Sep 11</td><td>145,770</td></tr><tr><td>Sep 12</td><td>113,179</td></tr><tr><td>Sep 13</td><td>121,241</td></tr><tr><td>Sep 14</td><td>170,175</td></tr><tr><td>Sep 15</td><td>234,490</td></tr><tr><td>Sep 16</td><td>163,058</td></tr><tr><td>Sep 17</td><td>170,183</td></tr><tr><td>Sep 18</td><td>146,287</td></tr><tr><td>Sep 19</td><td>110,063</td></tr></tbody>
+          </table>
+        </div>
+        <div class="sr-only chart-insights" aria-live="polite">
+          <h3>Key Insights</h3>
+          <p>Traffic follows a weekly pattern with weekdays averaging 166,427 visits and weekends dropping to around 113,229 visits. Sep 15 saw the highest traffic at 234,490 visits.</p>
+        </div>
+      </figure>
+      <div id="focus-info" class="focus-info" aria-live="polite"></div>
+      <div class="summary">
+        <strong>Total Days:</strong> <span id="total-days">30</span> |
+        <strong>Highest Day:</strong> <span id="highest-value">234,490</span> visits |
+        <strong>Average:</strong> <span id="average-value">150,468</span> visits
+      </div>
+      <!-- end past 30 days section -->
+
+      <section class="section_headline">
+        <h2>Visits in the Past 90 Days</h2>
+      </section>
+
+      <section class="section_subheadline">
+        There were <span id="total_visitors" class="data">...</span> visits over the past 90 days.
+      </section>
+
+      <section id="devices" class="three_column loading" data-block="devices" data-source="https://s3-us-gov-west-1.amazonaws.com/cg-446f64bd-3bff-4571-aaf3-22e7fb880b2d/usagov-analytics/both/devices.json">
+        <h3>Devices</h3>
+        <figure id="chart_device_types">
+          <ul class="data bar-chart">
+          </ul>
+        </figure>
+
+        <p>Based on rough network segmentation data, we estimate that <strong>less than 5%</strong> of all traffic across all agencies comes from U.S. federal government networks.
+        </p>
+        <p> Much more detailed data is available in <strong><a href="data/">downloadable CSV and JSON</a></strong>. This includes data on combined browser and OS usage. </p>
+      </section>
+
+      <section id="browsers" class="three_column">
+        <h3>Browsers</h3>
+
+        <figure id="chart_browsers" data-block="browsers" data-source="https://s3-us-gov-west-1.amazonaws.com/cg-446f64bd-3bff-4571-aaf3-22e7fb880b2d/usagov-analytics/both/browsers.json" class="loading">
+          <ul class="data bar-chart">
+          </ul>
+        </figure>
+
+        
+      </section>
+
+      <section id="operating_systems" class="three_column">
+        <h3>Operating Systems</h3>
+
+        <figure id="chart_os" data-block="os" data-source="https://s3-us-gov-west-1.amazonaws.com/cg-446f64bd-3bff-4571-aaf3-22e7fb880b2d/usagov-analytics/both/os.json" class="loading">
+          <ul class="data bar-chart">
+          </ul>
+        </figure>
+
+        <figure id="chart_windows" data-block="windows" data-source="https://s3-us-gov-west-1.amazonaws.com/cg-446f64bd-3bff-4571-aaf3-22e7fb880b2d/usagov-analytics/both/windows.json" data-scale-to-parent="true" class="loading">
+          <ul class="data bar-chart windows-div">
+          </ul>
+        </figure>
+      </section>
+
+      <!-- forces section to wrap, couldn't find a better way -->
+      <div style="clear: both"></div>
+
+      <section class="section_headline">
+        <h2>Visitor Locations over the Past 90 Days</h2>
+      </section>
+
+      <section id="cities" class="three_column loading" data-block="cities" data-source="https://s3-us-gov-west-1.amazonaws.com/cg-446f64bd-3bff-4571-aaf3-22e7fb880b2d/usagov-analytics/both/top-cities-90-days.json">
+        <h3>Cities</h3>
+        <figure id="chart_top-cities-90-days">
+          <ul class="data bar-chart">
+          </ul>
+        </figure>
+      </section>
+
+      <section id="countries" class="three_column">
+        <h3>Countries</h3>
+
+        <figure id="chart_us" data-block="countries" data-source="https://s3-us-gov-west-1.amazonaws.com/cg-446f64bd-3bff-4571-aaf3-22e7fb880b2d/usagov-analytics/both/top-countries-90-days.json" class="loading">
+          <ul class="data bar-chart">
+          </ul>
+        </figure>
+
+        <figure id="chart_countries" data-block="international_visits" data-source="https://s3-us-gov-west-1.amazonaws.com/cg-446f64bd-3bff-4571-aaf3-22e7fb880b2d/usagov-analytics/both/top-countries-90-days.json" class="loading">
+          <h3>International</h3>
+          <ul class="data bar-chart">
+          </ul>
+        </figure>
+      </section>
+
+    </div>
+
+    <div id="secondary_data" class="width-one-third">
+      <section id="top_100_table">
+        <!-- see: http://heydonworks.com/practical_aria_examples/ -->
+        <h2>Top <span id="top_table_type">Pages</span></h2>
+        <!-- Contextual summary BEFORE the tabs -->
+        <p style="position:absolute; left:-10000px; width:1px; height:1px; overflow:hidden;">
+          Select a tab to view unique pageviews for the current moment, the last 7 days, or the last 30 days.
+        </p>
+        <ul class="pills" role="tablist">
+          <li role="presentation"><a id="tab-now" aria-controls="top-pages-realtime" role="tab" data-type="Pages" aria-selected="true" href="#top-pages-realtime" class="site-nav">Now</a></li>
+          <li id="top7days" role="presentation"><a id="tab-7" aria-controls="top-pages-7-days" role="tab" data-type="Domains" aria-selected="true" href="#top-pages-7-days" class="site-nav" aria-labelledby="top-pages-heading top-pages-7-tab" onkeydown="if (event.key === 'ArrowRight') { document.getElementById('top30days').click(); }">7 Days</a></li>
+          <li id="top30days" role="presentation"><a id="tab-30" aria-controls="top-pages-30-days" role="tab" data-type="Domains" href="#top-pages-30-days" class="site-nav" aria-labelledby="top-pages-heading top-pages-30-tab" onkeydown="if (event.key === 'ArrowLeft') { document.getElementById('top7days').click(); }" aria-selected="false">30 Days</a></li>
+        </ul>
+
+        <figure class="top-pages loading" id="top-pages-7-days" role="tabpanel" data-block="top-pages" data-source="https://s3-us-gov-west-1.amazonaws.com/cg-446f64bd-3bff-4571-aaf3-22e7fb880b2d/usagov-analytics/both/top-pages-7-days.json" aria-hidden="false">
+          <h3>
+            <em>Unique pageviews over the last week.</em>
+          </h3>
+          <ul class="data bar-chart">
+          </ul>
+        </figure>
+
+        <figure class="top-pages loading" id="top-pages-30-days" role="tabpanel" data-block="top-pages" data-source="https://s3-us-gov-west-1.amazonaws.com/cg-446f64bd-3bff-4571-aaf3-22e7fb880b2d/usagov-analytics/both/top-pages-30-days.json" aria-hidden="true" style="display: none;">
+          <h3>
+            <em>Unique pageviews over the last 30 days.</em>
+          </h3>
+          <ul class="data bar-chart">
+          </ul>
+        </figure>
+
+      </section>
+
+      <section id="top_external_links_table">
+        <!-- see: http://heydonworks.com/practical_aria_examples/ -->
+        <h2>Top <span id="top_external_links_table_type">External Links</span></h2>
+
+        <!-- Contextual summary BEFORE the tabs -->
+        <p style="position:absolute; left:-10000px; width:1px; height:1px; overflow:hidden;">
+          Select a tab to view unique pageviews for the current moment, the last 7 days, or the last 30 days.
+        </p>
+        <ul class="pills" role="tablist">
+          <li><a role="tab" data-type="Links" aria-selected="true" href="#top-external-links-yesterday" class="site-nav">Yesterday</a></li>
+          <li><a role="tab" data-type="Links" href="#top-external-links-7-days" class="site-nav" aria-labelledby="top-pages-heading top-pages-7-tab" aria-selected="false">7 Days</a></li>
+          <li><a role="tab" data-type="Links" href="#top-external-links-30-days" class="site-nav" aria-labelledby="top-pages-heading top-pages-30-tab" aria-selected="false">30 Days</a></li>
+        </ul>
+
+        <figure class="top-pages loading" id="top-external-links-yesterday" role="tabpanel" data-block="top-external-links" data-source="https://s3-us-gov-west-1.amazonaws.com/cg-446f64bd-3bff-4571-aaf3-22e7fb880b2d/usagov-analytics/both/top-external-links-yesterday.json" data-refresh="15" aria-hidden="false">
+          <h3>
+            <em>Total external links clicked yesterday on USA.gov and USA.gov/es/.</em>
+          </h3>
+          <ul class="data bar-chart">
+          </ul>
+        </figure>
+
+        <figure class="top-pages loading" id="top-external-links-7-days" role="tabpanel" data-block="top-external-links" data-source="https://s3-us-gov-west-1.amazonaws.com/cg-446f64bd-3bff-4571-aaf3-22e7fb880b2d/usagov-analytics/both/top-external-links-7-days.json" aria-hidden="true" style="display: none;">
+          <h3>
+            <em>Total external links clicked over the last week on USA.gov and USA.gov/es/.</em>
+          </h3>
+          <ul class="data bar-chart">
+          </ul>
+        </figure>
+
+        <figure class="top-pages loading" id="top-external-links-30-days" role="tabpanel" data-block="top-external-links" data-source="https://s3-us-gov-west-1.amazonaws.com/cg-446f64bd-3bff-4571-aaf3-22e7fb880b2d/usagov-analytics/both/top-external-links-30-days.json" aria-hidden="true" style="display: none;">
+          <h3>
+            <em>Total external links clicked over the last 30 days on USA.gov and USA.gov/es/.</em>
+          </h3>
+          <ul class="data bar-chart">
+          </ul>
+        </figure>
+      </section>
+    </div>
+  </div>
+  </main>
+
+  <footer role="contentinfo">
+  <div class="container">
+    <section id="explanation" class="width-two-thirds">
+      <h2>About this Site</h2>
+      <p>This data comes from a Google Analytics account of the U.S. General Services Administration. The data provides a window into how people are finding and interacting with <a href="https://www.usa.gov/">USA.gov</a> and <a href="https://www.usa.gov/es/">USA.gov/es/</a> online. Individuals are not tracked and <a href="https://support.google.com/analytics/answer/2763052?hl=en">visitor IP addresses are anonymized.</a> </p>
+      <p>This dashboard is based on the <a href="http://analytics.usa.gov/">analytics.usa.gov</a> open source project, which provides <a href="https://github.com/GSA/analytics.usa.gov">code for the website</a> and <a href="https://github.com/18F/analytics-reporter">code behind the data collection</a> on
+        GitHub.</p>
+    </section>
+
+    <section class="width-one-third">
+      <h2>Download the data</h2>
+      <p>You can <a href="/website-analytics/data/">download the website analytics data.</a> Available in JSON and CSV format.</p>
+    </section>
+  </div>
+  </footer>
+
+
+
+<script src="/website-analytics/js/vendor/uswds.js"></script>
+<script src="/website-analytics/js/index.js"></script>
+
+
+</body></html>

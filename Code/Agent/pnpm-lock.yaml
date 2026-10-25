@@ -1,0 +1,74 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+  .:
+    dependencies:
+      parquetjs-lite:
+        specifier: ^0.8.7
+        version: 0.8.7
+      playwright:
+        specifier: ^1.57.0
+        version: 1.63.0
+      yaml:
+        specifier: ^2.9.1
+        version: 2.9.1
+
+packages:
+  int53@0.2.4:
+    resolution: { integrity: sha512-a5jlKftS7HUOhkUyYD7j2sJ/ZnvWiNlZS1ldR+g1ifQ+/UuZXIE+YTc/lK1qGj/GwAU5F8Z0e1eVq2t1J5Ob2g== }
+
+  node-int64@0.3.3:
+    resolution: { integrity: sha512-bLdNOp5SYyqfDz/ssGHt2OTg8u+jEkCx4EoZIzprqeonFIUhlSBrKu40e/x6hIFYJx4ZEt64/9IZJyafvhGZrw== }
+
+  parquetjs-lite@0.8.7:
+    resolution: { integrity: sha512-L0tdHzvy0btLJvAFZvjO0+ru+FL8tHPqiVE90KEnMy5jDqv+WmEy9Ii8SjiC+exAOi3RGyPYIdgJvFijYyEahA== }
+    engines: { node: '>=7.6' }
+
+  playwright-core@1.63.0:
+    resolution: { integrity: sha512-rYCsBF/M5HjUch52bbtVONEFjv6Xu8sm8h72dNlR5bzIE1fvC/bxgspzkjSfU+MweEMmPM8KJebG6nnyxo5mCg== }
+    engines: { node: '>=20' }
+    hasBin: true
+
+  playwright@1.63.0:
+    resolution: { integrity: sha512-+7ziBLidS4NaNCdt57SUDT+wYmmd5fmiQejUic/kb+YsYSCPyOOE9sebzMjNmQrsnNpDJqd4WHvV/8lfKfUDUg== }
+    engines: { node: '>=20' }
+    hasBin: true
+
+  snappyjs@0.6.1:
+    resolution: { integrity: sha512-YIK6I2lsH072UE0aOFxxY1dPDCS43I5ktqHpeAsuLNYWkE5pGxRGWfDM4/vSUfNzXjC1Ivzt3qx31PCLmc9yqg== }
+
+  varint@5.0.2:
+    resolution: { integrity: sha512-lKxKYG6H03yCZUpAGOPOsMcGxd1RHCu1iKvEHYDPmTyq2HueGhD73ssNBqqQWfvYs04G9iUFRvmAVLW20Jw6ow== }
+
+  yaml@2.9.1:
+    resolution: { integrity: sha512-3NxN8+78OdzbT7C/WjGsyfPAtJaN3FNDsWxv7Y7mcDsT/oOmgW8BpyQQFFBnvZE3j9Y2Sdz1ULFLezL7Eb2yFw== }
+    engines: { node: '>= 14.6' }
+    hasBin: true
+
+snapshots:
+  int53@0.2.4: {}
+
+  node-int64@0.3.3: {}
+
+  parquetjs-lite@0.8.7:
+    dependencies:
+      int53: 0.2.4
+      node-int64: 0.3.3
+      snappyjs: 0.6.1
+      varint: 5.0.2
+
+  playwright-core@1.63.0: {}
+
+  playwright@1.63.0:
+    dependencies:
+      playwright-core: 1.63.0
+
+  snappyjs@0.6.1: {}
+
+  varint@5.0.2: {}
+
+  yaml@2.9.1: {}

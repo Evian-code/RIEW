@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "site": "mdn_js",
+  "generated_at": "2026-09-20T13:00:19.198Z",
+  "method": "live same-state browser capture",
+  "source_run_dir": "data/runs/agent_task_mdn_100_2026-09-15",
+  "attempted_pages": 100,
+  "captured_pages": 99,
+  "representations": [
+    "rendered_all_anchors",
+    "rendered_visible_followable",
+    "rendered_aria_followable"
+  ],
+  "browser_version": "153.0.8010.12"
+}

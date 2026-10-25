@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-09-20T13:31:06.568Z",
+  "sites": [
+    {
+      "site": "wikipedia",
+      "attempted_pages": 50,
+      "captured_pages": 50,
+      "failed_pages": 0,
+      "output": "E:\\PHD2\\PHD_2nd\\Research\\WWW\\data\\runs\\agent_interface_aria_v1_2026-09-20\\wikipedia"
+    }
+  ]
+}
